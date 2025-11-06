@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/pageBagrounds">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center_horizontal">
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingTop="12dp"
+           >
+
+            <ImageButton
+                android:id="@+id/quizBackButton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@android:color/transparent"
+                android:clickable="true"
+                android:contentDescription="@string/move_backSide"
+                android:focusable="true"
+                android:src="@drawable/back_arrow"
+                app:tint="@color/white"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Quizzes"
+                android:textColor="@color/white"
+                android:textSize="26sp"
+               android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingEnd="20dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Common card style applied to all -->
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="15dp">
+
+                <!-- Psychology Card -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/quizPsychology"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginVertical="10dp"
+                    android:layout_gravity="center"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="6dp"
+                    app:cardBackgroundColor="#0D303C"
+                    app:strokeWidth="0dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="30dp">
+
+                        <TextView
+                            android:id="@+id/psychologyText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Psychology"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:textSize="22sp"
+                            android:layout_marginBottom="12dp" />
+
+                        <ImageView
+                            android:layout_width="220dp"
+                            android:layout_height="180dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/psycologybg" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- Technology Card -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/quizTechnology"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginVertical="10dp"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="6dp"
+                    app:strokeWidth="0dp"
+                    app:cardBackgroundColor="#0D303C">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="30dp">
+
+                        <TextView
+                            android:id="@+id/technologyText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="12dp"
+                            android:text="Technology"
+                            android:textColor="@color/white"
+                            android:textSize="22sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:layout_width="220dp"
+                            android:layout_height="180dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/quiz_technology_bg" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- Body Card -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/quizBody"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginVertical="10dp"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="6dp"
+                    app:strokeWidth="0dp"
+                    app:cardBackgroundColor="#0D303C">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="30dp">
+
+                        <TextView
+                            android:id="@+id/bodyText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="12dp"
+                            android:text="Body"
+                            android:textColor="@color/white"
+                            android:textSize="22sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:layout_width="220dp"
+                            android:layout_height="180dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/quiz_bodybg" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- Universe Card -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/quizUniverse"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginVertical="10dp"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="6dp"
+                    app:strokeWidth="0dp"
+                    app:cardBackgroundColor="#0D303C">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="30dp">
+
+                        <TextView
+                            android:id="@+id/UniverseText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Universe"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:textSize="22sp"
+                            android:layout_marginBottom="12dp" />
+
+                        <ImageView
+                            android:layout_width="220dp"
+                            android:layout_height="180dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/qui_universebg" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+</RelativeLayout>

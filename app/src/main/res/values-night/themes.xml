@@ -1,0 +1,13 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Learnly_skillbit_app" parent="Theme.Material3.DayNight.NoActionBar">
+
+        <!-- Apply Montserrat globally -->
+        <item name="android:fontFamily">@font/montserrat</item>
+        <item name="fontFamily">@font/montserrat</item>
+
+        <!-- Customize your dark theme here -->
+        <item name="colorPrimary">#F3C9FA</item>
+
+    </style>
+</resources>

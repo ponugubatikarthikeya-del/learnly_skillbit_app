@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="8dp"
+    app:strokeColor="@color/pageBagrounds"
+    app:strokeWidth="0dp"
+    app:cardElevation="6dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="ExtraText">
+
+        <TextView
+            android:id="@+id/favoriteTextFact"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/facts_page_bg"
+            android:gravity="center"
+            android:padding="12dp"
+            android:text="@string/fact_text"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:gravity="center"
+            android:weightSum="3"
+            android:background="@color/white"
+          >
+
+            <ImageButton
+                android:id="@+id/favoriteCopy"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:contentDescription="copy"
+                android:src="@drawable/round_content_copy_24"
+                app:tint="#007AFF" />
+
+            <ImageButton
+                android:id="@+id/favoriteBtnLike"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:contentDescription="Like"
+                android:src="@drawable/baseline_favorite_24"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <ImageButton
+                android:id="@+id/favoriteBtnShare"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:contentDescription="Share"
+                android:src="@drawable/baseline_share_24"
+                app:tint="#0FA215"
+                tools:ignore="TouchTargetSizeCheck" />
+
+        </LinearLayout>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>
+

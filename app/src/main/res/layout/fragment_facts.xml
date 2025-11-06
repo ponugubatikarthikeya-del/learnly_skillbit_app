@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/pageBagrounds"
+    tools:context=".fragments.FactsFragment">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp">
+
+        <!-- Title -->
+        <TextView
+            android:text="Hello,User"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="start"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <!-- Title -->
+        <TextView
+            android:text="What are you looking for today"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="start"
+            android:layout_marginStart="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <!-- Section 1: Interesting Facts -->
+        <TextView
+            android:text="Interesting Facts"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:textColor="#FFBB33"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerInteresting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:nestedScrollingEnabled="false" />
+
+        <!-- Section 2: Psychology Facts -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:padding="10dp"
+            android:text="Psychology Facts"
+            android:textColor="#FF4081"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerPsychology"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:nestedScrollingEnabled="false" />
+
+        <!--  unKnown facts -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Unknown Facts"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#7BBF2B"
+            android:padding="10dp"
+            android:layout_marginBottom="8dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerUnKnown"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="16dp"
+            android:nestedScrollingEnabled="false" />
+
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
+
+

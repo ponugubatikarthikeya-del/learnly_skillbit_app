@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/bottom_daily"
+        android:title="@string/Daily"
+        android:icon="@drawable/baseline_home_max_24"/>
+    <item
+        android:id="@+id/bottom_facts"
+        android:title="@string/Facts"
+        android:icon="@drawable/outline_local_library_24"/>
+    <item
+        android:id="@+id/bottom_games"
+        android:title="@string/Games"
+        android:icon="@drawable/outline_layers_24"/>
+    <item
+        android:id="@+id/bottom_favorite"
+        android:title="@string/Favorite"
+        android:icon="@drawable/baseline_favorite_border_24"/>
+    <item
+        android:id="@+id/bottom_profile"
+        android:title="@string/Profile_view"
+        android:icon="@drawable/outline_person_24"/>
+
+</menu>

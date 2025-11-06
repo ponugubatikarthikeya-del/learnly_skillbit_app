@@ -1,0 +1,25 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Learnly_skillbit_app" parent="Theme.Material3.DayNight.NoActionBar">
+
+        <!-- Apply Montserrat globally -->
+        <item name="android:fontFamily">@font/montserrat</item>
+        <item name="fontFamily">@font/montserrat</item>
+
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">#F3C9FA</item>
+
+        <item name="android:windowAnimationStyle">@style/animation</item>
+    </style>
+
+    <style name="Theme.Learnly_skillbit_app" parent="Base.Theme.Learnly_skillbit_app" />
+
+    <style name="animation">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+
+    <style name="App.Custom.Indicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:color">@color/white</item>
+    </style>
+</resources>

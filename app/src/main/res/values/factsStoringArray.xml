@@ -1,0 +1,1393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--  Daily Showing Facts -->
+    <string-array name="daily_facts">
+        <!-- Human Mind & Psychology -->
+        <item>Your brain processes images 60,000 times faster than text.</item>
+        <item>People are more creative when they’re slightly tired.</item>
+        <item>Humans remember emotionally charged events more vividly than neutral ones.</item>
+        <item>Music can change the way we perceive time passing.</item>
+        <item>Our brains can trick us into “remembering” things that never happened.</item>
+        <item>When you think about someone, your brain activates similar regions as when you see them in person.</item>
+        <item>Yawning after seeing someone else yawn is linked to empathy levels.</item>
+        <item>Your brain’s storage capacity is estimated at over 2.5 petabytes.</item>
+        <item>People blink less when focused on something they enjoy.</item>
+        <item>Memories are reconstructed each time you recall them, not played back like a video.</item>
+        <item>Your brain can generate enough electricity to power a small LED light.</item>
+        <item>People are more likely to be honest when they’re tired because they lack energy to lie.</item>
+        <item>Thinking in another language can make your decisions more logical and less emotional.</item>
+        <item>When people lie, they often add unnecessary details to sound believable.</item>
+        <item>Your mind can’t create completely new faces in dreams; it only mixes ones you’ve seen.</item>
+
+        <!-- Dreams & Sleep -->
+        <item>We forget about 90% of our dreams within 10 minutes of waking.</item>
+        <item>Blind people can still experience dreams through sound, touch, and emotion.</item>
+        <item>Most people dream about strangers their brains have seen briefly in real life.</item>
+        <item>You can only dream about faces you’ve seen before, even if you don’t remember them.</item>
+        <item>Dreaming helps your brain process emotions and stress.</item>
+        <item>Lucid dreaming allows you to control your dreams consciously.</item>
+        <item>Nightmares are more common during times of high stress or irregular sleep schedules.</item>
+        <item>The average person dreams for about two hours each night.</item>
+        <item>People who sleep in colder rooms often report more vivid dreams.</item>
+        <item>Dreams occur mainly during the REM stage of sleep.</item>
+        <item>Dreams can boost creativity by connecting unrelated ideas during sleep.</item>
+        <item>Some people dream in black and white, a trait linked to watching black-and-white TV as children.</item>
+        <item>During REM sleep, your brain is almost as active as when you’re awake.</item>
+        <item>Waking up naturally without an alarm often means you’ve completed a full sleep cycle.</item>
+        <item>Frequent nightmares can sometimes indicate an overactive imagination, not fear.</item>
+
+        <!-- Ancient Civilizations -->
+        <item>The ancient Egyptians invented toothpaste over 5,000 years ago.</item>
+        <item>The Indus Valley Civilization had advanced plumbing systems before Rome existed.</item>
+        <item>The ancient city of Babylon had one of the first recorded libraries in history.</item>
+        <item>The Mayans used chocolate as currency.</item>
+        <item>The Romans used urine to clean their clothes due to its ammonia content.</item>
+        <item>Greek temples were originally painted in bright colors, not plain white marble.</item>
+        <item>The Chinese built seismographs to detect earthquakes more than 1,700 years ago.</item>
+        <item>The Vikings used sunstones to navigate cloudy seas long before compasses.</item>
+        <item>The Great Library of Alexandria once held over half a million scrolls.</item>
+        <item>Some ancient Roman concrete structures still stand stronger than modern ones.</item>
+        <item>The Aztecs created floating gardens called chinampas to grow food on lakes.</item>
+        <item>Ancient Persians built wind towers that naturally cooled homes thousands of years before air conditioning.</item>
+        <item>The Inca Empire had a communication network of runners who could deliver messages faster than horses.</item>
+        <item>The ancient Greeks used bronze mirrors long before glass mirrors were invented.</item>
+        <item>Some ancient Roman roads are still in use today because of their layered stone design.</item>
+
+
+        <!-- Time & Universe -->
+        <item>Every second, the universe expands by millions of kilometers.</item>
+        <item>Time passes slightly faster on a mountain than at sea level.</item>
+        <item>A day on Venus is longer than a year on Venus.</item>
+        <item>There are more stars in the universe than grains of sand on all Earth’s beaches.</item>
+        <item>The light from some stars we see today began its journey millions of years ago.</item>
+        <item>Black holes can bend time and space around them.</item>
+        <item>The observable universe is about 93 billion light-years across.</item>
+        <item>Neutron stars can spin hundreds of times per second.</item>
+        <item>Time slows down near massive objects due to gravity’s effect.</item>
+        <item>There may be more universes beyond our own, a concept known as the multiverse theory.</item>
+        <item>Light from the nearest star after the Sun takes over four years to reach Earth.</item>
+        <item>Jupiter’s magnetic field is 14 times stronger than Earth’s.</item>
+        <item>There are planets where it rains diamonds due to extreme pressure.</item>
+        <item>The universe has no defined center — it’s expanding everywhere at once.</item>
+        <item>Every galaxy is moving away from us, no matter which direction we look.</item>
+
+        <!-- Technology & Innovation -->
+        <item>The first 1GB hard drive in 1980 weighed over 500 pounds.</item>
+        <item>The first email was sent in 1971 between two computers side by side.</item>
+        <item>Bluetooth was named after a Viking king known for uniting tribes.</item>
+        <item>3D printing can now build entire houses in less than 24 hours.</item>
+        <item>The average smartphone today has more computing power than NASA’s 1969 moon computers.</item>
+        <item>Voice recognition AI improves accuracy when trained with diverse accents.</item>
+        <item>Electric cars existed in the 1800s before gasoline engines took over.</item>
+        <item>The world’s first website is still online today at info.cern.ch.</item>
+        <item>Modern drones were inspired by the flight patterns of hummingbirds.</item>
+        <item>Quantum computers use atoms to perform calculations at unimaginable speeds.</item>
+        <item>The first computer bug was a real moth trapped inside a computer in 1947.</item>
+        <item>Wi-Fi doesn’t stand for anything; it was created as a catchy brand name.</item>
+        <item>The first 3D video game was created in 1974 and ran on less memory than a modern text file.</item>
+        <item>Modern elevators use AI to predict which floor you’ll go to next.</item>
+        <item>The first alarm clock could only ring at one time — 4 a.m.</item>
+
+        <!-- Body & Health Secrets -->
+        <item>Human bones are stronger than steel of the same density.</item>
+        <item>Your stomach acid is strong enough to dissolve stainless steel.</item>
+        <item>The human body replaces all its skin cells every 27 days.</item>
+        <item>Your heart beats about 100,000 times each day.</item>
+        <item>Your liver can regenerate even if 75% of it is damaged.</item>
+        <item>The tongue print is unique to every individual, like a fingerprint.</item>
+        <item>The human nose can detect over a trillion different smells.</item>
+        <item>Laughing improves blood flow and boosts immunity.</item>
+        <item>Every minute, your body sheds around 30,000 dead skin cells.</item>
+        <item>When you blush, the lining of your stomach blushes too.</item>
+        <item>Your heartbeat changes slightly when you breathe in and out.</item>
+        <item>Your body produces enough heat in 30 minutes to boil a liter of water.</item>
+        <item>Humans have the same number of neck bones as giraffes — seven.</item>
+        <item>Your skin accounts for about 15% of your total body weight.</item>
+        <item>Every person has a unique tongue print that never changes.</item>
+
+        <!-- Love -->
+        <item>When you look into someone’s eyes you love, your heartbeats can sync up.</item>
+        <item>Falling in love releases dopamine, the same chemical linked to addiction.</item>
+        <item>Couples who laugh together tend to have stronger relationships.</item>
+        <item>Love at first sight activates 12 brain areas simultaneously.</item>
+        <item>Long-distance relationships can increase emotional intimacy through deep communication.</item>
+        <item>People in love experience lower stress hormone levels.</item>
+        <item>The average person falls in love four times in their lifetime.</item>
+        <item>Holding hands can actually relieve physical pain.</item>
+        <item>When in love, your brain suppresses critical thinking toward that person.</item>
+        <item>Oxytocin, the “love hormone,” increases trust and bonding in relationships.</item>
+
+        <!-- add more facts (keep them short & legal) -->
+    </string-array>
+
+         <!--  ocean Facts-->
+        <string-array name="oceansFactsArray">
+            <item>The ocean covers over 70% of Earth’s surface, yet more than 80% remains unexplored.</item>
+            <item>The Mariana Trench is the deepest part of the ocean, plunging nearly 11 kilometers below the surface.</item>
+            <item>The Pacific Ocean is larger than all landmasses on Earth combined.</item>
+            <item>Water pressure in the deepest ocean can be over 1,000 times greater than at sea level.</item>
+            <item>Oceans hold about 97% of all Earth’s water.</item>
+            <item>The ocean produces over half of the world’s oxygen through tiny organisms called phytoplankton.</item>
+            <item>The Great Barrier Reef is the largest living structure on Earth and can be seen from space.</item>
+            <item>More people have visited the Moon than the deepest parts of the ocean.</item>
+            <item>The ocean’s color changes depending on what it reflects — blue from the sky and green from algae.</item>
+            <item>There are underwater lakes and rivers formed by dense saltwater on the ocean floor.</item>
+            <item>The world’s longest mountain range, the Mid-Ocean Ridge, lies entirely underwater.</item>
+            <item>Sound travels more than four times faster in water than in air.</item>
+            <item>The ocean absorbs about one-third of the carbon dioxide humans produce.</item>
+            <item>Some fish, like the lanternfish, create their own light through bioluminescence.</item>
+            <item>The deepest living fish ever recorded was found more than 8,000 meters deep.</item>
+            <item>Seawater contains traces of gold — around 20 million tons dissolved in all the oceans.</item>
+            <item>Ocean tides are primarily caused by the gravitational pull of the Moon and the Sun.</item>
+            <item>Coral reefs support more species per square meter than any other ecosystem on Earth.</item>
+            <item>The ocean floor is constantly reshaping due to tectonic plate movement.</item>
+            <item>There are entire underwater volcanoes known as “seamounts.”</item>
+            <item>The Sargasso Sea is the only sea without a coastline, surrounded by ocean currents.</item>
+            <item>Some whales communicate using low-frequency sounds that can travel thousands of kilometers.</item>
+            <item>The Arctic Ocean is the smallest and shallowest of all five oceans.</item>
+            <item>The Pacific Ocean’s name means “peaceful sea,” given by explorer Ferdinand Magellan.</item>
+            <item>Only about 5% of the seafloor has been mapped in high detail.</item>
+            <item>There are more artifacts and shipwrecks in the ocean than in all the world’s museums.</item>
+            <item>Sea cucumbers breathe through their anus.</item>
+            <item>Deep-sea vents can reach temperatures of over 400°C yet support thriving life forms.</item>
+            <item>Underwater currents move vast amounts of heat around the planet, influencing climate.</item>
+            <item>The ocean acts as Earth’s largest carbon sink.</item>
+            <item>Sharks existed before trees — for over 400 million years.</item>
+            <item>Some underwater mountains are taller than Mount Everest.</item>
+            <item>Ocean waves can travel thousands of miles without breaking.</item>
+            <item>Seawater is slightly blue because water absorbs colors like red and yellow first.</item>
+            <item>Some sea creatures can regenerate lost limbs, like starfish.</item>
+            <item>More than 90% of volcanic activity on Earth occurs underwater.</item>
+            <item>There’s a “twilight zone” in the ocean where sunlight barely reaches.</item>
+            <item>The deepest part of the ocean is so dark that no sunlight ever reaches it.</item>
+            <item>Some underwater sounds are so mysterious that scientists still can’t explain them.</item>
+            <item>Oceans contain about 20 million tons of dissolved salt for every cubic kilometer of water.</item>
+            <item>There’s a layer in the ocean where temperature drops rapidly — called the thermocline.</item>
+            <item>Sea otters hold hands while sleeping so they don’t drift apart.</item>
+            <item>Some jellyfish are immortal — they can revert to a younger stage after maturity.</item>
+            <item>Every year, thousands of new marine species are discovered.</item>
+            <item>Blue whales are the largest animals to have ever lived — even bigger than dinosaurs.</item>
+            <item>Ocean currents distribute heat and nutrients vital for marine life.</item>
+            <item>Some parts of the ocean glow at night due to bioluminescent plankton.</item>
+            <item>The ocean floor contains hidden freshwater reserves trapped under sediments.</item>
+            <item>Waves are caused by wind transferring energy to the surface of the ocean.</item>
+            <item>The ocean influences Earth’s weather more than any other factor.</item>
+            <item>Seawater contains nearly every element found on Earth.</item>
+            <item>Some octopuses build shelters using coconut shells.</item>
+            <item>The sea level is not the same everywhere due to gravity and ocean currents.</item>
+            <item>Some fish can change gender depending on environmental conditions.</item>
+            <item>Oceans play a crucial role in storing solar heat and regulating temperature.</item>
+            <item>Whale songs can be heard hundreds of kilometers away underwater.</item>
+            <item>Some species of coral live for over 4,000 years.</item>
+            <item>The ocean’s average depth is about 3.7 kilometers.</item>
+            <item>Marine snow — tiny falling particles — provides food for deep-sea life.</item>
+            <item>Underwater landslides can cause tsunamis.</item>
+            <item>Earth’s longest waterfall is underwater — the Denmark Strait cataract.</item>
+            <item>Plankton are the foundation of the marine food web.</item>
+            <item>The ocean’s salinity varies depending on rainfall and evaporation.</item>
+            <item>Some underwater creatures use camouflage so effectively they become invisible.</item>
+            <item>The ocean’s temperature affects the strength of hurricanes.</item>
+            <item>The “ring of fire” in the Pacific Ocean has over 450 volcanoes.</item>
+            <item>Some fish communicate using electrical signals.</item>
+            <item>Sea sponges are among the oldest multicellular organisms on Earth.</item>
+            <item>Some parts of the ocean are so cold that they’re below freezing but remain liquid due to salt.</item>
+            <item>Marine mammals like whales must surface to breathe air despite living underwater.</item>
+            <item>There are underwater waterfalls created by the movement of dense water masses.</item>
+            <item>Ocean waves transfer energy, not water, across vast distances.</item>
+            <item>The pressure at the bottom of the Mariana Trench could crush a car instantly.</item>
+            <item>Seawater freezes at around -2°C because of its salt content.</item>
+            <item>Some crustaceans use sound to communicate by snapping their claws.</item>
+            <item>The ocean floor is home to underwater deserts called abyssal plains.</item>
+            <item>Seawater can conduct electricity due to its dissolved salts.</item>
+            <item>Some areas of the ocean are biologically dead zones with no oxygen.</item>
+            <item>The ocean helps recycle nutrients vital for life on Earth.</item>
+            <item>Some whales fast for months during migration.</item>
+            <item>Many marine species rely on moonlight for navigation and breeding.</item>
+            <item>There’s enough salt in the ocean to cover all land on Earth with 150 meters of salt.</item>
+            <item>The Red Sea gets its name from occasional blooms of red algae.</item>
+            <item>Ocean acidification occurs when carbon dioxide dissolves in seawater.</item>
+            <item>Icebergs float because saltwater is denser than freshwater.</item>
+            <item>The Antarctic Ocean has the strongest currents in the world.</item>
+            <item>Some underwater creatures live in total darkness their entire lives.</item>
+            <item>The ocean floor is younger than most land on Earth due to constant renewal.</item>
+            <item>Some fish can “walk” on the ocean floor using fins.</item>
+            <item>The Pacific Ocean holds around half of all Earth’s ocean water.</item>
+            <item>Some parts of the ocean are so deep they could fit Mount Everest with room to spare.</item>
+            <item>Ocean plants like seagrass meadows can store more carbon than forests.</item>
+            <item>The first sound recordings of the deep ocean revealed eerie natural noises called “The Bloop.”</item>
+            <item>Ocean explorers use submersibles that can withstand extreme pressure and darkness.</item>
+            <item>The Indian Ocean is the warmest of all major oceans.</item>
+            <item>Ocean tides affect the behavior of many marine animals.</item>
+            <item>Some coral reefs can regenerate themselves after damage if conditions are right.</item>
+            <item>Sunlight can only penetrate up to about 200 meters below the ocean surface.</item>
+            <item>There are hidden mountain chains and valleys deeper than the Grand Canyon beneath the sea.</item>
+            <item>The Atlantic Ocean is growing wider by a few centimeters every year.</item>
+            <item>Oceans have existed on Earth for over 3 billion years.</item>
+            <item>The ocean is constantly changing — tides, currents, and temperatures shift every moment.</item>
+        </string-array>
+
+
+        <!-- Space Facts -->
+        <string-array name="spaceFactsArray">
+            <item>Space is completely silent because there’s no air for sound to travel through.</item>
+            <item>The Sun accounts for 99.8% of the total mass in our Solar System.</item>
+            <item>Venus rotates backward compared to most planets, meaning the Sun rises in the west there.</item>
+            <item>One day on Venus is longer than one year on Venus.</item>
+            <item>Jupiter’s Great Red Spot is a storm larger than Earth that has raged for centuries.</item>
+            <item>Neutron stars are so dense that a teaspoon of their material would weigh billions of tons on Earth.</item>
+            <item>The footprints left by Apollo astronauts on the Moon could last for millions of years because there’s no wind or rain.</item>
+            <item>There are more stars in the universe than grains of sand on all Earth’s beaches combined.</item>
+            <item>Light from the Sun takes about 8 minutes and 20 seconds to reach Earth.</item>
+            <item>The Milky Way galaxy is about 100,000 light-years wide.</item>
+            <item>Black holes can warp time and space so strongly that time slows down near them.</item>
+            <item>Saturn could float in water if there were a bathtub big enough—it’s mostly made of gas.</item>
+            <item>Space smells faintly like hot metal and burnt steak according to astronauts.</item>
+            <item>The Hubble Space Telescope travels around Earth at about 28,000 kilometers per hour.</item>
+            <item>Our Solar System takes about 230 million years to orbit the center of the Milky Way.</item>
+            <item>The Sun will eventually expand into a red giant and swallow Mercury and Venus.</item>
+            <item>Uranus rotates on its side, likely because of a massive ancient collision.</item>
+            <item>Pluto has five known moons, the largest of which is named Charon.</item>
+            <item>The International Space Station travels at 7.66 kilometers per second, orbiting Earth every 90 minutes.</item>
+            <item>Comets are cosmic snowballs made of ice, rock, and dust that orbit the Sun.</item>
+            <item>Space begins about 100 kilometers above Earth, at the Kármán line.</item>
+            <item>Earth is the only planet in our Solar System not named after a Roman or Greek god.</item>
+            <item>There’s a massive hexagonal storm at Saturn’s north pole.</item>
+            <item>Mars has the largest volcano in the Solar System — Olympus Mons, three times taller than Mount Everest.</item>
+            <item>The Moon is slowly drifting away from Earth at about 3.8 centimeters per year.</item>
+            <item>There are more than 200 billion galaxies in the observable universe.</item>
+            <item>Mercury has no atmosphere to retain heat, so temperatures swing from +430°C to -180°C.</item>
+            <item>Neptune’s winds can reach speeds over 2,000 kilometers per hour — faster than the speed of sound.</item>
+            <item>The farthest human-made object, Voyager 1, has been traveling through space since 1977.</item>
+            <item>Some stars are so large that if placed at the center of our Solar System, they would engulf Jupiter’s orbit.</item>
+            <item>Astronauts grow about 2 inches taller in space because gravity no longer compresses their spine.</item>
+            <item>Our Sun is an average-sized star — there are stars hundreds of times larger.</item>
+            <item>Time moves slower in stronger gravitational fields — a phenomenon called time dilation.</item>
+            <item>There are likely more planets than stars in the Milky Way.</item>
+            <item>Some galaxies collide and merge, creating giant new galaxies over billions of years.</item>
+            <item>The temperature in the shade on the Moon can drop to -170°C at night.</item>
+            <item>Every second, the Sun converts about 600 million tons of hydrogen into helium.</item>
+            <item>The Milky Way and Andromeda galaxies are on a collision course — they’ll merge in about 4 billion years.</item>
+            <item>Stars twinkle because Earth’s atmosphere distorts their light.</item>
+            <item>There is a giant cloud of alcohol floating in space near the constellation Aquila.</item>
+            <item>Some exoplanets orbit their stars so closely that a year lasts only a few hours.</item>
+            <item>The coldest known place in the universe is the Boomerang Nebula, at -272°C.</item>
+            <item>The largest known star, UY Scuti, is nearly 1,700 times the size of the Sun.</item>
+            <item>Space suits have about 14 layers to protect astronauts from radiation and micrometeoroids.</item>
+            <item>The Sun’s magnetic field flips every 11 years during the solar cycle.</item>
+            <item>There are rogue planets that drift through space without orbiting any star.</item>
+            <item>Space debris travels so fast that even tiny fragments can damage spacecraft.</item>
+            <item>Jupiter has at least 95 moons — and scientists keep finding more.</item>
+            <item>Some black holes spin at nearly the speed of light.</item>
+            <item>The light we see from distant stars is often millions or billions of years old.</item>
+            <item>Astronauts can’t cry properly in space — tears just float away.</item>
+            <item>The Andromeda Galaxy is the closest spiral galaxy to us, about 2.5 million light-years away.</item>
+            <item>Some stars explode as supernovae, releasing more energy in seconds than the Sun will in its lifetime.</item>
+            <item>The Moon has moonquakes caused by tidal forces from Earth’s gravity.</item>
+            <item>Every hour, about 60 tons of cosmic dust fall on Earth.</item>
+            <item>Neutron stars can spin hundreds of times per second.</item>
+            <item>There’s a region in space called the “Bootes Void” that’s almost entirely empty.</item>
+            <item>The Sun’s light contains all colors of the rainbow, even though it appears white.</item>
+            <item>Some planets have diamond rain — scientists believe it rains diamonds on Neptune and Uranus.</item>
+            <item>Saturn’s rings are mostly made of ice chunks and rocky debris.</item>
+            <item>Gamma-ray bursts are the most powerful explosions known in the universe.</item>
+            <item>The first living creature in space was a dog named Laika, launched by the Soviet Union in 1957.</item>
+            <item>There’s enough space between atoms that if you removed all empty space, humans could fit into a sugar cube.</item>
+            <item>The Milky Way is moving through space at about 2 million kilometers per hour.</item>
+            <item>On Mars, sunsets appear blue instead of red.</item>
+            <item>Earth’s magnetic field protects us from deadly solar radiation.</item>
+            <item>Some asteroids have their own tiny moons orbiting them.</item>
+            <item>The Hubble Deep Field image revealed thousands of unseen galaxies in a patch of sky the size of a coin.</item>
+            <item>The Moon has no atmosphere, so its sky is always black, even during the day.</item>
+            <item>In space, metals can fuse together without heat in a process called cold welding.</item>
+            <item>The largest volcano in the Solar System, Olympus Mons, could cover the entire state of Arizona.</item>
+            <item>There may be billions of Earth-like planets in our galaxy alone.</item>
+            <item>Satellites use solar panels to convert sunlight directly into electricity.</item>
+            <item>Earth’s atmosphere extends farther into space than the Moon’s orbit.</item>
+            <item>The space between galaxies is not completely empty — it contains dark matter and energy.</item>
+            <item>Our galaxy has a supermassive black hole at its center called Sagittarius A*.</item>
+            <item>Every galaxy you see in the night sky is moving — nothing in space is truly still.</item>
+            <item>There are stars that burn so hot they appear blue instead of yellow or red.</item>
+            <item>The Sun’s gravity is so strong that it controls the motion of objects billions of kilometers away.</item>
+            <item>Jupiter’s moon Europa may have an ocean hidden beneath its icy surface.</item>
+            <item>Some galaxies are shaped like rings, others like spirals or even irregular blobs.</item>
+            <item>Earth’s orbit around the Sun is not a perfect circle — it’s an ellipse.</item>
+            <item>Without Earth’s atmosphere, our planet’s surface temperature would be around -18°C.</item>
+            <item>Time moves slightly faster on the International Space Station than on Earth’s surface.</item>
+            <item>There’s a “space boundary” called the magnetopause that shields Earth from solar wind.</item>
+            <item>The observable universe is about 93 billion light-years across.</item>
+            <item>Some stars orbit each other as binary or even triple systems.</item>
+            <item>Every element in your body was forged in the heart of a star billions of years ago.</item>
+            <item>There are galaxies so far away their light has traveled more than 13 billion years to reach us.</item>
+            <item>The James Webb Space Telescope can see light that originated shortly after the Big Bang.</item>
+            <item>The Sun makes up 99.8% of the Solar System’s total mass.</item>
+            <item>When you see a star, you’re looking back in time — some may have already died.</item>
+            <item>The vacuum of space is not truly empty — it’s filled with radiation and microscopic particles.</item>
+            <item>Every year, Earth moves 940 million kilometers around the Sun.</item>
+            <item>There are cosmic rays constantly passing through your body right now.</item>
+            <item>Saturn’s moon Titan has lakes of methane instead of water.</item>
+            <item>Spacecraft use gravitational slingshots from planets to gain speed without extra fuel.</item>
+            <item>The largest known galaxy, IC 1101, is over 50 times the size of the Milky Way.</item>
+            <item>Some planets orbit two stars, creating double sunsets like in science fiction movies.</item>
+            <item>The Sun’s energy comes from nuclear fusion — the same process that powers hydrogen bombs.</item>
+            <item>In the far future, galaxies will drift so far apart that no light from them will reach us.</item>
+            <item>Space expands faster than the speed of light — but only space itself, not objects within it.</item>
+        </string-array>
+
+    <!-- fitness -->
+
+        <string-array name="fitnessFactsArray">
+            <item>Muscle growth happens during rest, not while you’re working out.</item>
+            <item>Hydration boosts performance — even 2% dehydration can reduce strength.</item>
+            <item>Strength training increases metabolism more effectively than cardio alone.</item>
+            <item>Consistency matters more than intensity for long-term fitness results.</item>
+            <item>Protein is essential for muscle repair after workouts.</item>
+            <item>Walking just 30 minutes a day can improve heart health and mood.</item>
+            <item>Men typically have more muscle mass due to higher testosterone levels.</item>
+            <item>Women burn fat more efficiently during endurance workouts than men.</item>
+            <item>Stretching after exercise helps reduce soreness and improve flexibility.</item>
+            <item>Compound exercises like squats and deadlifts work multiple muscles at once.</item>
+            <item>Sleep is as important as training — recovery builds real progress.</item>
+            <item>Women’s bodies recover faster from endurance workouts than men’s.</item>
+            <item>Building muscle increases fat burning even when you’re resting.</item>
+            <item>Men tend to lose fat faster because of higher lean muscle mass.</item>
+            <item>Core workouts help stabilize your spine and improve posture.</item>
+            <item>Bodyweight workouts can be as effective as gym training when done right.</item>
+            <item>Women benefit from resistance training just as much as men — it doesn’t make them bulky.</item>
+            <item>Drinking coffee before a workout can improve endurance and focus.</item>
+            <item>Men have larger hearts and lungs, giving them slightly higher oxygen capacity.</item>
+            <item>Women are generally more flexible due to hormonal and structural differences.</item>
+            <item>Progressive overload — slowly increasing resistance — drives muscle growth.</item>
+            <item>Skipping warm-ups increases your risk of injury.</item>
+            <item>Fitness isn’t just about looks — it boosts brain function and confidence.</item>
+            <item>Rest days are essential to avoid burnout and overtraining.</item>
+            <item>Women’s metabolism changes across their menstrual cycle, affecting performance.</item>
+            <item>Men build muscle faster, but women can sustain effort for longer durations.</item>
+            <item>HIIT workouts burn calories even hours after you finish exercising.</item>
+            <item>Strong glutes improve lower back stability and athletic performance.</item>
+            <item>Proper form is more important than lifting heavy weights.</item>
+            <item>Men generally store more fat around the abdomen, while women store it around hips and thighs.</item>
+            <item>Fitness improves sleep quality and reduces stress hormones.</item>
+            <item>Women need more iron due to monthly blood loss, especially if active.</item>
+            <item>Stretching improves blood circulation and reduces muscle tension.</item>
+            <item>Cardio strengthens the heart, while strength training strengthens the body.</item>
+            <item>Men’s bones are typically denser, but strength training improves bone health in everyone.</item>
+            <item>Balanced nutrition fuels better workouts than supplements alone.</item>
+            <item>Women’s bodies rely more on fat for fuel during long workouts.</item>
+            <item>Warm-ups prepare muscles and joints, reducing injury risks.</item>
+            <item>Drinking enough water supports muscle recovery and joint health.</item>
+            <item>Men experience faster recovery in short, high-intensity training.</item>
+            <item>Building strength helps both men and women prevent age-related muscle loss.</item>
+            <item>Fitness progress takes patience — small habits create big changes.</item>
+            <item>Women’s hearts beat faster on average, even at rest.</item>
+            <item>Regular strength training can improve posture and joint stability.</item>
+            <item>Cardio before weights can reduce strength performance; do it after.</item>
+            <item>Men burn more calories per minute due to higher muscle density.</item>
+            <item>Yoga improves balance, flexibility, and mental calm for both genders.</item>
+            <item>Overtraining can increase stress hormones and stall muscle growth.</item>
+            <item>Core strength helps prevent lower back pain.</item>
+            <item>Women adapt to endurance training more efficiently over time.</item>
+            <item>Stretching cold muscles can lead to strains — always warm up first.</item>
+            <item>Men have higher oxygen-carrying capacity, aiding sprint performance.</item>
+            <item>Women can handle higher rep ranges without as much fatigue.</item>
+            <item>Daily mobility work improves long-term joint health.</item>
+            <item>Proper breathing during exercise boosts oxygen flow and endurance.</item>
+            <item>Strength training reduces the risk of osteoporosis in women.</item>
+            <item>Men gain upper body strength more quickly, while women progress steadily overall.</item>
+            <item>Consistency and sleep are the secret ingredients to visible fitness gains.</item>
+            <item>Drinking water before meals can help control appetite naturally.</item>
+            <item>Fitness helps reduce symptoms of anxiety and depression.</item>
+            <item>Women generally recover faster between sets than men do.</item>
+            <item>Muscle weighs more than fat, so don’t rely only on the scale for progress.</item>
+            <item>Resistance bands are effective tools for both men and women.</item>
+            <item>Short, frequent workouts can be more beneficial than occasional long ones.</item>
+            <item>Men lose weight faster, but women maintain results longer with consistency.</item>
+            <item>Good posture improves breathing and workout efficiency.</item>
+            <item>Balanced training includes cardio, strength, and flexibility.</item>
+            <item>Women’s ligaments are more flexible, making joint stability training important.</item>
+            <item>Protein intake after workouts speeds up recovery and muscle repair.</item>
+            <item>Men and women both benefit from compound lifts for full-body strength.</item>
+            <item>Stretching before bed helps muscle recovery overnight.</item>
+            <item>Resting between sets allows your muscles to refuel energy stores.</item>
+            <item>Men’s testosterone levels peak in the morning, improving workout performance then.</item>
+            <item>Women have better muscle endurance at lower intensities.</item>
+            <item>Eating a mix of carbs and protein before exercise improves energy levels.</item>
+            <item>Posture correction exercises can eliminate long-term pain.</item>
+            <item>Women’s muscles are equally capable of strength gain when trained properly.</item>
+            <item>Strength training helps burn fat faster than steady-state cardio.</item>
+            <item>Men typically have larger muscle fibers, but training quality matters more.</item>
+            <item>Foam rolling helps reduce muscle stiffness and improves flexibility.</item>
+            <item>Skipping leg day affects balance and overall strength.</item>
+            <item>Women’s bodies tend to recover glycogen faster after endurance exercise.</item>
+            <item>Core exercises enhance performance in every type of sport.</item>
+            <item>Regular exercise strengthens your immune system.</item>
+            <item>Men respond faster to strength training but lose gains quicker without consistency.</item>
+            <item>Low-impact workouts like swimming protect joints while building endurance.</item>
+            <item>Fitness progress comes faster when paired with good nutrition.</item>
+            <item>Women benefit from lifting heavy — it boosts metabolism and confidence.</item>
+            <item>Stretching in the morning wakes up your muscles and joints.</item>
+            <item>Cardio should complement strength training, not replace it.</item>
+            <item>Proper footwear can prevent knee and ankle injuries during training.</item>
+            <item>Men tend to excel in short bursts of power, women in endurance events.</item>
+            <item>Drinking chocolate milk post-workout can aid muscle recovery.</item>
+            <item>Good form protects joints and builds strength more effectively.</item>
+            <item>Women’s bodies adapt better to heat during endurance activities.</item>
+            <item>Men benefit from flexibility and yoga as much as women do from strength training.</item>
+            <item>Mind-muscle connection improves the effectiveness of every exercise.</item>
+            <item>Tracking progress helps maintain motivation over time.</item>
+            <item>Women with more muscle mass burn calories even at rest.</item>
+            <item>Strong core muscles reduce the risk of injury in any physical activity.</item>
+            <item>Exercise releases endorphins that naturally boost happiness.</item>
+            <item>Men who prioritize flexibility gain strength longevity and injury resistance.</item>
+            <item>Fitness is not about perfection — it’s about progress, patience, and persistence.</item>
+        </string-array>
+
+
+    <!-- love -->
+
+        <string-array name="loveFactsArray">
+            <item>Love releases feel-good chemicals like dopamine and oxytocin in the brain.</item>
+            <item>Hugging someone you love for 20 seconds can lower stress and blood pressure.</item>
+            <item>Eye contact increases emotional connection between two people.</item>
+            <item>Couples who laugh together tend to have stronger relationships.</item>
+            <item>Love can actually reduce physical pain through the brain’s reward system.</item>
+            <item>Hearing your partner’s voice can calm your heart rate instantly.</item>
+            <item>Love isn’t just an emotion — it’s also a biological drive for bonding.</item>
+            <item>Acts of kindness release serotonin, the happiness hormone, in both giver and receiver.</item>
+            <item>People are more likely to fall in love when they share adrenaline-boosting experiences.</item>
+            <item>Holding hands synchronizes heartbeats after a few minutes.</item>
+            <item>Love improves memory and creativity through emotional engagement.</item>
+            <item>Trust is one of the strongest predictors of lasting love.</item>
+            <item>When you love someone, your brain mirrors their emotions automatically.</item>
+            <item>Love can boost the immune system and overall longevity.</item>
+            <item>Couples who express gratitude regularly report higher satisfaction.</item>
+            <item>True love is linked with deep friendship and shared values.</item>
+            <item>Long-term love activates brain areas linked to calmness, not obsession.</item>
+            <item>Giving love creates more happiness than receiving it.</item>
+            <item>Sharing goals strengthens emotional connection between partners.</item>
+            <item>Love stories trigger the same brain regions as real relationships.</item>
+            <item>Small gestures often mean more than expensive gifts in love.</item>
+            <item>Love helps regulate stress hormones like cortisol.</item>
+            <item>People in love blink in sync more often during conversation.</item>
+            <item>Physical affection increases relationship satisfaction significantly.</item>
+            <item>Listening deeply is one of the purest forms of showing love.</item>
+            <item>Couples who spend time reminiscing feel closer afterward.</item>
+            <item>Love activates brain regions that reduce fear and anxiety.</item>
+            <item>Emotional security matters more than perfection in relationships.</item>
+            <item>Love and friendship share many of the same brain pathways.</item>
+            <item>Supportive relationships help heal emotional wounds faster.</item>
+            <item>People who feel loved experience lower risk of depression.</item>
+            <item>Smiling at someone you care about triggers their brain’s reward center.</item>
+            <item>Love languages differ — some show love through words, others through actions.</item>
+            <item>Mutual respect forms the foundation of real love.</item>
+            <item>Expressing appreciation strengthens romantic bonds.</item>
+            <item>Love thrives on trust, communication, and shared laughter.</item>
+            <item>Partners who celebrate small wins together stay happier longer.</item>
+            <item>Hearing your loved one’s name activates pleasure areas in the brain.</item>
+            <item>True love doesn’t fade with distance; it grows with effort.</item>
+            <item>Honest communication prevents most relationship problems.</item>
+            <item>Love increases empathy — it literally rewires the brain to care more.</item>
+            <item>Long-term couples often mirror each other’s body language unconsciously.</item>
+            <item>Being in love can make people more motivated and goal-driven.</item>
+            <item>Love makes everyday moments feel special through shared meaning.</item>
+            <item>Partners who learn together grow closer emotionally.</item>
+            <item>Conflict handled kindly can strengthen love rather than weaken it.</item>
+            <item>Love improves self-esteem and confidence over time.</item>
+            <item>Relationships built on friendship tend to last the longest.</item>
+            <item>Laughing releases endorphins that bond people emotionally.</item>
+            <item>Couples who express affection publicly often feel more secure privately.</item>
+            <item>Forgiveness is a powerful expression of love and maturity.</item>
+            <item>Love inspires creativity and openness to new experiences.</item>
+            <item>Feeling loved increases resilience during tough times.</item>
+            <item>Shared adventures build stronger emotional memories.</item>
+            <item>Heart rates can synchronize when people fall deeply in love.</item>
+            <item>Love helps people recover faster from illness and stress.</item>
+            <item>Healthy love always respects individuality and personal space.</item>
+            <item>Emotional intimacy is built through honest vulnerability.</item>
+            <item>Expressing love verbally reinforces emotional bonds.</item>
+            <item>When two people care deeply, silence can feel comfortable, not awkward.</item>
+            <item>People tend to remember compliments from loved ones more vividly.</item>
+            <item>True love grows stronger through patience, not perfection.</item>
+            <item>Kind words can change the emotional climate of a relationship.</item>
+            <item>Couples who share humor cope better with stress together.</item>
+            <item>Listening without judging builds deeper love.</item>
+            <item>Touch is one of the earliest ways humans express love.</item>
+            <item>People in love show similar brain activity patterns across cultures.</item>
+            <item>Love helps the brain release oxytocin, known as the “bonding hormone.”</item>
+            <item>Couples who thank each other daily feel more connected.</item>
+            <item>Love isn’t about finding the right person but building the right connection.</item>
+            <item>Expressing love boosts your own happiness levels.</item>
+            <item>Shared laughter strengthens relationship satisfaction more than gifts.</item>
+            <item>Falling in love increases dopamine, creating that “butterfly” feeling.</item>
+            <item>Love can make people more compassionate toward others in general.</item>
+            <item>Relationships thrive on shared experiences, not material things.</item>
+            <item>Healthy arguments focus on solutions, not blame.</item>
+            <item>Real love celebrates both similarities and differences.</item>
+            <item>Love is a skill — the more you practice empathy, the stronger it becomes.</item>
+            <item>Positive physical touch increases trust between partners.</item>
+            <item>People who feel loved tend to live longer, happier lives.</item>
+            <item>Love can make the brain release the same chemicals as chocolate does.</item>
+            <item>Expressing affection lowers blood pressure and improves mood.</item>
+            <item>Support during challenges deepens love’s foundation.</item>
+            <item>Listening with full attention is one of the best gifts of love.</item>
+            <item>Love inspires people to become better versions of themselves.</item>
+            <item>Mutual understanding keeps relationships strong through change.</item>
+            <item>Expressing gratitude in relationships reduces conflict.</item>
+            <item>Love can help heal emotional trauma through connection and safety.</item>
+            <item>Couples who share future dreams stay emotionally closer.</item>
+            <item>Real love doesn’t need constant reassurance — it builds trust through actions.</item>
+            <item>Love makes people more cooperative and forgiving.</item>
+            <item>Sharing personal stories increases intimacy between partners.</item>
+            <item>Happy relationships often include shared hobbies or routines.</item>
+            <item>Being truly heard makes people feel deeply loved.</item>
+            <item>Love helps people find meaning and purpose beyond themselves.</item>
+            <item>Affection releases oxytocin, creating calmness and connection.</item>
+            <item>Love teaches patience and the art of understanding differences.</item>
+            <item>Kindness is one of the most attractive traits in any relationship.</item>
+            <item>Healthy love grows through honesty, laughter, and time.</item>
+            <item>True love is less about possession and more about appreciation.</item>
+            <item>Little acts of love done daily create lasting bonds.</item>
+            <item>Love reminds us that connection is one of life’s greatest joys.</item>
+        </string-array>
+
+ <!-- Men -->
+
+        <string-array name="menFactsArray">
+            <item>Men’s brains are about 10% larger on average, but women’s brains have more connections between hemispheres.</item>
+            <item>Men blink less often than women — roughly 14 times per minute compared to 19.</item>
+            <item>Men are more likely to be left-handed than women, statistically speaking.</item>
+            <item>Testosterone levels can temporarily rise when a man wins a competition — even in video games.</item>
+            <item>Men’s heartbeats are usually slightly slower than women’s.</item>
+            <item>Men have thicker skin — literally — about 25% thicker due to collagen density.</item>
+            <item>Men tend to lose body heat slower than women because of higher muscle mass.</item>
+            <item>Men are more likely to have red-green color blindness due to genetics.</item>
+            <item>Men produce about twice as much sweat as women when exposed to heat.</item>
+            <item>Men’s jawlines are shaped by testosterone levels during puberty.</item>
+            <item>Men’s immune systems can weaken temporarily under extreme stress.</item>
+            <item>Men are more prone to risk-taking behaviors, linked to dopamine response differences.</item>
+            <item>Men are more likely to snore due to narrower airways in the throat region.</item>
+            <item>Men’s voices deepen around age 13 due to vocal cord lengthening caused by testosterone.</item>
+            <item>On average, men have better spatial awareness but weaker color memory than women.</item>
+            <item>Men’s facial hair grows faster in the summer than in winter because of hormones.</item>
+            <item>Men’s hearts are typically heavier than women’s — by about 60 to 80 grams.</item>
+            <item>Men have a higher percentage of muscle mass and lower body fat on average.</item>
+            <item>Men’s bones are generally denser and stronger, especially in the arms and legs.</item>
+            <item>Men experience hair loss mainly due to sensitivity to dihydrotestosterone (DHT).</item>
+            <item>Men’s hearing tends to decline earlier than women’s, especially for high frequencies.</item>
+            <item>Men’s metabolism runs about 6–10% faster due to greater lean muscle mass.</item>
+            <item>Men are more likely to have a stronger grip strength than women at any age.</item>
+            <item>Men’s sense of smell is slightly weaker than women’s on average.</item>
+            <item>Men are biologically more sensitive to bright light exposure in the morning.</item>
+            <item>Men have higher red blood cell counts, allowing greater oxygen transport.</item>
+            <item>Men’s skin contains more sebaceous glands, making it oilier than women’s.</item>
+            <item>Men’s eyebrows grow faster and thicker because of testosterone levels.</item>
+            <item>Men have more sweat glands but fewer pain receptors per area of skin.</item>
+            <item>Men’s hearts beat around 70 beats per minute — slightly slower than women’s.</item>
+            <item>Men tend to store fat around the abdomen, while women store it around hips and thighs.</item>
+            <item>Men are more likely to remember visual details over verbal details.</item>
+            <item>Men’s lungs are on average 25% larger than women’s of the same height.</item>
+            <item>Men’s bodies have higher water content, around 60%, compared to women’s 55%.</item>
+            <item>Men generally have more active sweat glands in their hands and feet.</item>
+            <item>Men’s skin ages slower due to higher collagen content, despite less skincare use.</item>
+            <item>Men tend to have slightly thicker skull bones than women.</item>
+            <item>Men’s reaction times are often quicker in motion-based tasks.</item>
+            <item>Men’s smell of sweat changes subtly based on their stress level.</item>
+            <item>Men are more likely to develop baldness if their maternal grandfather was bald.</item>
+            <item>Men’s testosterone peaks in the morning and declines by evening.</item>
+            <item>Men’s nails grow slightly faster than women’s on average.</item>
+            <item>Men have better night vision because of higher rod cell density in the eyes.</item>
+            <item>Men’s hearts are more prone to disease due to cholesterol differences.</item>
+            <item>Men’s facial hair can indicate hormonal balance — patchy growth is common during puberty.</item>
+            <item>Men’s sense of direction is often stronger because of hippocampal structure differences.</item>
+            <item>Men are more likely to be diagnosed with color vision deficiencies at birth.</item>
+            <item>Men’s pain threshold can rise during competitive or adrenaline-filled activities.</item>
+            <item>Men experience slower skin wound healing compared to women.</item>
+            <item>Men’s eyebrows protect eyes better from sweat due to shape and thickness.</item>
+            <item>Men produce more earwax than women because of hormone differences.</item>
+            <item>Men’s body temperature regulation is more efficient during exercise.</item>
+            <item>Men are more likely to develop sleep apnea than women.</item>
+            <item>Men’s hearts are more responsive to physical training improvements.</item>
+            <item>Men’s facial structure continues to subtly change until around age 35.</item>
+            <item>Men have a denser network of blood vessels in muscles for oxygen delivery.</item>
+            <item>Men’s fingerprints tend to have thicker ridges than women’s.</item>
+            <item>Men’s veins appear more prominent due to lower subcutaneous fat.</item>
+            <item>Men are more likely to develop nearsightedness with age.</item>
+            <item>Men’s body odor changes with diet and testosterone fluctuations.</item>
+            <item>Men can detect motion better in peripheral vision than women.</item>
+            <item>Men’s vocal pitch can subtly reveal confidence levels subconsciously.</item>
+            <item>Men are less likely to feel cold due to higher basal metabolic rate.</item>
+            <item>Men’s adrenal glands release adrenaline faster in emergencies.</item>
+            <item>Men’s lungs are more efficient at oxygen absorption during exercise.</item>
+            <item>Men’s shoulders broaden during puberty due to skeletal growth plates.</item>
+            <item>Men tend to produce more lactic acid in muscles during exertion.</item>
+            <item>Men’s body hair pattern is genetically influenced by their mother’s side.</item>
+            <item>Men’s jaw muscles are naturally stronger due to testosterone effects.</item>
+            <item>Men tend to heal bone fractures faster because of denser bone tissue.</item>
+            <item>Men have fewer taste buds on average than women.</item>
+            <item>Men’s muscle fibers contract faster but fatigue sooner under sustained load.</item>
+            <item>Men’s voice changes start before facial hair appears during puberty.</item>
+            <item>Men are more likely to have a deeper belly button shape.</item>
+            <item>Men’s resting body temperature can be slightly lower than women’s.</item>
+            <item>Men’s body odor is affected by testosterone-linked skin bacteria.</item>
+            <item>Men tend to underestimate time intervals slightly compared to women.</item>
+            <item>Men’s legs are proportionally longer compared to torso than women’s.</item>
+            <item>Men’s hearts pump more blood per beat due to larger chamber size.</item>
+            <item>Men’s vocal cords vibrate slower, creating a deeper tone naturally.</item>
+            <item>Men’s fingertips have stronger grip friction due to skin structure.</item>
+            <item>Men’s stomach acid levels are higher, aiding faster digestion.</item>
+            <item>Men’s brains use more gray matter for problem-solving than women’s.</item>
+            <item>Men are more likely to remember the general idea of events than specific details.</item>
+            <item>Men’s skin produces more melanin when exposed to sunlight.</item>
+            <item>Men’s skeletal muscles respond faster to resistance training.</item>
+            <item>Men’s hand bones are on average longer and denser.</item>
+            <item>Men’s hearts are less responsive to emotional stress than women’s physiologically.</item>
+            <item>Men’s endurance improves significantly with consistent training routines.</item>
+            <item>Men’s knees are more prone to ligament injuries than women’s.</item>
+            <item>Men’s voice depth continues to evolve slightly into their 30s.</item>
+            <item>Men’s skin scars more easily due to collagen fiber patterning.</item>
+            <item>Men are more likely to have stronger upper body muscles than women.</item>
+            <item>Men’s arteries harden slightly earlier with age than women’s.</item>
+            <item>Men tend to be taller because of longer growth plate activity in puberty.</item>
+            <item>Men’s breathing rate is naturally lower than women’s at rest.</item>
+            <item>Men’s reflexes improve when testosterone levels rise.</item>
+            <item>Men’s lungs adapt faster to high altitude than women’s.</item>
+            <item>Men’s immune responses are more affected by sleep deprivation.</item>
+            <item>Men’s facial symmetry subtly shifts with aging hormone changes.</item>
+            <item>Men’s physical performance peaks around age 25 on average.</item>
+        </string-array>
+
+    <!-- Women -->
+
+
+        <string-array name="womenFactsArray">
+            <item>Women generally have a stronger immune system than men due to hormonal and genetic factors.</item>
+            <item>Women’s hearts beat faster on average than men’s — around 78 beats per minute.</item>
+            <item>Women’s skin ages slower because of higher estrogen levels that preserve collagen longer.</item>
+            <item>Women have more taste buds, giving them a better sense of flavor and texture.</item>
+            <item>Women’s brains are wired with more connections between left and right hemispheres, improving multitasking.</item>
+            <item>Women blink more often than men — about 19 times per minute compared to 14.</item>
+            <item>Women’s pain tolerance increases during childbirth due to natural endorphin release.</item>
+            <item>Women’s hearts are smaller but pump blood faster to maintain circulation efficiency.</item>
+            <item>Women have a stronger sense of smell, especially during their reproductive years.</item>
+            <item>Women’s memories for faces and emotions are generally sharper than men’s.</item>
+            <item>Women can detect more shades of red and orange due to genetic differences on the X chromosome.</item>
+            <item>Women’s skin is thinner than men’s, making it more sensitive to temperature and touch.</item>
+            <item>Women have a higher percentage of body fat, which supports hormonal balance and fertility.</item>
+            <item>Women’s hearing is slightly better than men’s, especially at high frequencies.</item>
+            <item>Women’s immune response helps them recover faster from viral infections.</item>
+            <item>Women are more likely to experience cold hands and feet due to different blood flow regulation.</item>
+            <item>Women’s bones are lighter and more flexible than men’s, aiding agility.</item>
+            <item>Women are more likely to have stronger verbal and emotional intelligence.</item>
+            <item>Women’s eyes are more sensitive to color contrast and detail.</item>
+            <item>Women are biologically wired to notice facial expressions faster than men.</item>
+            <item>Women’s skin contains less collagen after menopause, which can lead to visible aging signs.</item>
+            <item>Women tend to have better endurance at low-intensity exercise than men.</item>
+            <item>Women’s brains use more white matter, improving communication between brain regions.</item>
+            <item>Women’s sense of hearing remains sharp for longer into old age.</item>
+            <item>Women have a natural advantage in fine motor control and balance tasks.</item>
+            <item>Women’s hearts are more adaptable to emotional stress and recovery.</item>
+            <item>Women’s skin is more prone to dehydration because of lower oil gland activity.</item>
+            <item>Women’s voices naturally rise slightly in pitch during ovulation due to hormonal changes.</item>
+            <item>Women’s hair grows slower than men’s but tends to be thicker in texture.</item>
+            <item>Women can distinguish a wider range of emotional tones in voices.</item>
+            <item>Women’s bodies retain iron differently, leading to lower average iron stores.</item>
+            <item>Women’s pain sensitivity fluctuates with hormone cycles.</item>
+            <item>Women have better peripheral vision because of wider visual fields.</item>
+            <item>Women are biologically more resistant to certain age-related diseases.</item>
+            <item>Women’s lungs are smaller but more efficient at oxygen exchange.</item>
+            <item>Women’s immune cells stay more active longer with age compared to men’s.</item>
+            <item>Women’s heart disease symptoms often differ, appearing as fatigue or nausea.</item>
+            <item>Women’s hair naturally grows faster during summer months.</item>
+            <item>Women’s body temperature slightly rises during ovulation.</item>
+            <item>Women’s metabolism slows down more with age compared to men’s.</item>
+            <item>Women tend to store fat around the hips and thighs for reproductive energy needs.</item>
+            <item>Women’s sense of taste is more sensitive to bitterness and sourness.</item>
+            <item>Women’s digestive systems absorb nutrients more efficiently during pregnancy.</item>
+            <item>Women’s joints are more flexible due to higher levels of collagen and elastin.</item>
+            <item>Women’s brains are slightly smaller in volume but denser in neuron packing.</item>
+            <item>Women’s left and right brain hemispheres communicate faster through a larger corpus callosum.</item>
+            <item>Women’s skin temperature changes more rapidly in response to emotion or stress.</item>
+            <item>Women tend to handle chronic pain better than men through adaptive brain processing.</item>
+            <item>Women’s sweat glands activate less often, making them sweat less overall.</item>
+            <item>Women have naturally higher HDL (“good”) cholesterol levels than men.</item>
+            <item>Women’s eyesight adapts to low light faster than men’s on average.</item>
+            <item>Women are better at recognizing voices, especially of other women.</item>
+            <item>Women’s hair contains less sulfur, which affects its softness and flexibility.</item>
+            <item>Women’s skin has a slightly higher pH level, influencing how skincare works.</item>
+            <item>Women’s bodies retain more water during hormonal shifts, causing mild bloating.</item>
+            <item>Women are less likely to lose hair completely, even with aging.</item>
+            <item>Women’s lungs recover faster after quitting smoking than men’s lungs.</item>
+            <item>Women’s nails grow slower but are more flexible and resistant to breaking.</item>
+            <item>Women tend to feel colder in air-conditioned environments due to body heat differences.</item>
+            <item>Women’s hearts can beat faster when listening to emotional music.</item>
+            <item>Women’s skin bruises more easily due to thinner dermal layers.</item>
+            <item>Women are biologically more sensitive to painkillers’ effects than men.</item>
+            <item>Women’s eyebrows naturally grow closer together during adolescence.</item>
+            <item>Women’s metabolism burns more fat during rest than carbohydrates.</item>
+            <item>Women’s hearing sensitivity is highest between ages 20 and 40.</item>
+            <item>Women’s muscle fibers recover faster from light exercise than men’s.</item>
+            <item>Women’s body produces more oxytocin during emotional bonding.</item>
+            <item>Women’s brains release more serotonin during acts of kindness.</item>
+            <item>Women are more likely to smile in social situations due to empathy response.</item>
+            <item>Women’s eyes contain more cone cells, improving color vision.</item>
+            <item>Women have slower sweat evaporation, helping retain skin moisture.</item>
+            <item>Women’s bones contain less calcium after menopause, requiring extra dietary care.</item>
+            <item>Women’s heartbeat rhythm can shift during the menstrual cycle.</item>
+            <item>Women tend to experience milder hangovers due to metabolic enzyme differences.</item>
+            <item>Women’s skin is more reactive to seasonal humidity changes.</item>
+            <item>Women have better natural insulation in colder weather because of fat distribution.</item>
+            <item>Women’s immune responses can make them more prone to autoimmune diseases.</item>
+            <item>Women’s sleep cycles are slightly shorter than men’s on average.</item>
+            <item>Women’s tears contain more protein and hormones than men’s tears.</item>
+            <item>Women can process emotional facial expressions faster than men.</item>
+            <item>Women’s nails grow faster on their dominant hand.</item>
+            <item>Women’s bodies adjust more efficiently to temperature changes during pregnancy.</item>
+            <item>Women are more sensitive to caffeine’s effects due to hormonal influence.</item>
+            <item>Women’s eyes dilate more when viewing something they find emotionally touching.</item>
+            <item>Women’s digestive systems work slower, aiding nutrient absorption.</item>
+            <item>Women’s pupils are more responsive to changes in emotional states.</item>
+            <item>Women’s hair reflects light differently, giving it more natural shine.</item>
+            <item>Women’s pain perception varies depending on estrogen levels.</item>
+            <item>Women have higher oxytocin surges during physical affection.</item>
+            <item>Women’s immune systems react faster to vaccines.</item>
+            <item>Women’s muscle flexibility allows them to perform better in yoga and dance.</item>
+            <item>Women’s eyes are more likely to tear up in response to empathy triggers.</item>
+            <item>Women’s memory for emotional experiences is stronger and lasts longer.</item>
+            <item>Women’s hearts handle low blood pressure more efficiently during rest.</item>
+            <item>Women’s bones are less dense but more elastic than men’s, reducing fracture risk.</item>
+            <item>Women’s skin regenerates faster after minor cuts or scrapes.</item>
+            <item>Women’s heartbeat often synchronizes with close emotional partners over time.</item>
+            <item>Women’s perception of warmth increases when they feel emotionally supported.</item>
+        </string-array>
+
+   <!-- UnSolved Mysteries -->
+
+        <string-array name="unsolved_mysteries_of_science">
+            <item>No one fully understands why humans need sleep — scientists know its effects but not its true purpose.</item>
+            <item>Dark matter makes up about 85% of the universe’s mass, yet we have never directly detected it.</item>
+            <item>Dark energy is believed to be pushing the universe apart faster — but no one knows what it really is.</item>
+            <item>The human brain is still the most complex structure known, and we don’t fully understand how consciousness works.</item>
+            <item>We still don’t know why the universe exists at all — matter should have destroyed itself with antimatter.</item>
+            <item>Scientists can’t yet explain how some people remember events that never happened — known as false memory syndrome.</item>
+            <item>Why the placebo effect works so powerfully on the human body remains an unsolved mystery.</item>
+            <item>We don’t know why time only moves forward and not backward, even though physics allows both directions.</item>
+            <item>Some stars, called magnetars, have magnetic fields trillions of times stronger than Earth’s — we don’t know why.</item>
+            <item>Quantum entanglement lets particles affect each other instantly — faster than light — and no one knows how.</item>
+            <item>Scientists still can’t explain how the universe “inflated” faster than light after the Big Bang.</item>
+            <item>No one knows how life first appeared on Earth — whether it began here or came from space.</item>
+            <item>Gravity is the weakest force in nature, yet it shapes the entire universe — its true nature remains mysterious.</item>
+            <item>Some animals can regrow entire limbs, and scientists still don’t fully understand how regeneration works.</item>
+            <item>We don’t know why some people can detect magnetic fields — a phenomenon called magnetoreception.</item>
+            <item>There are hundreds of species on Earth that glow naturally, and we don’t know why bioluminescence evolved so often.</item>
+            <item>Every snowflake has a unique shape, but the precise physics behind their patterns is still unknown.</item>
+            <item>Quantum mechanics and general relativity both describe the universe — but they don’t agree with each other.</item>
+            <item>Scientists still can’t define what exactly time is or why we experience it linearly.</item>
+            <item>Why do humans dream? The real reason behind dreams remains a deep mystery in neuroscience.</item>
+            <item>Ball lightning has been reported for centuries, yet scientists still can’t fully reproduce or explain it.</item>
+            <item>We still don’t know why the universe’s physical constants are so perfectly tuned for life to exist.</item>
+            <item>Scientists don’t know how bees navigate using Earth’s magnetic field with such accuracy.</item>
+            <item>Some diseases, like Alzheimer’s, are still biologically mysterious despite decades of research.</item>
+            <item>We don’t yet know what most of our DNA actually does — about 98% is considered “non-coding.”</item>
+            <item>The brain can generate electrical activity minutes after death, and we don’t know why.</item>
+            <item>Scientists have no complete theory explaining how consciousness arises from brain cells.</item>
+            <item>There are thousands of radio signals detected from deep space with unknown origins.</item>
+            <item>We still can’t explain why yawning is contagious between humans and even animals.</item>
+            <item>Some planets appear to have “diamond rain,” but we can’t confirm how it forms.</item>
+            <item>Quantum particles can exist in two places at once — a mystery at the heart of modern physics.</item>
+            <item>Why the speed of light is constant in all frames of reference remains one of physics’ greatest puzzles.</item>
+            <item>The “Wow!” radio signal from 1977 remains one of the most mysterious signals ever recorded.</item>
+            <item>We still don’t know why the universe is mostly made of hydrogen and helium, not heavier elements.</item>
+            <item>Time slows down near massive objects — but why gravity affects time remains a deep mystery.</item>
+            <item>Earth’s magnetic poles have flipped many times, and scientists don’t know what triggers the reversals.</item>
+            <item>We don’t know what lies inside a black hole — physics as we know it breaks down there.</item>
+            <item>Some whales communicate using sounds that can travel thousands of kilometers, but how they navigate acoustically is unknown.</item>
+            <item>We don’t yet know why humans have fingerprints or why each one is unique.</item>
+            <item>Scientists can’t explain why humans and dolphins are the only species that help others without reward.</item>
+            <item>There’s no scientific consensus on why we age — many competing theories exist but none are complete.</item>
+            <item>Some plants communicate chemically underground through fungi networks, but how far this intelligence goes is unknown.</item>
+            <item>Scientists don’t know why humans cry emotional tears — no other species seems to do it.</item>
+            <item>We don’t know why the speed of light is the ultimate cosmic speed limit.</item>
+            <item>Many deep-sea creatures glow in complete darkness, but we don’t fully understand how or why.</item>
+            <item>Why cats always seem to land on their feet remains partially unexplained in physics terms.</item>
+            <item>We still don’t know what triggers mass animal migrations with such perfect timing.</item>
+            <item>There’s no clear explanation for the placebo effect’s power over physical healing.</item>
+            <item>We don’t yet know why human intelligence developed so suddenly in evolutionary history.</item>
+            <item>Saturn’s hexagonal storm at its north pole remains one of the strangest atmospheric mysteries in the solar system.</item>
+            <item>Scientists still don’t know how our brains create the feeling of “self.”</item>
+            <item>We can’t explain how the brain turns electrical signals into conscious experience.</item>
+            <item>We don’t know where most of the universe’s lithium has disappeared since the Big Bang.</item>
+            <item>Some frogs can freeze solid in winter and revive in spring — we don’t know how they avoid cell damage.</item>
+            <item>The universe might be infinite — but we have no way of proving or disproving it.</item>
+            <item>Some viruses seem to behave intelligently when infecting — scientists don’t know how.</item>
+            <item>Scientists have never found a complete explanation for how magnets work at a quantum level.</item>
+            <item>We don’t yet understand what causes earthquakes deep below tectonic plates.</item>
+            <item>Some animals detect earthquakes before they happen — no one knows how they sense it.</item>
+            <item>We still don’t know how lightning starts in a cloud.</item>
+            <item>Why humans have different blood types remains one of biology’s open questions.</item>
+            <item>We don’t know why bees can detect ultraviolet patterns invisible to humans.</item>
+            <item>Scientists can’t explain how migratory birds navigate thousands of miles with near-perfect accuracy.</item>
+            <item>We still don’t know if parallel universes exist — but mathematics suggests they could.</item>
+            <item>Scientists can’t yet explain why the Sun’s corona is millions of degrees hotter than its surface.</item>
+            <item>We don’t know what 95% of the universe — dark matter and dark energy — actually is.</item>
+            <item>The human brain has more connections than stars in the galaxy, but we don’t know how it forms thoughts.</item>
+            <item>Some people can hear sounds others can’t — a phenomenon still not fully explained.</item>
+            <item>We still don’t know how a single fertilized cell becomes a complete human being.</item>
+            <item>Quantum particles can communicate instantly — defying Einstein’s concept of speed limits.</item>
+            <item>We don’t know why sleep deprivation affects emotions before logic.</item>
+            <item>Some ocean sounds detected by sonar have no known source or explanation.</item>
+            <item>Scientists can’t explain how life thrives around deep-sea volcanic vents without sunlight.</item>
+            <item>We don’t yet know what causes some people to have perfect pitch while others can’t detect tone differences.</item>
+            <item>We still don’t know what the smallest possible unit of time is.</item>
+            <item>Some species of jellyfish can technically live forever — scientists don’t know why.</item>
+            <item>We don’t know what came before the Big Bang — or if “before” even existed.</item>
+            <item>Scientists can’t explain why the human brain uses dreams to process emotions.</item>
+            <item>Some lakes appear to change color overnight — reasons are still debated.</item>
+            <item>Quantum tunneling lets particles move through barriers they shouldn’t — but how remains unclear.</item>
+            <item>Scientists don’t know why the human appendix still exists or what its full function is.</item>
+            <item>We still don’t know why some volcanoes erupt regularly and others stay dormant for centuries.</item>
+            <item>Scientists can’t explain the origin of cosmic rays that strike Earth from deep space.</item>
+            <item>We don’t know what defines the boundary between life and non-life at a molecular level.</item>
+            <item>Some stars suddenly vanish from telescopes — scientists are still searching for reasons.</item>
+            <item>We don’t know why some people feel déjà vu more often than others.</item>
+            <item>Scientists can’t explain why quantum particles behave differently when observed.</item>
+            <item>We don’t know what happens inside a black hole beyond the event horizon.</item>
+            <item>Some ancient bacteria have survived for millions of years — scientists don’t know how.</item>
+            <item>We still can’t explain why matter has mass at all — the Higgs boson only partly answers it.</item>
+            <item>Scientists don’t know how the first galaxies formed so quickly after the Big Bang.</item>
+            <item>We don’t yet understand why humans have dominant hands.</item>
+            <item>Some sounds from deep oceans don’t match any known geological or biological source.</item>
+            <item>We still don’t know what gives time its one-way flow from past to future.</item>
+            <item>Scientists can’t fully explain how emotions affect the immune system.</item>
+            <item>We don’t know why quantum randomness seems truly unpredictable.</item>
+            <item>Despite modern physics, we still don’t know what reality truly is at the smallest scale.</item>
+            <item>Some stars emit rhythmic pulses for reasons we can’t yet explain.</item>
+            <item>We don’t know how the brain stores and retrieves long-term memories.</item>
+        </string-array>
+
+  <!--> Time and Universe -->
+
+
+        <string-array name="time_and_universeFactsArray">
+            <item>Time moves slower the closer you are to a massive object like Earth or a black hole.</item>
+            <item>Every second, the universe expands in all directions faster than we can observe.</item>
+            <item>If you could travel near the speed of light, time for you would slow down compared to people on Earth.</item>
+            <item>We can see about 93 billion light-years across the universe, even though it’s only 13.8 billion years old.</item>
+            <item>Black holes can stretch time so much that one hour near them could equal years elsewhere.</item>
+            <item>Looking into space is like looking into the past — the light from distant galaxies took billions of years to reach us.</item>
+            <item>The universe has no center; every point is moving away from every other point.</item>
+            <item>Time passes slightly faster at the top of a mountain than it does at sea level.</item>
+            <item>Some scientists think time might have begun only when the universe was born — before that, “before” had no meaning.</item>
+            <item>The farther away a galaxy is, the faster it’s moving away from us.</item>
+            <item>Our galaxy, the Milky Way, is moving through space at nearly 2 million kilometers per hour.</item>
+            <item>One day on Venus is longer than an entire year on Venus.</item>
+            <item>The universe is mostly made of dark matter and dark energy — we can’t see or touch either.</item>
+            <item>Light from the Sun takes about 8 minutes and 20 seconds to reach Earth.</item>
+            <item>The universe might expand forever — or it might one day collapse back in a “Big Crunch.”</item>
+            <item>Time seems to flow forward, but physics equations work the same in both directions.</item>
+            <item>Every second, around 4 million tons of the Sun’s mass turns into pure energy.</item>
+            <item>There are more stars in the universe than grains of sand on all Earth’s beaches.</item>
+            <item>The Milky Way and Andromeda galaxies are on a collision course and will merge in about 4 billion years.</item>
+            <item>Gravity doesn’t pull objects instantly — it moves at the speed of light.</item>
+            <item>The observable universe keeps growing because light from faraway galaxies is just now reaching us.</item>
+            <item>Time zones exist because the Earth rotates, giving each location its own sunrise and sunset.</item>
+            <item>Space is not completely empty — it’s filled with invisible particles and radiation.</item>
+            <item>Some scientists believe time might be an illusion created by how our brains process change.</item>
+            <item>The Big Bang wasn’t an explosion in space; it was the expansion of space itself.</item>
+            <item>If you could see far enough, you might see the back of your own head — space could curve back on itself.</item>
+            <item>Every minute, the universe grows by about 300 million kilometers across in every direction.</item>
+            <item>Time passes at different speeds for astronauts and people on Earth due to relativity.</item>
+            <item>Neutron stars spin so fast that one rotation can take less than a millisecond.</item>
+            <item>Earth’s orbit around the Sun changes slightly every 100,000 years, influencing ice ages.</item>
+            <item>Space has no sound because there’s no air to carry vibrations.</item>
+            <item>Time on Earth is slowly speeding up as the Moon drifts away about 3.8 cm every year.</item>
+            <item>When you look at the Moon, you see it as it was 1.3 seconds ago.</item>
+            <item>Even with the fastest rockets, it would take over 70,000 years to reach the nearest star.</item>
+            <item>Space itself can stretch, bend, and ripple like a fabric.</item>
+            <item>Gravity waves from colliding black holes literally stretch time and space itself.</item>
+            <item>Because light travels at a finite speed, we can never see the present universe — only its past.</item>
+            <item>In space, clocks tick differently depending on how fast they’re moving or where they are.</item>
+            <item>Black holes can theoretically evaporate over time through something called Hawking radiation.</item>
+            <item>We live inside a galaxy that’s over 100,000 light-years across.</item>
+            <item>Every second, about 20 new stars are born somewhere in the observable universe.</item>
+            <item>The closer something moves to the speed of light, the heavier it becomes and the slower its time passes.</item>
+            <item>The cosmic microwave background is the faint afterglow of the Big Bang, still visible today.</item>
+            <item>Our universe could be just one of many — a multiverse of countless realities.</item>
+            <item>Some scientists think time might flow differently in other universes.</item>
+            <item>If Earth were the size of a grain of sand, the Sun would be the size of a basketball 15 meters away.</item>
+            <item>When you watch a sunset, you’re seeing the Sun as it was eight minutes ago.</item>
+            <item>Space is expanding faster than the speed of light — not breaking physics, because it’s space itself that stretches.</item>
+            <item>In theory, if you could travel faster than light, you could move backward in time — but it’s impossible so far.</item>
+            <item>All clocks tick slower near strong gravity — even atomic ones.</item>
+            <item>Time dilation has been proven using precise satellite and jet experiments.</item>
+            <item>The entire visible universe might be just a tiny part of a much larger cosmic structure.</item>
+            <item>Some stars are so far away that their light has traveled for billions of years — they might not even exist anymore.</item>
+            <item>The expansion of the universe is actually accelerating, not slowing down.</item>
+            <item>Space smells like burnt metal and seared steak — according to astronauts’ reports of returning suits.</item>
+            <item>If you could fold space-time, you might travel instantly across the universe — a concept called a wormhole.</item>
+            <item>The speed of light is not just fast — it’s the ultimate cosmic speed limit.</item>
+            <item>One year on Mercury is only 88 Earth days long.</item>
+            <item>Time runs slightly faster on GPS satellites, and engineers must correct for it daily.</item>
+            <item>We can only observe about 4% of the universe — the rest is invisible energy and matter.</item>
+            <item>Black holes warp not only space but time itself — past and future lose meaning near them.</item>
+            <item>Space is constantly expanding even between galaxies that are billions of light-years apart.</item>
+            <item>There’s no “up” or “down” in the universe — only direction relative to gravity and motion.</item>
+            <item>The arrow of time always points from order to chaos — this is called entropy.</item>
+            <item>The Andromeda Galaxy appears blue because it’s moving toward us, not away.</item>
+            <item>Without gravity, time as we know it would have no meaning.</item>
+            <item>Some black holes spin so fast that they drag space-time around them.</item>
+            <item>Every atom in your body was forged inside an ancient star that exploded long ago.</item>
+            <item>Even though the universe is 13.8 billion years old, light lets us see 46 billion light-years away because of expansion.</item>
+            <item>Scientists believe the entire universe might one day fade into darkness and emptiness.</item>
+            <item>Every galaxy has a supermassive black hole at its center, influencing how it evolves.</item>
+            <item>In a black hole, gravity is so strong that even time appears to stop from an outside view.</item>
+            <item>We live in a constantly changing universe — even “empty” space is full of energy.</item>
+            <item>Some physicists think time could one day stop if the universe stops expanding.</item>
+            <item>The more you move, the more space and time mix together — that’s relativity in action.</item>
+            <item>If you could watch a clock fall into a black hole, it would appear to freeze forever at the edge.</item>
+            <item>Space isn’t empty — it’s a sea of invisible energy called the quantum vacuum.</item>
+            <item>Every minute, the Earth travels about 1,800 kilometers through space.</item>
+            <item>We are literally made of stardust — every carbon, oxygen, and iron atom once belonged to a star.</item>
+            <item>The concept of “now” is different for everyone, depending on their speed and gravity.</item>
+            <item>The early universe was so dense that light couldn’t travel freely for 380,000 years.</item>
+            <item>The future of time depends on the universe’s fate — eternal expansion or cosmic collapse.</item>
+            <item>Time doesn’t have a universal speed — it depends on where and how you observe it.</item>
+            <item>In theory, space could loop back on itself — you could travel far enough to end up where you started.</item>
+            <item>The night sky we see today shows stars as they were thousands or millions of years ago.</item>
+            <item>Space and time are woven together into a single fabric called space-time.</item>
+            <item>At the speed of light, time would appear to stop entirely.</item>
+            <item>We don’t yet know if time had a beginning or if it has always existed.</item>
+            <item>Some scientists think every second, new universes are born in a vast cosmic multiverse.</item>
+            <item>Black holes might connect different points in space and time — but we can’t test it yet.</item>
+            <item>Space continues to expand faster than galaxies can keep up, stretching them apart forever.</item>
+            <item>The deeper into space we look, the younger the universe appears.</item>
+            <item>Time flows differently for everything in motion — that’s why we age slower in space.</item>
+            <item>The Big Bang didn’t happen at a single point; it happened everywhere, all at once.</item>
+            <item>One day, all stars will burn out, leaving the universe dark and quiet — a “heat death.”</item>
+            <item>The concept of time travel doesn’t break physics — it just hasn’t been proven possible yet.</item>
+            <item>The faster you move through space, the slower you move through time.</item>
+            <item>Our entire solar system orbits the center of the Milky Way every 230 million years.</item>
+            <item>There are parts of the universe we will never see — light from there will never reach us.</item>
+        </string-array>
+
+    <!-- Nature wonders -->
+
+        <string-array name="nature_wondersFactsArray">
+            <item>Some trees can live for thousands of years; the oldest known tree is over 4,800 years old.</item>
+            <item>The Amazon rainforest produces about 20% of the Earth’s oxygen.</item>
+            <item>Lightning strikes the Earth about 8 million times per day.</item>
+            <item>Bioluminescent plankton can make entire beaches glow at night.</item>
+            <item>Antarctica is the driest, windiest, and coldest place on Earth — yet some microbes still live there.</item>
+            <item>The Great Barrier Reef is the largest living structure on Earth, visible even from space.</item>
+            <item>Each snowflake has a completely unique shape formed by tiny changes in temperature and humidity.</item>
+            <item>Some deserts, like the Atacama in Chile, can go decades without measurable rain.</item>
+            <item>The Sahara Desert used to be covered in grass and lakes thousands of years ago.</item>
+            <item>Some lakes turn pink due to salt-loving microorganisms that produce pigments.</item>
+            <item>Volcano lightning occurs when ash and rock particles collide in an eruption cloud.</item>
+            <item>Mount Everest grows about 4 millimeters taller each year due to tectonic movement.</item>
+            <item>The Dead Sea is so salty that people can naturally float on its surface.</item>
+            <item>More than 80% of life on Earth is found in the oceans.</item>
+            <item>The Northern and Southern Lights are caused by charged particles from the Sun colliding with Earth’s atmosphere.</item>
+            <item>Some plants can “hear” vibrations — like buzzing bees — and produce more nectar in response.</item>
+            <item>There’s a place in Venezuela where lightning strikes over 200 nights a year.</item>
+            <item>Sand from the Sahara Desert travels across the Atlantic Ocean, feeding nutrients to the Amazon rainforest.</item>
+            <item>Some fish can change gender naturally depending on their environment.</item>
+            <item>There’s a forest in Poland where trees grow in a mysterious curve, and no one knows why.</item>
+            <item>The world’s largest living organism is a fungus in Oregon, covering over 2,300 acres underground.</item>
+            <item>Some lakes, like Lake Baikal, are so deep they contain 20% of Earth’s unfrozen freshwater.</item>
+            <item>Rainbows can form at night — they’re called moonbows.</item>
+            <item>Some deserts bloom with flowers only once every few years after rare rains.</item>
+            <item>The air after a storm smells fresh due to a chemical called ozone.</item>
+            <item>There are more trees on Earth than stars in the Milky Way galaxy.</item>
+            <item>Some plants, like the Mimosa pudica, can move their leaves when touched.</item>
+            <item>The ocean’s deepest point, the Mariana Trench, is deeper than Mount Everest is tall.</item>
+            <item>Butterflies taste food with their feet.</item>
+            <item>The Earth’s magnetic field protects all life from harmful solar radiation.</item>
+            <item>Fire rainbows appear when sunlight passes through ice crystals in high clouds.</item>
+            <item>Some frogs freeze solid in winter and thaw back to life in spring.</item>
+            <item>Each year, about 1,500 new plant species are discovered worldwide.</item>
+            <item>Whales can communicate across thousands of kilometers underwater.</item>
+            <item>Some plants release chemicals to warn nearby plants of danger, like insect attacks.</item>
+            <item>The Amazon River once flowed in the opposite direction, toward the Pacific Ocean.</item>
+            <item>The Blue Whale’s heart is so large that a human could crawl through its arteries.</item>
+            <item>The Himalayas are still growing as the Indian plate pushes into Asia.</item>
+            <item>Some birds navigate using Earth’s magnetic field as a natural GPS.</item>
+            <item>A single teaspoon of soil can contain more microorganisms than there are people on Earth.</item>
+            <item>There’s a waterfall in Antarctica that flows bright red due to iron-rich water.</item>
+            <item>The temperature inside a lightning bolt can be five times hotter than the Sun’s surface.</item>
+            <item>Some species of bamboo can grow more than a meter in a single day.</item>
+            <item>The Grand Canyon reveals nearly 2 billion years of Earth’s geological history.</item>
+            <item>The Amazon rainforest loses an area the size of a football field every few seconds to deforestation.</item>
+            <item>There are more life forms living on your skin than there are humans on Earth.</item>
+            <item>Some plants trap and digest insects to survive in poor soil conditions.</item>
+            <item>Ocean tides are caused by the gravitational pull of the Moon and the Sun.</item>
+            <item>Earth’s rotation is gradually slowing down by about 17 milliseconds every century.</item>
+            <item>There are underwater rivers and lakes formed by dense saltwater layers beneath the ocean.</item>
+            <item>Some mountains, like Mount Kilimanjaro, have glaciers even though they’re near the equator.</item>
+            <item>Every year, lightning kills more trees than forest fires do.</item>
+            <item>Some coral reefs are older than the pyramids of Egypt.</item>
+            <item>Plants can communicate through underground fungal networks known as the “Wood Wide Web.”</item>
+            <item>The Earth’s atmosphere extends far beyond the Moon’s orbit, though it becomes extremely thin.</item>
+            <item>There are underwater volcanoes constantly shaping new ocean floors.</item>
+            <item>Some caves have crystals so large they can weigh over 50 tons.</item>
+            <item>Giraffes have the same number of neck bones as humans — just much longer ones.</item>
+            <item>About 70% of Earth’s surface is covered by water, but only 1% is drinkable freshwater.</item>
+            <item>Some animals, like tardigrades, can survive in space and extreme conditions.</item>
+            <item>The Sahara Desert expands southward by about 48 kilometers every year.</item>
+            <item>Rainforests are home to more than half of all known animal and plant species.</item>
+            <item>Some flowers only bloom once in their lifetime, then die immediately after.</item>
+            <item>Deep ocean vents release heat and minerals that support entire ecosystems without sunlight.</item>
+            <item>Desert sand dunes can “sing” — their movement creates deep humming sounds.</item>
+            <item>The Amazon River discharges enough water daily to fill over 80 million Olympic pools.</item>
+            <item>Some mountains are still rising, while others are slowly eroding away.</item>
+            <item>Hailstones can grow larger than baseballs inside powerful thunderstorms.</item>
+            <item>The northern forests of Earth, called taigas, make up the largest land biome.</item>
+            <item>Some species of coral can live for over 4,000 years.</item>
+            <item>Ocean waves can travel thousands of kilometers without losing strength.</item>
+            <item>The Earth’s magnetic poles have flipped many times throughout history.</item>
+            <item>Some rivers disappear into the ground and reappear miles away.</item>
+            <item>Raindrops aren’t tear-shaped — they’re actually shaped like hamburger buns when falling.</item>
+            <item>The Amazon rainforest generates its own rain through water released by plants.</item>
+            <item>Each year, more than 100 tons of cosmic dust fall onto Earth from space.</item>
+            <item>The Atacama Desert in Chile is so dry that NASA uses it to test Mars rovers.</item>
+            <item>Some mountain ranges are still forming today as continents slowly move.</item>
+            <item>Sea otters hold hands while sleeping to avoid drifting apart.</item>
+            <item>There are frozen methane bubbles trapped under Arctic lakes that can ignite if released.</item>
+            <item>The sound of ocean waves can reduce stress and lower heart rates naturally.</item>
+            <item>Some desert plants can store water for years to survive long dry periods.</item>
+            <item>Rainforests can create their own microclimates, keeping temperatures stable.</item>
+            <item>Sand dunes can move over 10 meters per year due to strong winds.</item>
+            <item>The temperature inside a cloud can vary by dozens of degrees within a few meters.</item>
+            <item>Giant sequoia trees are so tall that some create their own ecosystems in their branches.</item>
+            <item>Some animals glow in the dark due to natural bioluminescence.</item>
+            <item>Under the right conditions, waterfalls can freeze into solid ice towers.</item>
+            <item>Rivers can carve through solid rock over millions of years, shaping entire landscapes.</item>
+            <item>Some insects can walk on water thanks to surface tension and tiny hair structures on their legs.</item>
+            <item>Salt flats like Bolivia’s Salar de Uyuni can reflect the sky perfectly after rain, creating mirror illusions.</item>
+            <item>There are underwater forests made entirely of kelp, stretching for kilometers.</item>
+            <item>The deepest known cave on Earth goes down over 2,200 meters underground.</item>
+            <item>Some lakes explode due to trapped carbon dioxide suddenly being released — known as limnic eruptions.</item>
+            <item>Earthquakes can permanently change the length of a day by milliseconds.</item>
+            <item>Every leaf on a tree acts as a mini solar panel, turning sunlight into energy.</item>
+            <item>Some trees communicate distress through airborne chemical signals when attacked by insects.</item>
+            <item>The smell of rain, called petrichor, comes from oils released by soil bacteria.</item>
+            <item>Earth’s gravity slightly varies depending on location due to mountains and density changes.</item>
+        </string-array>
+
+     <!-- Animals -->
+
+        <string-array name="animalsFactsArray">
+            <item>Octopuses have three hearts and blue blood.</item>
+            <item>Elephants can recognize themselves in a mirror, showing self-awareness.</item>
+            <item>Koalas sleep for up to 22 hours a day.</item>
+            <item>Crows can remember human faces and hold grudges for years.</item>
+            <item>Dolphins call each other by unique names using signature whistles.</item>
+            <item>Some species of jellyfish can live forever by reverting to their younger state.</item>
+            <item>Sloths can hold their breath longer than dolphins — up to 40 minutes.</item>
+            <item>Honey never spoils — archaeologists have found edible honey in ancient tombs.</item>
+            <item>Owls can rotate their heads about 270 degrees without damaging blood flow.</item>
+            <item>Axolotls can regrow not only limbs but also parts of their brain and heart.</item>
+            <item>Penguins propose to their mates with pebbles.</item>
+            <item>Sharks existed before trees appeared on Earth.</item>
+            <item>Butterflies can taste food through their feet.</item>
+            <item>Polar bears have black skin under their white fur to absorb heat from the sun.</item>
+            <item>Some ants form living bridges and rafts using their own bodies.</item>
+            <item>Whales have unique songs that can travel hundreds of kilometers underwater.</item>
+            <item>Giraffes only sleep about 30 minutes a day in short naps.</item>
+            <item>Bees can communicate the location of flowers through a “waggle dance.”</item>
+            <item>Rats and mice laugh when tickled, though it’s too high-pitched for humans to hear.</item>
+            <item>Sea otters hold hands while sleeping to keep from drifting apart.</item>
+            <item>Parrots can learn and use words in context, not just mimic sounds.</item>
+            <item>Camels can close their nostrils to keep out sand during storms.</item>
+            <item>Dogs can detect certain diseases like cancer through scent.</item>
+            <item>Cats have a special reflective layer in their eyes called the tapetum lucidum that helps them see in near darkness.</item>
+            <item>The heart of a shrimp is located in its head.</item>
+            <item>Starfish have no brain but can regenerate lost arms.</item>
+            <item>Male seahorses, not females, carry and give birth to the babies.</item>
+            <item>Elephants use low-frequency sounds that humans can’t hear to communicate over long distances.</item>
+            <item>Flamingos are born gray — their pink color comes from the food they eat.</item>
+            <item>A group of owls is called a “parliament.”</item>
+            <item>A cheetah can accelerate from 0 to 100 km/h in just three seconds.</item>
+            <item>Frogs can breathe through their skin as well as their lungs.</item>
+            <item>Hummingbirds can flap their wings up to 80 times per second.</item>
+            <item>The fingerprints of a koala are almost identical to those of humans.</item>
+            <item>Penguins can drink seawater — their glands filter out the salt.</item>
+            <item>The pistol shrimp snaps its claw so fast it creates a bubble hotter than the sun’s surface.</item>
+            <item>Bees are the only insects that produce food eaten by humans.</item>
+            <item>Some frogs freeze solid during winter and thaw back to life in spring.</item>
+            <item>Elephants can “hear” with their feet by detecting vibrations in the ground.</item>
+            <item>Manatees are more closely related to elephants than to dolphins.</item>
+            <item>Ravens can solve puzzles and use tools as intelligently as small children.</item>
+            <item>Some snakes can glide through the air by flattening their bodies.</item>
+            <item>Male emperor penguins keep their eggs warm on their feet for two months without eating.</item>
+            <item>Blue whales are the largest animals ever known to have lived on Earth.</item>
+            <item>Sea turtles can migrate thousands of kilometers to return to the beach where they were born.</item>
+            <item>Axolotls remain in their juvenile stage their entire life — they never fully metamorphose.</item>
+            <item>Some species of octopus collect shiny shells to decorate their dens.</item>
+            <item>Parrotfish produce a mucus “sleeping bag” at night to hide their scent from predators.</item>
+            <item>A group of flamingos is called a “flamboyance.”</item>
+            <item>A shrimp’s heart beats 300 times per minute.</item>
+            <item>The tongue of a blue whale can weigh as much as an elephant.</item>
+            <item>Orcas are actually the largest members of the dolphin family.</item>
+            <item>Some ants farm fungus and protect it as their main food source.</item>
+            <item>Cows have best friends and can become stressed when separated.</item>
+            <item>Reindeer eyes change color with the seasons — golden in summer, blue in winter.</item>
+            <item>Snails can sleep for up to three years if conditions are harsh.</item>
+            <item>Slugs have four noses used to detect light and smell.</item>
+            <item>Male peacocks fan their feathers to attract mates, but each display is unique.</item>
+            <item>A jellyfish doesn’t have a brain, heart, or bones — but it can still hunt and move with precision.</item>
+            <item>Honeybees can recognize human faces.</item>
+            <item>Some cats are allergic to humans due to skin proteins and perfume scents.</item>
+            <item>The giant squid has eyes as large as dinner plates.</item>
+            <item>Platypuses can detect electric signals from their prey using their bills.</item>
+            <item>Owls are virtually silent when they fly because of special feathers that muffle sound.</item>
+            <item>Dogs’ wet noses help them absorb scent chemicals more effectively.</item>
+            <item>Wombat poop is cube-shaped to prevent it from rolling away.</item>
+            <item>Camels store fat, not water, in their humps.</item>
+            <item>There are more chickens on Earth than any other bird species.</item>
+            <item>Sea cucumbers eject their internal organs to scare off predators, then grow them back.</item>
+            <item>Hippos produce a natural sunscreen that gives their skin a pinkish hue.</item>
+            <item>Male lions do most of the sleeping — up to 20 hours a day — while lionesses hunt.</item>
+            <item>Polar bears can smell seals from nearly a kilometer away through thick ice.</item>
+            <item>Beavers’ teeth never stop growing and are orange due to iron content.</item>
+            <item>Some monkeys use stones as tools to crack nuts.</item>
+            <item>Sharks can detect electrical fields produced by other animals.</item>
+            <item>Butterflies can see ultraviolet light, invisible to humans.</item>
+            <item>Frogs use their eyes to swallow — they push them into their mouths to help food go down.</item>
+            <item>A newborn kangaroo is smaller than a grape.</item>
+            <item>Ants don’t have lungs — they breathe through small holes on their bodies.</item>
+            <item>There’s a species of immortal jellyfish that can revert back to its juvenile stage indefinitely.</item>
+            <item>Penguins can jump up to six feet in the air out of the water.</item>
+            <item>Horses can sleep both lying down and standing up.</item>
+            <item>Raccoons wash their food before eating when water is available.</item>
+            <item>Male giraffes determine if a female is fertile by tasting her urine.</item>
+            <item>Bees’ wings beat about 200 times per second.</item>
+            <item>The mantis shrimp can punch with the force of a bullet.</item>
+            <item>Some moths drink the tears of sleeping birds for nutrition.</item>
+            <item>Elephants can die of heartbreak if their companions pass away.</item>
+            <item>Clownfish are born male but can change to female if necessary.</item>
+            <item>Penguins mate for life and often return to the same partner every year.</item>
+            <item>Some bats have wingspans wider than an adult human’s arms.</item>
+            <item>Chameleons don’t change color to match surroundings but to communicate mood and temperature.</item>
+            <item>Orangutans build a new nest every night high up in the trees.</item>
+            <item>Spiders can produce up to seven different kinds of silk for different uses.</item>
+            <item>Antarctic icefish have clear blood due to lack of hemoglobin.</item>
+            <item>Some parrots live longer than humans — up to 90 years.</item>
+            <item>Cats can make over 100 different sounds, while dogs can make about 10.</item>
+            <item>Fireflies produce light through a chemical reaction called bioluminescence.</item>
+            <item>Male penguins often gift pebbles to attract their mates.</item>
+            <item>The mimic octopus can impersonate more than 15 other marine creatures.</item>
+            <item>Goats have rectangular pupils that give them a wide field of vision.</item>
+            <item>There are shrimp smaller than a grain of rice living in Antarctic ice.</item>
+            <item>Blue whales’ hearts beat only about eight times per minute when diving deep.</item>
+        </string-array>
+
+    <!-- Mind -->
+
+        <string-array name="mindFactsArray">
+            <item>The human brain has about 86 billion neurons that communicate through electrical signals.</item>
+            <item>Your brain uses around 20% of your body’s total oxygen and energy supply.</item>
+            <item>Memories are not stored in one place — they are spread across different brain regions.</item>
+            <item>Dreams are your brain’s way of organizing thoughts, emotions, and experiences.</item>
+            <item>Humans can experience more than 30,000 distinct emotions.</item>
+            <item>Your subconscious mind controls about 95% of your daily decisions.</item>
+            <item>Music can activate every known part of the human brain.</item>
+            <item>The brain never actually “stops thinking” — even during sleep it remains active.</item>
+            <item>Emotions last for only about 90 seconds unless you keep thinking about them.</item>
+            <item>The human mind can process images seen for less than 13 milliseconds.</item>
+            <item>Reading fiction can increase your brain’s empathy and understanding of others.</item>
+            <item>Memories are rewritten slightly every time you recall them.</item>
+            <item>Your brain is more active at night than during the day.</item>
+            <item>People are more creative when they’re slightly tired because the brain is less inhibited.</item>
+            <item>The human brain generates enough electricity to power a small light bulb.</item>
+            <item>Your mind can trick your body into feeling physical pain without injury — known as psychosomatic pain.</item>
+            <item>Negative thoughts stick longer in your memory because of an evolutionary survival response.</item>
+            <item>Humans can’t multitask; the brain actually switches focus rapidly between tasks.</item>
+            <item>The hippocampus, which helps form memories, shrinks during chronic stress.</item>
+            <item>Most dreams fade from memory within five minutes of waking up.</item>
+            <item>Smell is the sense most strongly tied to memory.</item>
+            <item>The placebo effect is proof that the brain can heal the body through belief alone.</item>
+            <item>When you imagine practicing a skill, your brain strengthens the same neural pathways as physical practice.</item>
+            <item>Laughter triggers the release of endorphins, the body’s natural “feel good” chemicals.</item>
+            <item>People remember emotionally charged moments better than neutral ones.</item>
+            <item>The human brain is more than three times larger than that of our closest relatives, chimpanzees.</item>
+            <item>Your brain keeps developing new connections throughout your entire life — a process called neuroplasticity.</item>
+            <item>Humans are wired to seek patterns, even in random information.</item>
+            <item>Daydreaming can boost creativity and problem-solving ability.</item>
+            <item>The fear response happens faster than conscious thought — your brain reacts before you realize the danger.</item>
+            <item>Every person’s brain has a unique physical structure, like a fingerprint.</item>
+            <item>When you talk to yourself silently, your brain activates the same regions as speaking aloud.</item>
+            <item>Your brain can recognize familiar faces in less than 100 milliseconds.</item>
+            <item>Memories are strengthened when linked with strong emotions.</item>
+            <item>The left side of the brain generally handles logic, while the right side handles creativity — but both sides work together constantly.</item>
+            <item>Thinking about your goals activates the same reward centers as achieving them.</item>
+            <item>Human brains are wired to notice and remember negative events more than positive ones.</item>
+            <item>Chronic stress can physically change brain structure over time.</item>
+            <item>The average adult brain weighs about 1.4 kilograms.</item>
+            <item>Most people can remember only about seven items at once in their short-term memory.</item>
+            <item>Visualization can improve athletic and cognitive performance almost as much as physical practice.</item>
+            <item>The brain processes visual information 60,000 times faster than text.</item>
+            <item>When people make eye contact, their brain waves can synchronize.</item>
+            <item>Humans can’t tickle themselves because the brain predicts its own movements.</item>
+            <item>Memories of emotional pain activate the same brain areas as physical pain.</item>
+            <item>Learning something new creates new connections between neurons.</item>
+            <item>Your brain makes up about 2% of your body weight but consumes 20% of your calories.</item>
+            <item>Loneliness can change how your brain processes social cues.</item>
+            <item>Your brain sometimes invents details to fill gaps in memory — this is called confabulation.</item>
+            <item>Most of what you “see” is your brain’s interpretation, not direct vision.</item>
+            <item>The smell of chocolate increases theta brain waves, which trigger relaxation.</item>
+            <item>People remember unfinished tasks better than completed ones — known as the Zeigarnik effect.</item>
+            <item>Humans tend to overestimate short-term results and underestimate long-term growth.</item>
+            <item>Your mind can create false memories that feel completely real.</item>
+            <item>The brain produces more than 50,000 thoughts per day on average.</item>
+            <item>Emotions can affect how you perceive time — fear makes moments feel longer.</item>
+            <item>Social rejection activates the same brain areas as physical pain.</item>
+            <item>Smiling, even when you don’t feel happy, can trick your brain into feeling better.</item>
+            <item>Your brain changes structure after every new experience or piece of information.</item>
+            <item>When people learn together, their brain activity patterns often sync up.</item>
+            <item>Humans are more likely to believe information that supports their existing beliefs — called confirmation bias.</item>
+            <item>Stress hormones can temporarily block access to stored memories.</item>
+            <item>Your brain replays memories during sleep to strengthen them.</item>
+            <item>Thinking about positive outcomes activates the same pleasure circuits as receiving rewards.</item>
+            <item>The human brain can generate about 23 watts of power when awake.</item>
+            <item>Remembering something triggers the same brain activity as experiencing it for the first time.</item>
+            <item>Your brain is about 75% water.</item>
+            <item>People are more likely to remember words related to survival.</item>
+            <item>Fear can make your pupils widen to gather more visual information.</item>
+            <item>When you recall a memory, your brain temporarily rewrites it with new context.</item>
+            <item>The act of helping others activates the brain’s reward system.</item>
+            <item>The more you focus on gratitude, the more your brain rewires itself for positivity.</item>
+            <item>Your perception of color and sound can be influenced by your emotions.</item>
+            <item>People with higher curiosity tend to remember information longer.</item>
+            <item>The brain is capable of producing new neurons, even in adulthood.</item>
+            <item>When you imagine a future event, your brain activates the same regions as when recalling a memory.</item>
+            <item>Emotional intelligence often predicts success better than IQ.</item>
+            <item>Humans tend to mimic others’ facial expressions automatically — it helps us build empathy.</item>
+            <item>Brain cells communicate at speeds up to 400 kilometers per hour.</item>
+            <item>When you learn a second language, your brain physically grows new gray matter.</item>
+            <item>Memories of fear can be reduced by recalling them in a calm emotional state.</item>
+            <item>Humor activates multiple parts of the brain, improving creativity and focus.</item>
+            <item>Stress shrinks the prefrontal cortex — the area responsible for decision-making.</item>
+            <item>When people are in love, their brain releases chemicals similar to addiction responses.</item>
+            <item>The brain’s default mode network activates when your mind wanders or daydreams.</item>
+            <item>Humans tend to remember the beginning and end of experiences best — known as the primacy and recency effect.</item>
+            <item>When you learn through teaching others, your brain retains information longer.</item>
+            <item>People make faster decisions when they trust their instincts than when they overthink.</item>
+            <item>Smelling something familiar can trigger a stronger emotional memory than seeing a picture.</item>
+            <item>Most of your decisions are influenced by emotions, even when you think they’re logical.</item>
+            <item>The brain processes rejection as a form of physical pain to discourage isolation.</item>
+            <item>Humans are more creative when they feel safe and supported.</item>
+            <item>The brain’s reward system releases dopamine when you complete even small goals.</item>
+            <item>Your mind can’t differentiate between vividly imagined and real experiences at the neural level.</item>
+            <item>When you meditate, the amygdala — your fear center — becomes less active.</item>
+            <item>The average person has about 6,000 thoughts per day, though most are repetitive.</item>
+            <item>Habits are formed when the brain shifts behavior from conscious effort to automatic response.</item>
+            <item>The human brain stores the equivalent of about 2.5 petabytes of information.</item>
+            <item>Music with lyrics activates both the language and emotional centers of the brain.</item>
+            <item>The human mind is more likely to remember unfinished melodies than complete ones — known as the “earworm effect.”</item>
+        </string-array>
+
+    <!-- Mysteries -->
+
+        <string-array name="mysteriesFactsArray">
+            <item>The Voynich Manuscript remains undeciphered despite centuries of study.</item>
+            <item>The Voynich Manuscript remains the world’s most mysterious unreadable book.</item>
+            <item>No one knows exactly how the giant stones of Stonehenge were transported thousands of years ago.</item>
+            <item>The Bermuda Triangle has inspired mystery after ships and planes vanished there under unexplained circumstances.</item>
+            <item>The origin of dark matter and dark energy, which make up 95% of the universe, is still unknown.</item>
+            <item>Some sounds, like the “Bloop” recorded in 1997 in the Pacific Ocean, remain unexplained.</item>
+            <item>Thousands of people hear a low-frequency hum called the “Worldwide Hum,” but its source is still a mystery.</item>
+            <item>The Antikythera mechanism, found in a shipwreck, is an ancient analog computer built over 2,000 years ago.</item>
+            <item>How the Great Pyramid of Giza was built with such precision remains one of history’s greatest mysteries.</item>
+            <item>The Tunguska event in 1908 flattened over 2,000 square kilometers of forest, but no impact crater was ever found.</item>
+            <item>Saturn’s moon Titan has rivers and lakes made of liquid methane and ethane, not water.</item>
+            <item>Deep inside the ocean, scientists have discovered sounds that do not match any known marine species.</item>
+            <item>The Mayan civilization disappeared suddenly around the 9th century, with no clear explanation.</item>
+            <item>The universe appears to be expanding faster than expected, and scientists don’t know why.</item>
+            <item>Some ancient structures align perfectly with celestial bodies, suggesting advanced astronomical knowledge.</item>
+            <item>Several massive stone spheres found in Costa Rica have perfectly round shapes — no one knows their purpose.</item>
+            <item>Every year, mysterious lights appear over Marfa, Texas — yet no natural or human cause has been confirmed.</item>
+            <item>The Nazca Lines in Peru form massive animal shapes only visible from above, made over 1,500 years ago.</item>
+            <item>We don’t know what causes ball lightning, a glowing sphere that sometimes appears during storms.</item>
+            <item>The “Wow! Signal” detected in 1977 remains the strongest unexplained radio signal from space.</item>
+            <item>Lake Vostok in Antarctica has been sealed under ice for millions of years — and may contain unknown life forms.</item>
+            <item>Earth’s magnetic field has reversed many times in history, but the cause and timing remain unpredictable.</item>
+            <item>The mechanism that triggers earthquakes is well known, but why some are far stronger than predicted isn’t.</item>
+            <item>Scientists have detected neutrinos coming from unknown cosmic sources.</item>
+            <item>Some people claim to see repeating numbers, known as “angel numbers,” though their cause is psychological or unknown.</item>
+            <item>There are massive “gravity holes” on Earth where the planet’s pull is mysteriously weaker.</item>
+            <item>Deep below the ocean floor, microbes live in extreme conditions — scientists still don’t know how they survive.</item>
+            <item>Ancient maps show landmasses that were supposedly unknown at the time they were drawn.</item>
+            <item>The Piri Reis map from 1513 shows parts of Antarctica centuries before it was officially discovered.</item>
+            <item>Some meteorites contain amino acids, the building blocks of life, hinting that life may have come from space.</item>
+            <item>There’s a mysterious radio burst from deep space that repeats every 16 days, and its source is still unknown.</item>
+            <item>Some regions of the ocean remain completely unexplored — over 80% of it is still unmapped.</item>
+            <item>People have reported finding ancient metallic objects embedded in rock layers millions of years old.</item>
+            <item>Earth’s inner core may rotate at a different speed than the rest of the planet, but no one knows why.</item>
+            <item>Some ancient cities are found underwater, hinting at civilizations lost to rising seas.</item>
+            <item>Several ancient cultures built pyramids independently across the world — with no known connection between them.</item>
+            <item>Scientists have no full explanation for why we dream or what dreams truly mean.</item>
+            <item>The deepest parts of the ocean may contain species that humans have never seen.</item>
+            <item>There are mysterious lights that appear above earthquake zones, known as earthquake lights.</item>
+            <item>We still don’t know what causes spontaneous human combustion — though it has been reported for centuries.</item>
+            <item>The exact origin of life on Earth remains one of science’s greatest unanswered questions.</item>
+            <item>Some stars disappear from the sky without going supernova, and no one knows where they went.</item>
+            <item>Many ancient temples were built with mathematical precision that still challenges modern architects.</item>
+            <item>Scientists have found “rogue planets” that drift through space with no stars to orbit.</item>
+            <item>Deep under the Pacific Ocean, there are strange metallic nodules covering the seafloor — their formation is a mystery.</item>
+            <item>The “dark flow” suggests entire galaxy clusters are moving toward something beyond the observable universe.</item>
+            <item>The Taos Hum in New Mexico is an unexplained low-frequency sound heard by residents for decades.</item>
+            <item>Some people experience déjà vu frequently, yet science still doesn’t fully understand why it happens.</item>
+            <item>The Loch Ness Monster legend persists, though no solid evidence has ever been found.</item>
+            <item>Ancient Roman concrete is stronger than modern concrete — and scientists only recently began to understand why.</item>
+            <item>Some parts of the ocean glow at night for reasons still not entirely understood.</item>
+            <item>The “Devil’s Kettle” waterfall in Minnesota swallows half its water into an unknown underground route.</item>
+            <item>Saturn’s hexagon-shaped storm at its north pole is unlike anything else seen in the solar system.</item>
+            <item>There are entire tribes in the Amazon rainforest that have never had contact with the outside world.</item>
+            <item>The mechanism of consciousness — how awareness arises from the brain — is still unexplained.</item>
+            <item>Some ancient tombs were built with materials that prevent mold growth, baffling modern scientists.</item>
+            <item>There’s a mysterious zone in Alaska called the “Alaska Triangle,” known for unexplained disappearances.</item>
+            <item>Some people can sense magnetic north — a phenomenon called magnetoreception.</item>
+            <item>Venus rotates in the opposite direction of most planets, and no one knows exactly why.</item>
+            <item>Jupiter emits more heat than it receives from the Sun — the source of this energy is still debated.</item>
+            <item>The Baltic Sea Anomaly is a large, unexplained formation discovered underwater in 2011.</item>
+            <item>There are strange humming sounds recorded in the deep ocean called “The Upsweep” that defy explanation.</item>
+            <item>Scientists have found giant viruses that blur the line between living and non-living things.</item>
+            <item>Some people report “shadow sleep paralysis” where they see figures while unable to move.</item>
+            <item>The Black Knight satellite is an unidentified object said to orbit Earth — its origin remains debated.</item>
+            <item>Quantum entanglement allows particles to affect each other instantly, even across vast distances — how it works is still a mystery.</item>
+            <item>Every few years, scientists detect mysterious signals called Fast Radio Bursts coming from deep space.</item>
+            <item>There are huge structures under the Amazon forest that might belong to a lost civilization.</item>
+            <item>The brain produces electrical spikes moments after death — their purpose is unknown.</item>
+            <item>In 1902, a mysterious mechanical device known as the Baghdad Battery was discovered — its use is still unclear.</item>
+            <item>Some cave paintings are so detailed that they show knowledge of stars invisible to the naked eye.</item>
+            <item>Earth occasionally receives mysterious bursts of cosmic energy from unknown origins.</item>
+            <item>The Sahara Desert hides entire fossilized forests and seas beneath its sand.</item>
+            <item>Some ancient stones emit faint magnetic energy, the source of which remains unknown.</item>
+            <item>We’ve mapped Mars more accurately than Earth’s ocean floors.</item>
+            <item>Quantum physics suggests particles can exist in multiple places at once — an unresolved paradox.</item>
+            <item>Scientists have discovered planets made entirely of diamond, but their formation is not fully understood.</item>
+            <item>There are hundreds of languages that suddenly vanished from history with no record of how or why.</item>
+            <item>Some deep-sea creatures emit light patterns that no one has yet decoded.</item>
+            <item>Ancient structures like Machu Picchu were built without iron tools — the techniques remain mysterious.</item>
+            <item>There are massive stone ruins under the waters of Yonaguni, Japan, whose origins remain debated.</item>
+            <item>We still don’t know what triggered the sudden extinction of the woolly mammoth.</item>
+            <item>The universe may be one of many — a multiverse theory still being explored.</item>
+            <item>There are repeating patterns in cosmic radiation that could hint at parallel universes.</item>
+            <item>The “Great Silence” — why we haven’t heard from intelligent alien life — remains an unsolved puzzle.</item>
+            <item>Time itself behaves differently near massive objects — but why remains one of physics’ biggest mysteries.</item>
+            <item>The ocean floor has magnetic striping that records Earth’s past, but some patterns don’t match geological timelines.</item>
+            <item>Some meteorites contain minerals not found anywhere on Earth.</item>
+            <item>Infrasound, sounds too low for humans to hear, can make people feel anxious or see “ghostly” visions.</item>
+            <item>Lightning has been seen striking the same place continuously for hours — the cause is unknown.</item>
+            <item>Some animals navigate thousands of miles using magnetic fields — we still don’t fully understand how.</item>
+            <item>Every galaxy appears to have a massive black hole at its center — no one knows why.</item>
+            <item>The speed of time may not be constant everywhere in the universe, according to recent observations.</item>
+            <item>The oldest star ever found is nearly as old as the universe itself — how it survived this long is unknown.</item>
+            <item>Some dreams have accurately predicted real-life events — science still can’t explain how coincidence or intuition works.</item>
+
+        </string-array>
+
+
+
+
+</resources>

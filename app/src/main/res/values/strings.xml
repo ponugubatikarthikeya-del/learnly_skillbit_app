@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Factify</string>
+    <string name="overView_text">Your Daily Factory of Facts !</string>
+    <string name="Daily">Daily\n</string>
+    <string name="Facts">Facts</string>
+    <string name="Games">Games</string>
+    <string name="Favorite">Favorites</string>
+    <string name="Profile_view">Profile</string>
+    <string name="CategotiesList">catogory</string>
+    <string name="welcome_back">Welcome Back</string>
+    <string name="daily_fact">Daily Fact</string>
+    <string name="hello_user">Hello, User</string>
+    <string name="what_are_you_looking_for_today">what are you looking for today ?</string>
+    <string name="interesting_facts">Interesting Facts</string>
+    <string name="psychology_facts">psychology Facts</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="like">Like</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="share">Share</string>
+    <string name="category">Category</string>
+    <string name="fact_text">Fact text</string>
+    <string name="move_backSide">backside</string>
+    <string name="no_favorites_yet">No favorites yet</string>
+    <string name="factsshow">factsShow</string>
+    <string name="daily_factView">Daily Fact</string>
+
+</resources>

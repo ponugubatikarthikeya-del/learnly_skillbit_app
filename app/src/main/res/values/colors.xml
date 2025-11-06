@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="gray">#FF808080</color>
+    <color name="red">#D71E1E</color>
+    <color name="actionbarcolor">#2E2A3A</color>
+    <color name="toastcolor">#333333</color>
+    <color name="pageBagrounds">#0A2533</color>
+    <color name="blue">#007AFF</color>
+
+</resources>
