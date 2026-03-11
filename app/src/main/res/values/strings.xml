@@ -1,20 +1,19 @@
 <resources>
+    <!-- xml layout code -->
     <string name="app_name">Factify</string>
     <string name="overView_text">Your Daily Factory of Facts !</string>
-    <string name="Daily">Daily\n</string>
+    <string name="Daily">Daily</string>
     <string name="Facts">Facts</string>
     <string name="Games">Games</string>
     <string name="Favorite">Favorites</string>
-    <string name="Profile_view">Profile</string>
-    <string name="CategotiesList">catogory</string>
+    <string name="Settings">Setting</string>
+    <string name="CategoriesList">Categories</string>
     <string name="welcome_back">Welcome Back</string>
     <string name="daily_fact">Daily Fact</string>
-    <string name="hello_user">Hello, User</string>
     <string name="what_are_you_looking_for_today">what are you looking for today ?</string>
     <string name="interesting_facts">Interesting Facts</string>
-    <string name="psychology_facts">psychology Facts</string>
+    <string name="psychology_facts">Psychology Facts</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="like">Like</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
@@ -23,7 +22,173 @@
     <string name="fact_text">Fact text</string>
     <string name="move_backSide">backside</string>
     <string name="no_favorites_yet">No favorites yet</string>
-    <string name="factsshow">factsShow</string>
+    <string name="factsShow">factsShow</string>
     <string name="daily_factView">Daily Fact</string>
+    <string name="player_turn">%1$s Turn</string>
+    <string name="no_facts_available">No Facts Available</string>
+    <string name="toast_text">Toast Msg</string>
+    <string name="back">BACK</string>
+    <string name="reset">RESET</string>
+    <string name="snake_game">SNAKE GAME</string>
+    <string name="snake_gameView">Snake Game View</string>
+    <string name="start">Start</string>
+    <string name="sGame_button_up">UP</string>
+    <string name="sGame_button_down">DOWN</string>
+    <string name="sGame_button_right">RIGHT</string>
+    <string name="sGame_button_left">LEFT</string>
+    <string name="quiz_psychology">Psychology</string>
+    <string name="quiz_body">Body</string>
+    <string name="quiz_technology">Technology</string>
+    <string name="quiz_universe">Universe</string>
+    <string name="quizzes">Quizzes</string>
+    <string name="quiz_completed_dialog">Quiz completed</string>
+    <string name="your_score">Your Score : </string>
+    <string name="_5_10">5/10</string>
+    <string name="com_vs_you">Com vs YOU</string>
+    <string name="tic_Multiplayer">MULTIPLAYER</string>
+    <string name="tic_toc_toe">TIC TAC TOE</string>
+    <string name="copy_view">Copy</string>
+    <string name="Buddy_name">Buddy</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="terms_and_conditions">Terms and conditions</string>
+    <string name="more_apps_to_try">More apps to try</string>
+    <string name="enter_arrow">Enter Arrow</string>
+
+    <!-- java files strings -->
+    <string name="facts_over">facts are over wait a moment i will set new facts for you</string>
+    <string name="score_view">Score: %1$d</string>
+    <string name="you_win">You Win!</string>
+    <string name="com_wins">Com Win!</string>
+    <string name="draw1">DRAW</string>
+    <string name="draw">✌️ DRAW</string>
+    <string name="computer_turn">Computers Turn..</string>
+    <string name="your_turn">Your Turn (X)..</string>
+    <string name="score_0">Score: 0</string>
+    <string name="questions_progress">Questions %1$d/%2$d</string>
+    <string name="quiz_score_format">%1$d / %2$d</string>
+    <string name="better_luck_next_time">Better Luck Next Time!</string>
+    <string name="keep_practicing">Keep practicing!! 💪</string>
+    <string name="player_win">%1$s Win!</string>
+    <string name="turn_status">%1$s Turn</string>
+    <string name="full_score">Awesome</string>
+    <string name="no_internet_connection">Please check your network</string>
+    <string name="Liked_toast">Liked</string>
+    <string name="game_over">Game Over !!</string>
+    <string name="exit">Exit</string>
+    <string name="restart">Restart</string>
+    <string name="profile_photo">Profile photo</string>
+    <string name="quiz">Quiz</string>
+    <string name="snake_game_items">Snake Game</string>
+    <string name="tic_tac_toe">Tic Tac Toe</string>
+    <string name="hello_buddy">Hello Buddy</string>
+    <string name="unknown_facts">Unknown Facts</string>
+    <string name="fact_prefix">fact|</string>
+    <string name="clipboard_label">Fact</string>
+
+
+    <string name="cat_interesting">Interesting</string>
+    <string name="cat_oceans">Oceans</string>
+    <string name="cat_space">Space</string>
+    <string name="cat_fitness">Fitness</string>
+    <string name="cat_mind">Mind</string>
+    <string name="cat_psychology">Psychology</string>
+    <string name="cat_men">Men</string>
+    <string name="cat_women">Women</string>
+    <string name="cat_love">Love</string>
+    <string name="cat_unknown">Unknown</string>
+    <string name="cat_time_universe">Time&amp;Universe</string>
+    <string name="cat_nature_wonders">Nature Wonders</string>
+    <string name="cat_mysteries">Mysteries</string>
+    <string name="cat_animals">Animals</string>
+    <string name="cat_category">category</string>
+
+
+    <string name="lastFactCount">lastFactCount</string>
+    <string name="dd_mm_yyyy">dd-MM-yyyy</string>
+    <string name="lastDate">lastDate</string>
+    <string name="isFrontVisible">isFrontVisible</string>
+    <string name="showed_facts">showed_facts</string>
+
+    <!-- Preferences -->
+    <string name="prefs_facts">facts_prefs</string>
+    <string name="prefs_fav_set">fav_set</string>
+
+    <!-- Clipboard -->
+    <string name="clipboard_label_fact">Fact</string>
+
+    <!-- Toast / Copy -->
+    <string name="copied_text">Copied</string>
+
+    <!-- Share -->
+    <string name="share_fact_via">Share fact via</string>
+
+    <string name="daily_prefix">daily|</string>
+
+    <string name="currentFact_key">currentFact</string>
+
+    <string name="noFacts_today">No facts available today</string>
+
+    <string name="change_listener_fav">fav_set</string>
+
+    <!-- URLs -->
+    <string name="developer_apps_url">https://play.google.com/store/apps/dev?id=8374043554473360551</string>
+    <string name="privacy_policy_url">https://factifypt.netlify.app/</string>
+    <string name="terms_url">https://factifypt.netlify.app/terms</string>
+
+    <!-- Network messages -->
+    <string name="check_network">Please check your network</string>
+    <!-- Intent Keys -->
+    <string name="intent_open_fact_text">open_fact_text</string>
+    <!-- Default Text -->
+
+    <string name="intent_player1">PLAYER 1</string>
+    <string name="intent_player2">PLAYER 2</string>
+
+    <string name="default_player1_name">Player 1</string>
+    <string name="default_player2_name">Player 2</string>
+    <string name="enter_both_names">Enter both player names!</string>
+
+    <!-- Default fallback -->
+    <string name="quiz_not_found">No quiz found!</string>
+    <string name="quiz_default_options">Option1 | Option2 | Option3 | Option4</string>
+    <string name="quiz_default_correct">Option1</string>
+
+    <string name="quiz_type_key">quizType</string>
+
+    <!-- Default Quiz Category -->
+    <string name="default_quiz_type">psychology</string>
+    <string name="player_x_won">Player X Won!</string>
+    <string name="option_4">Option 4</string>
+    <string name="option_3">Option 3</string>
+    <string name="option_2">Option 2</string>
+    <string name="option_1">Option 1</string>
+    <string name="question">Question</string>
+    <string name="questions_1_10">Questions : 1/10</string>
+    <string name="loading_progressbar">loading_progressBar</string>
+    <string name="start_game">START GAME</string>
+    <string name="player_2_name">Player 2 Name</string>
+    <string name="player_1_name">Player 1 Name</string>
+    <string name="enter_player_names">Enter Player Names</string>
+    <string name="tic_cell9">tic_cell9</string>
+    <string name="tic_cell8">tic_cell8</string>
+    <string name="tic_cell7">tic_cell7</string>
+    <string name="tic_cell6">tic_cell6</string>
+    <string name="tic_cell5">tic_cell5</string>
+    <string name="tic_cell4">tic_cell4</string>
+    <string name="tic_cell3">tic_cell3</string>
+    <string name="tic_cell2">tic_cell2</string>
+    <string name="tic_cell1">tic_cellButton</string>
+    <string name="start_playing">Start Playing..</string>
+    <string name="bottom_navigationView">Bottom_NavigationView</string>
+    <string name="facts_screen_container">Facts screen container</string>
+    <string name="fact_list">List of facts shown</string>
+    <string name="offline">(offline)</string>
+    <string name="editSymbol">editSymbol</string>
+    <string name="welcome_user">Hello, %1$s</string>
+    <string name="won_symbol">won symbol</string>
+    <string name="more_games_coming_soon">More Games Coming Soon ...</string>
+    <string name="choose_your_avatar">Choose your Avatar</string>
+    <string name="Quiz_back">Back</string>
+
 
 </resources>

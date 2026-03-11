@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!-- Gradient background -->
+    <gradient
+        android:startColor="#141E30"
+        android:centerColor="#243B55"
+        android:endColor="#141E30"
+        android:angle="135" />
+
+    <!-- Optional: Add a subtle overlay glow -->
+    <corners android:radius="0dp" />
+</shape>

@@ -1,33 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_margin="8dp"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:clickable="true"
+    android:focusable="true"
     app:cardCornerRadius="8dp"
-    app:strokeColor="@color/pageBagrounds"
-    app:strokeWidth="0dp"
-    app:cardElevation="6dp">
+    app:cardElevation="6dp"
+    app:strokeWidth="0dp">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        tools:ignore="ExtraText">
+        android:orientation="vertical">
 
+        <!-- FACT TEXT -->
         <TextView
             android:id="@+id/favoriteTextFact"
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:background="@drawable/facts_page_bg"
-            android:gravity="center"
             android:padding="12dp"
+            android:gravity="center"
             android:text="@string/fact_text"
             android:textColor="@color/black"
-            android:textSize="20sp"
-            android:textStyle="bold" />>
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:background="@drawable/facts_page_bg"
+            android:contentDescription="@string/fact_text"/>
 
+        <!-- ACTION BUTTON ROW -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -35,41 +38,47 @@
             android:padding="10dp"
             android:gravity="center"
             android:weightSum="3"
-            android:background="@color/white"
-          >
+            android:background="@color/white">
 
+            <!-- COPY BUTTON -->
             <ImageButton
                 android:id="@+id/favoriteCopy"
                 android:layout_width="0dp"
                 android:layout_height="48dp"
                 android:layout_weight="1"
                 android:background="@android:color/transparent"
-                android:contentDescription="copy"
+                android:minWidth="48dp"
+                android:minHeight="48dp"
                 android:src="@drawable/round_content_copy_24"
-                app:tint="#007AFF" />
+                app:tint="@color/favorites_copyBg"
+                android:contentDescription="@string/copy_view"/>
 
+            <!-- LIKE BUTTON -->
             <ImageButton
                 android:id="@+id/favoriteBtnLike"
                 android:layout_width="0dp"
                 android:layout_height="48dp"
                 android:layout_weight="1"
-                android:background="@null"
-                android:contentDescription="Like"
+                android:background="@android:color/transparent"
+                android:minWidth="48dp"
+                android:minHeight="48dp"
                 android:src="@drawable/baseline_favorite_24"
-                tools:ignore="TouchTargetSizeCheck" />
+                android:contentDescription="@string/like"/>
 
+            <!-- SHARE BUTTON -->
             <ImageButton
                 android:id="@+id/favoriteBtnShare"
                 android:layout_width="0dp"
                 android:layout_height="48dp"
                 android:layout_weight="1"
-                android:background="@null"
-                android:contentDescription="Share"
+                android:background="@android:color/transparent"
+                android:minWidth="48dp"
+                android:minHeight="48dp"
                 android:src="@drawable/baseline_share_24"
-                app:tint="#0FA215"
-                tools:ignore="TouchTargetSizeCheck" />
+                app:tint="@color/favorites_shareColor"
+                android:contentDescription="@string/share"/>
 
         </LinearLayout>
     </LinearLayout>
-</com.google.android.material.card.MaterialCardView>
 
+</com.google.android.material.card.MaterialCardView>

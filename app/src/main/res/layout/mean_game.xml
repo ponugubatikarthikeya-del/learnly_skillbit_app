@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/menu_bg">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tic_toc_toe"
+        android:textColor="@android:color/white"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:letterSpacing="0.1"
+        android:layout_marginBottom="40dp"
+        android:shadowColor="@color/tic_homePg_titleBg"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="8" />
+
+    <!-- Multiplayer Button -->
+
+    <!-- Computer vs You Button -->
+    <Button
+        android:id="@+id/multiplayerButton"
+        android:layout_width="220dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/btn_purple_gradient"
+        android:elevation="10dp"
+        android:stateListAnimator="@null"
+        android:text="@string/tic_Multiplayer"
+        android:textAllCaps="true"
+        android:textColor="@color/tic_homePg_buttonText"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:minHeight="60dp"
+        android:minWidth="220dp"/>
+
+    <Button
+        android:id="@+id/computerButton"
+        android:layout_width="220dp"
+        android:layout_height="60dp"
+        android:background="@drawable/btn_blue_gradient"
+        android:elevation="10dp"
+        android:stateListAnimator="@null"
+        android:text="@string/com_vs_you"
+        android:textAllCaps="true"
+        android:textColor="@color/tic_homePg_buttonText"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:minHeight="60dp"
+        android:minWidth="220dp"/>
+
+</LinearLayout>

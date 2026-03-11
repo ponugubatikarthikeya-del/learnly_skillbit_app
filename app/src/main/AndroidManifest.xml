@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -11,39 +14,30 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Learnly_skillbit_app">
-        <activity
-            android:name=".Quiz_items"
-            android:exported="false" >
 
-        </activity>
-        <activity
-            android:name=".snakeGameActivity"
-            android:exported="false">
-
-        </activity>
-        <activity
-            android:name=".showingFactsScreen.FactsDisplayActivity"
-            android:exported="false" />
-        <activity
-            android:name=".quiz_Activity"
-            android:exported="false">
-        </activity>
-        <activity
-            android:name=".HomeScreen"
-            android:exported="false">
-        </activity>
-        <activity
-            android:name=".overView_screen"
-            android:exported="false" />
         <activity
             android:name=".splash_screen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".HomeScreen" android:exported="false" />
+        <activity android:name=".Quiz_items" android:exported="false" />
+        <activity android:name=".quiz_Activity" android:exported="false" />
+        <activity android:name=".snakeGameActivity" android:exported="false" />
+        <activity android:name=".overView_screen" android:exported="false" />
+        <activity android:name=".ticGameHomePage" android:exported="false" />
+        <activity android:name=".ticComVsManView" android:exported="false" />
+        <activity android:name=".MultiPlayer" android:exported="false" />
+        <activity android:name=".MultiplayerNamesActivity" android:exported="false" />
+
+        <activity
+            android:name=".showingFactsScreen.FactsDisplayActivity"
+            android:exported="false" />
+
     </application>
 
 </manifest>

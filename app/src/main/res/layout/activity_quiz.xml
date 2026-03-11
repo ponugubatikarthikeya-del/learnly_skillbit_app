@@ -14,35 +14,38 @@
      android:orientation="horizontal"
      android:layout_gravity="center"
      android:gravity="center"
-     android:layout_marginBottom="50dp"
+     android:weightSum="2"
+     android:layout_marginBottom="150dp"
    >
 
     <TextView
         android:id="@+id/QuizQuestionView"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Questions : 1/10 "
-        android:textSize="20sp"
+        android:layout_weight="1"
+        android:text="@string/questions_1_10"
+        android:gravity="center"
+        android:textSize="17sp"
         android:textStyle="bold"
         android:textColor="@color/white"
-        android:paddingEnd="60dp"
       />
 
      <TextView
          android:id="@+id/score_text"
-         android:layout_width="wrap_content"
+         android:layout_width="0dp"
          android:layout_height="wrap_content"
-         android:paddingEnd="10dp"
-         android:text="Score : 0"
+         android:layout_weight="1"
+         android:text="@string/score_0"
          android:textColor="@color/white"
-         android:textSize="20sp"
-         android:textStyle="bold" />
+         android:textSize="17sp"
+         android:gravity="center"
+         android:textStyle="bold"/>
 
 
  </LinearLayout>
     <TextView
         android:id="@+id/question_text"
-        android:text="Question"
+        android:text="@string/question"
         android:textSize="24sp"
         android:textStyle="bold"
         android:textColor="@color/white"
@@ -55,48 +58,60 @@
         android:id="@+id/option1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:backgroundTint="#E0E0E0"
-        android:text="Option 1"
-        android:textColor="#000"
+        android:backgroundTint="@color/quizOptionBtnBg"
+        android:text="@string/option_1"
+        android:textColor="@color/quiz_optionBtnTextBg"
         android:layout_margin="5dp"
         app:cornerRadius="10dp"
         android:padding="15dp"
-        tools:ignore="VisualLintButtonSize" />
+        android:clickable="true"
+        android:focusable="true"
+        tools:ignore="VisualLintButtonSize"
+        android:contentDescription="@string/option_1"/>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/option2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:backgroundTint="#E0E0E0"
-        android:text="Option 2"
-        android:textColor="#000"
+        android:backgroundTint="@color/quizOptionBtnBg"
+        android:text="@string/option_2"
+        android:textColor="@color/quiz_optionBtnTextBg"
         android:layout_margin="5dp"
         app:cornerRadius="10dp"
+        android:clickable="true"
+        android:focusable="true"
         android:padding="15dp"
-        tools:ignore="VisualLintButtonSize" />
+        tools:ignore="VisualLintButtonSize"
+        android:contentDescription="@string/option_2"/>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/option3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:backgroundTint="#E0E0E0"
-        android:text="Option 3"
-        android:textColor="#000"
+        android:backgroundTint="@color/quizOptionBtnBg"
+        android:text="@string/option_3"
+        android:textColor="@color/quiz_optionBtnTextBg"
         android:layout_margin="5dp"
         app:cornerRadius="10dp"
         android:padding="15dp"
-        tools:ignore="VisualLintButtonSize" />
+        android:clickable="true"
+        android:focusable="true"
+        tools:ignore="VisualLintButtonSize"
+        android:contentDescription="@string/option_3"/>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/option4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:backgroundTint="#E0E0E0"
-        android:text="Option 4"
-        android:textColor="#000"
+        android:backgroundTint="@color/quizOptionBtnBg"
+        android:text="@string/option_4"
+        android:textColor="@color/quiz_optionBtnTextBg"
         android:layout_margin="5dp"
         app:cornerRadius="10dp"
         android:padding="15dp"
-        tools:ignore="VisualLintButtonSize" />
+        android:clickable="true"
+        android:focusable="true"
+        tools:ignore="VisualLintButtonSize"
+        android:contentDescription="@string/option_4"/>
 
 </LinearLayout>

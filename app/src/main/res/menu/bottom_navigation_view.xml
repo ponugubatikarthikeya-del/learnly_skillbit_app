@@ -19,7 +19,7 @@
         android:icon="@drawable/baseline_favorite_border_24"/>
     <item
         android:id="@+id/bottom_profile"
-        android:title="@string/Profile_view"
+        android:title="@string/Settings"
         android:icon="@drawable/outline_person_24"/>
 
 </menu>

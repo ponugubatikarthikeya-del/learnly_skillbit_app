@@ -5,23 +5,25 @@
     android:id="@+id/games"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/pageBagrounds">
+    android:background="@color/pageBackgrounds">
 
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
+        android:layout_marginTop="30dp"
         tools:ignore="UselessParent">
 
         <TextView
             android:id="@+id/games_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="20dp"
+            android:padding="15dp"
             android:text="@string/Games"
             android:textColor="@color/white"
-            android:textSize="50sp" />
+            android:textSize="30sp"
+            android:textStyle="bold" />
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
@@ -30,9 +32,11 @@
             android:layout_marginEnd="20dp"
             app:cardElevation="20dp"
             app:cardCornerRadius="20dp"
-            android:backgroundTint="@color/pageBagrounds"
-            android:layout_gravity="center_horizontal"
-            >
+            android:clickable="true"
+            android:focusable="true"
+            android:backgroundTint="@color/pageBackgrounds"
+            android:layout_gravity="center_horizontal">
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -54,29 +58,31 @@
                         android:layout_height="wrap_content"
                         android:gravity="center_vertical"
                         android:orientation="horizontal"
-                        android:padding="20dp">
+                        android:padding="15dp">
 
                         <ImageView
-                            android:layout_width="40dp"
-                            android:layout_height="40dp"
-                            android:src="@drawable/outline_layers_24" />
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/outline_travel_explore_24"
+                            android:contentDescription="@string/quiz"
+                            />
 
                         <TextView
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="16dp"
                             android:layout_weight="1"
-                            android:paddingStart="10dp"
-                            android:text="Quiz"
+                            android:text="@string/quiz"
                             android:textColor="@color/black"
-                            android:textSize="25sp"
+                            android:textSize="20sp"
                             android:textStyle="bold"
                             tools:ignore="RtlSymmetry" />
 
                         <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:src="@drawable/baseline_keyboard_arrow_right_24" />
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/baseline_keyboard_arrow_right_24"
+                            android:contentDescription="@string/enter_arrow"/>
                     </LinearLayout>
                 </com.google.android.material.card.MaterialCardView>
 
@@ -105,28 +111,29 @@
                         android:layout_height="wrap_content"
                         android:gravity="center_vertical"
                         android:orientation="horizontal"
-                        android:padding="20dp">
+                        android:padding="15dp">
 
                         <ImageView
-                            android:layout_width="40dp"
-                            android:layout_height="40dp"
-                            android:src="@drawable/outline_layers_24" />
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/outline_cruelty_free_24"
+                            android:contentDescription="@string/snake_game_items"/>
 
                         <TextView
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="16dp"
                             android:layout_weight="1"
-                            android:paddingStart="10dp"
-                            android:text="Snake Game"
+                            android:text="@string/snake_game_items"
                             android:textColor="@color/black"
-                            android:textSize="25sp"
+                            android:textSize="20sp"
                             android:textStyle="bold" />
 
                         <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:src="@drawable/baseline_keyboard_arrow_right_24" />
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/baseline_keyboard_arrow_right_24"
+                            android:contentDescription="@string/enter_arrow"/>
                     </LinearLayout>
                 </com.google.android.material.card.MaterialCardView>
 
@@ -153,12 +160,13 @@
                         android:layout_height="wrap_content"
                         android:gravity="center_vertical"
                         android:orientation="horizontal"
-                        android:padding="20dp">
+                        android:padding="15dp">
 
                         <ImageView
-                            android:layout_width="40dp"
-                            android:layout_height="40dp"
-                            android:src="@drawable/outline_layers_24" />
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/outline_ticlog_24"
+                            android:contentDescription="@string/tic_toc_toe"/>
 
                         <TextView
                             android:id="@+id/TicTacToeGame"
@@ -166,20 +174,31 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="16dp"
                             android:layout_weight="1"
-                            android:paddingStart="10dp"
-                            android:text="Tic Tac Toe"
+                            android:text="@string/tic_tac_toe"
                             android:textColor="@color/black"
-                            android:textSize="25sp"
+                            android:textSize="20sp"
                             android:textStyle="bold" />
 
                         <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:src="@drawable/baseline_keyboard_arrow_right_24" />
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/baseline_keyboard_arrow_right_24"
+                            android:contentDescription="@string/enter_arrow" />
                     </LinearLayout>
                 </com.google.android.material.card.MaterialCardView>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/more_games_coming_soon"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="11sp"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center_horizontal" />
+
     </LinearLayout>
 
 

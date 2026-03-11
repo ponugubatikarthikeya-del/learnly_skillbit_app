@@ -15,17 +15,18 @@
     </string-array>
 
     <string-array name="psychologyOptions">
-        <item>A) Cerebellum | B) Amygdala | C) Brainstem | D) Hippocampus</item>
-        <item>A) Dopamine | B) Insulin | C) Melatonin | D) Adrenaline</item>
-        <item>A) Short-term memory | B) Sensory memory | C) Long-term memory | D) Procedural memory</item>
-        <item>A) Taste | B) Smell | C) Hearing | D) Sight</item>
-        <item>A) Anger | B) Sadness | C) Happiness | D) Fear</item>
-        <item>A) Oneirology | B) Somnology | C) Neurology | D) Chronobiology</item>
-        <item>A) Cerebellum | B) Frontal lobe | C) Brainstem | D) Temporal lobe</item>
-        <item>A) Intelligent Quantity | B) Intelligence Quotient | C) Inner Quality | D) Information Query</item>
-        <item>A) Sigmund Freud | B) Carl Jung | C) Abraham Maslow | D) Ivan Pavlov</item>
-        <item>A) Claustrophobia | B) Scopophobia | C) Acrophobia | D) Nyctophobia</item>
+        <item>Cerebellum|Amygdala|Brainstem|Hippocampus</item>
+        <item>Dopamine|Insulin|Melatonin|Adrenaline</item>
+        <item>Short-term memory|Sensory memory|Long-term memory|Procedural memory</item>
+        <item>Taste|Smell|Hearing|Sight</item>
+        <item>Anger|Sadness|Happiness|Fear</item>
+        <item>Oneirology|Somnology|Neurology|Chronobiology</item>
+        <item>Cerebellum|Frontal lobe|Brainstem|Temporal lobe</item>
+        <item>Intelligent Quantity|Intelligence Quotient|Inner Quality|Information Query</item>
+        <item>Sigmund Freud|Carl Jung|Abraham Maslow|Ivan Pavlov</item>
+        <item>Claustrophobia|Scopophobia|Acrophobia|Nyctophobia</item>
     </string-array>
+
 
     <string-array name="psychologyAnswers">
         <item>Amygdala</item>
@@ -39,47 +40,6 @@
         <item>Abraham Maslow</item>
         <item>Scopophobia</item>
     </string-array>
-
-    <!-- Body Facts -->
-    <string-array name="bodyQuestions">
-        <item>What is the largest internal organ in the human body?</item>
-        <item>Which organ can regenerate itself?</item>
-        <item>How many bones are in an adult human body?</item>
-        <item>Which part of the body never stops growing?</item>
-        <item>What percentage of the human body is water?</item>
-        <item>Which muscle is the strongest in the human body based on work done?</item>
-        <item>How many chambers does the human heart have?</item>
-        <item>What is the smallest bone in the human body?</item>
-        <item>Which organ controls balance in the body?</item>
-        <item>What is the main function of red blood cells?</item>
-    </string-array>
-
-    <string-array name="bodyOptions">
-        <item>A) Heart | B) Liver | C) Lungs | D) Brain</item>
-        <item>A) Heart | B) Liver | C) Pancreas | D) Kidneys</item>
-        <item>A) 196 | B) 206 | C) 212 | D) 210</item>
-        <item>A) Nails | B) Ears and Nose | C) Hair | D) Skin</item>
-        <item>A) 60% | B) 70% | C) 50% | D) 80%</item>
-        <item>A) Heart | B) Jaw (Masseter) | C) Biceps | D) Gluteus</item>
-        <item>A) 2 | B) 3 | C) 4 | D) 5</item>
-        <item>A) Stapes | B) Femur | C) Tibia | D) Ulna</item>
-        <item>A) Brainstem | B) Cerebellum | C) Inner ear | D) Spinal cord</item>
-        <item>A) Carry oxygen | B) Fight infection | C) Produce hormones | D) Regulate temperature</item>
-    </string-array>
-
-    <string-array name="bodyAnswers">
-        <item>Liver</item>
-        <item>Liver</item>
-        <item>206</item>
-        <item>Ears and Nose</item>
-        <item>60%</item>
-        <item>Jaw (Masseter)</item>
-        <item>4</item>
-        <item>Stapes</item>
-        <item>Inner ear</item>
-        <item>Carry oxygen</item>
-    </string-array>
-
     <!-- Technology -->
     <string-array name="technologyQuestions">
         <item>Who is known as the father of computers?</item>
@@ -95,17 +55,18 @@
     </string-array>
 
     <string-array name="technologyOptions">
-        <item>A) Charles Babbage | B) Alan Turing | C) Tim Berners-Lee | D) John von Neumann</item>
-        <item>A) Artificial Insight | B) Artificial Intelligence | C) Automated Information | D) Analytical Interface</item>
-        <item>A) UNIVAC | B) ENIAC | C) Colossus | D) IBM 701</item>
-        <item>A) Hyper Text Transfer Protocol | B) High Transfer Text Process | C) Home Transfer Type Protocol | D) Hyper Text Transmit Page</item>
-        <item>A) Apple | B) IBM | C) Blackberry | D) Nokia</item>
-        <item>A) IBM | B) Xerox | C) Apple | D) Intel</item>
-        <item>A) Central Processing Unit | B) Core Process Utility | C) Control Power Unit | D) Central Power Utility</item>
-        <item>A) Bill Gates and Paul Allen | B) Steve Jobs | C) Mark Zuckerberg | D) Jeff Bezos</item>
-        <item>A) 2005 | B) 2006 | C) 2007 | D) 2008</item>
-        <item>A) Swift | B) Kotlin | C) C# | D) Python</item>
+        <item>Charles Babbage|Alan Turing|Tim Berners-Lee|John von Neumann</item>
+        <item>Artificial Insight|Artificial Intelligence|Automated Information|Analytical Interface</item>
+        <item>UNIVAC|ENIAC|Colossus|IBM 701</item>
+        <item>Hyper Text Transfer Protocol|High Transfer Text Process|Home Transfer Type Protocol|Hyper Text Transmit Page</item>
+        <item>Apple|IBM|Blackberry|Nokia</item>
+        <item>IBM|Xerox|Apple|Intel</item>
+        <item>Central Processing Unit|Core Process Utility|Control Power Unit|Central Power Utility</item>
+        <item>Bill Gates and Paul Allen|Steve Jobs|Mark Zuckerberg|Jeff Bezos</item>
+        <item>2005|2006|2007|2008</item>
+        <item>Swift|Kotlin|C#|Python</item>
     </string-array>
+
 
     <string-array name="technologyAnswers">
         <item>Charles Babbage</item>
@@ -135,16 +96,16 @@
     </string-array>
 
     <string-array name="universeOptions">
-        <item>A) Venus | B) Jupiter | C) Mars | D) Neptune</item>
-        <item>A) Singularity | B) Event Horizon | C) Wormhole | D) Dark Zone</item>
-        <item>A) Milky Way | B) Andromeda | C) Whirlpool | D) Sombrero</item>
-        <item>A) Earth’s rotation | B) Solar flares | C) Charged particles from the Sun | D) Cosmic dust</item>
-        <item>A) Neptune | B) Venus | C) Jupiter | D) Saturn</item>
-        <item>A) Earth | B) Mars | C) Jupiter | D) Venus</item>
-        <item>A) Alpha Centauri | B) Sirius | C) Proxima Centauri | D) Betelgeuse</item>
-        <item>A) 4.5 billion years | B) 13.8 billion years | C) 10 billion years | D) 20 billion years</item>
-        <item>A) Neptune | B) Uranus | C) Saturn | D) Mercury</item>
-        <item>A) Time | B) Distance | C) Speed | D) Mass</item>
+        <item>Venus|Jupiter|Mars|Neptune</item>
+        <item>Singularity|Event Horizon|Wormhole|Dark Zone</item>
+        <item>Milky Way|Andromeda|Whirlpool|Sombrero</item>
+        <item>Earth’s rotation|Solar flares|Charged particles from the Sun|Cosmic dust</item>
+        <item>Neptune|Venus|Jupiter|Saturn</item>
+        <item>Earth|Mars|Jupiter|Venus</item>
+        <item>Alpha Centauri|Sirius|Proxima Centauri|Betelgeuse</item>
+        <item>4.5 billion years|13.8 billion years|10 billion years|20 billion years</item>
+        <item>Neptune|Uranus|Saturn|Mercury</item>
+        <item>Time|Distance|Speed|Mass</item>
     </string-array>
 
     <string-array name="universeAnswers">

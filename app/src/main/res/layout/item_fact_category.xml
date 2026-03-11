@@ -1,53 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/categoryCard"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:id="@+id/categoryCard"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-android:layout_margin="8dp"
+    android:layout_margin="8dp"
+    android:clickable="true"
+    android:focusable="true"
     app:cardCornerRadius="7dp"
-    app:strokeWidth="0dp"
-    app:strokeColor="@color/pageBagrounds"
     app:cardElevation="0dp"
-    android:backgroundTint="@color/pageBagrounds"
-    android:clipToOutline="false"
-  >
+    android:backgroundTint="@color/pageBackgrounds"
+    app:strokeWidth="0dp">
 
-
-        <LinearLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-            <ImageView
-                android:id="@+id/categoryImage"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="4"
-               android:adjustViewBounds="true"
-                android:scaleType="centerCrop"
-                android:src="@drawable/ocean_bg" />
+        <!-- Category Image -->
+        <ImageView
+            android:id="@+id/categoryImage"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ocean_bg"
+            android:contentDescription="@string/category"/>
 
-            <LinearLayout
+        <!-- Title container -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/pageBackgrounds"
+            android:gravity="center_vertical"
+            android:paddingVertical="10dp">
+
+            <!-- Category Title -->
+            <TextView
+                android:id="@+id/categoryTitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:gravity="center"
-                android:background="@color/pageBagrounds">
+                android:text="@string/category"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:paddingHorizontal="10dp"/>
+        </LinearLayout>
 
-                <TextView
-                    android:id="@+id/categoryTitle"
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"
-                    android:text="Category"
-                    android:padding="10dp"
-                    android:gravity="start"
-                    android:textColor="@color/white"
-                    android:textSize="20sp"
-                    android:textStyle="bold"
-                    android:layout_gravity="start"/>
-            </LinearLayout>
     </LinearLayout>
-</com.google.android.material.card.MaterialCardView>
 
+</com.google.android.material.card.MaterialCardView>

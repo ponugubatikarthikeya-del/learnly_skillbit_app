@@ -1,0 +1,364 @@
+package com.factifyft.app;
+
+import android.app.Activity;
+import android.app.Dialog;
+import android.content.Context;
+import android.graphics.Canvas;
+import android.graphics.Paint;
+import android.graphics.Point;
+import android.util.AttributeSet;
+import android.util.DisplayMetrics;
+import android.view.LayoutInflater;
+import android.view.SurfaceHolder;
+import android.view.SurfaceView;
+import android.view.View;
+import android.widget.TextView;
+
+import androidx.annotation.NonNull;
+import androidx.core.content.ContextCompat;
+
+import java.util.ArrayList;
+import java.util.Random;
+
+public class GameView extends SurfaceView implements Runnable, SurfaceHolder.Callback {
+
+    private boolean dialogShown = false;
+
+    // Public direction enum so activity can set
+    public enum Direction {UP, DOWN, LEFT, RIGHT}
+
+    // Listener interface for score update
+    public interface OnScoreChangeListener {
+        void onScoreChanged(int newScore);
+    }
+
+    private Thread gameThread;
+    private volatile boolean running = false;
+    private SurfaceHolder holder;
+
+    private final int rows = 15;         // grid size (15x15)
+    private final int cols = 15;
+    private Paint gridPaint, snakePaint, foodPaint, bgPaint, borderPaint;
+    private ArrayList<Point> snake;
+    private Point food;
+    private Direction currentDirection = Direction.RIGHT;
+    private final Random random = new Random();
+    private int score = 0;
+    private boolean isGameOver = false;
+
+    private OnScoreChangeListener scoreListener;
+
+    public GameView(Context context) {
+        super(context);
+        init();
+    }
+
+    public GameView(Context context, AttributeSet attrs) {
+        super(context, attrs);
+        init();
+    }
+
+    public GameView(Context context, AttributeSet attrs, int defStyle) {
+        super(context, attrs, defStyle);
+        init();
+    }
+
+    private void init() {
+        holder = getHolder();
+        holder.addCallback(this);
+
+        bgPaint = new Paint();
+        bgPaint.setColor(ContextCompat.getColor(getContext(), R.color.snake_bg_dark));
+
+        gridPaint = new Paint();
+        gridPaint.setColor(ContextCompat.getColor(getContext(), R.color.snake_grid));
+        gridPaint.setStyle(Paint.Style.STROKE);
+        gridPaint.setStrokeWidth(2);
+
+        snakePaint = new Paint();
+        snakePaint.setColor(ContextCompat.getColor(getContext(), R.color.snake_green));
+
+        foodPaint = new Paint();
+        foodPaint.setColor(ContextCompat.getColor(getContext(), R.color.snake_food_red));
+
+        borderPaint = new Paint();
+        borderPaint.setColor(ContextCompat.getColor(getContext(), R.color.snake_border));
+        borderPaint.setStyle(Paint.Style.STROKE);
+        borderPaint.setStrokeWidth(6);
+    }
+
+    // Allow MainActivity to set a callback to show score
+    public void setOnScoreChangeListener(OnScoreChangeListener listener) {
+        this.scoreListener = listener;
+    }
+
+    public void changeDirection(Direction dir) {
+        // Prevent immediate reverse (classic rule)
+        if ((currentDirection == Direction.UP && dir == Direction.DOWN) ||
+                (currentDirection == Direction.DOWN && dir == Direction.UP) ||
+                (currentDirection == Direction.LEFT && dir == Direction.RIGHT) ||
+                (currentDirection == Direction.RIGHT && dir == Direction.LEFT)) {
+            return;
+        }
+        currentDirection = dir;
+    }
+
+    public void resetGame() {
+        dialogShown = false;
+        isGameOver = false;
+        score = 0;
+        notifyScore();
+        snake = new ArrayList<>();
+        // start with length 4 in center
+        int startX = cols / 2;
+        int startY = rows / 2;
+        snake.add(new Point(startX, startY));
+        snake.add(new Point(startX - 1, startY));
+        snake.add(new Point(startX - 2, startY));
+        snake.add(new Point(startX - 3, startY));
+        currentDirection = Direction.RIGHT;
+        placeFood();
+    }
+
+    private void placeFood() {
+        // pick random empty spot
+        while (true) {
+            int x = random.nextInt(cols);
+            int y = random.nextInt(rows);
+            boolean clash = false;
+            for (Point p : snake) {
+                if (p.x == x && p.y == y) {
+                    clash = true;
+                    break;
+                }
+            }
+            if (!clash) {
+                food = new Point(x, y);
+                break;
+            }
+        }
+    }
+
+    private void notifyScore() {
+        if (scoreListener != null) scoreListener.onScoreChanged(score);
+    }
+
+    @Override
+    public void surfaceCreated(@NonNull SurfaceHolder holder) {
+        resetGame();
+    }
+
+    @Override
+    public void surfaceChanged(@NonNull SurfaceHolder holder, int format, int width, int height) {
+    }
+
+    @Override
+    public void surfaceDestroyed(@NonNull SurfaceHolder holder) {
+        running=false;
+        pause(); // ensure stop the Thread
+    }
+
+    public void pause() {
+        running = false;
+        if (gameThread != null) {
+            try {
+                gameThread.join();
+            } catch (InterruptedException ignored) {
+            }
+        }
+        gameThread = null;
+    }
+
+    public void resume() {
+        if (running) return;
+        running = true;
+        gameThread = new Thread(this);
+        gameThread.start();
+    }
+
+    // Core loop
+    @Override
+    public void run() {
+        long updateDelay = 200; // movement speed: 200ms
+        long lastTime = System.currentTimeMillis();
+
+        while (running) {
+
+            if (!holder.getSurface().isValid()) {
+                android.os.SystemClock.sleep(20);
+                continue;
+            }
+
+            long now = System.currentTimeMillis();
+
+            if (now - lastTime >= updateDelay) {
+
+                update();
+
+                if (isGameOver && !dialogShown) {
+                    dialogShown = true;
+                    Activity activity = (Activity) getContext();
+                    activity.runOnUiThread(() -> showGameAlertdialog(score));
+                }
+
+                Canvas canvas = holder.lockCanvas();
+                if (canvas != null) {
+                    drawGame(canvas);
+                    holder.unlockCanvasAndPost(canvas);
+                }
+
+                lastTime = now;
+            }
+
+            android.os.SystemClock.sleep(16);   // ← No warnings!
+        }
+    }
+
+    // Update snake position, check collisions, food eaten
+    private void update() {
+        if (snake == null || snake.isEmpty()) return;
+        if(isGameOver) return;
+        // compute new head position
+        Point head = new Point(snake.get(0).x, snake.get(0).y);
+        switch (currentDirection) {
+            case UP:
+                head.y -= 1;
+                break;
+            case DOWN:
+                head.y += 1;
+                break;
+            case LEFT:
+                head.x -= 1;
+                break;
+            case RIGHT:
+                head.x += 1;
+                break;
+        }
+
+        // Check wall collision => resetGame (game over behavior)
+        if (head.x < 0 || head.x >= cols || head.y < 0 || head.y >= rows) {
+            // game over: restart
+            isGameOver = true;
+            return;
+        }
+
+        // Check self-collision
+        for (Point p : snake) {
+            if (p.x == head.x && p.y == head.y) {
+                isGameOver = true;
+                return;
+            }
+        }
+
+        // Add head
+        snake.add(0, head);
+
+        // Check for food
+        if (food != null && head.x == food.x && head.y == food.y) {
+            score += 1;
+            notifyScore();
+            // grow: do not remove tail
+            placeFood();
+        } else {
+            // normal move: remove tail
+            snake.remove(snake.size() - 1);
+        }
+    }
+
+    private void showGameAlertdialog(int score) {
+        Context context = getContext();
+        if (!(context instanceof Activity activity)) return;
+
+        final Dialog dialog = new Dialog(context);
+
+        // FIX: use LayoutInflater.from(context)
+        LayoutInflater inflater = LayoutInflater.from(context);
+
+        View dialogView = inflater.inflate(
+                R.layout.gameover_dialog,
+                activity.findViewById(android.R.id.content),
+                false
+        );
+
+        TextView gameScoreView = dialogView.findViewById(R.id.gameScore);
+        TextView exitBtn = dialogView.findViewById(R.id.exitBtn);
+        TextView restartBtn = dialogView.findViewById(R.id.restartBtn);
+
+        gameScoreView.setText(context.getString(R.string.score_view, score));
+
+        dialog.setContentView(dialogView);
+        dialog.setCancelable(false);
+
+        if (dialog.getWindow() != null) {
+            DisplayMetrics metrics = context.getResources().getDisplayMetrics();
+            int width = (int) (metrics.widthPixels * 0.925);
+            int height = (int) (metrics.heightPixels * 0.650);
+            dialog.getWindow().setLayout(width, height);
+            dialog.getWindow().getAttributes().windowAnimations = R.style.animation;
+            dialog.getWindow().setBackgroundDrawableResource(android.R.color.transparent);
+        }
+
+        exitBtn.setOnClickListener(v -> {
+            dialog.dismiss();
+            activity.finish();
+        });
+
+        restartBtn.setOnClickListener(v -> {
+            dialog.dismiss();
+            resetGame();
+        });
+
+        dialog.show();
+    }
+    // Draw everything
+    private void drawGame(Canvas canvas) {
+        if (snake == null) return;
+
+        // clear background
+        canvas.drawColor(ContextCompat.getColor(getContext(), R.color.snake_canvas_bg));
+//        canvas.drawColor(Color.parseColor("#E8F7FF"));
+
+        int width = canvas.getWidth() - 48; // margins
+        int height = canvas.getHeight() - 48;
+        int size = Math.min(width, height);
+        int left = 24;
+        int top = 24;
+        int right = left + size;
+        int bottom = top + size;
+
+        // compute cell size
+        // computed at runtime
+        int cellSize = size / cols;
+
+        // draw board background
+        canvas.drawRect(left, top, right, bottom, bgPaint);
+
+        // draw grid lines
+        for (int r = 0; r <= rows; r++) {
+            int y = top + r * cellSize;
+            canvas.drawLine(left, y, right, y, gridPaint);
+        }
+        for (int c = 0; c <= cols; c++) {
+            int x = left + c * cellSize;
+            canvas.drawLine(x, top, x, bottom, gridPaint);
+        }
+
+        // draw snake
+        for (Point p : snake) {
+            int px = left + p.x * cellSize;
+            int py = top + p.y * cellSize;
+            canvas.drawRect(px + 4, py + 4, px + cellSize - 4, py + cellSize - 4, snakePaint);
+        }
+
+        // draw food
+        if (food != null) {
+            float cx = left + food.x * cellSize + cellSize / 2f;
+            float cy = top + food.y * cellSize + cellSize / 2f;
+            float radius = cellSize * 0.35f;
+            canvas.drawCircle(cx, cy, radius, foodPaint);
+        }
+
+        // border
+        canvas.drawRect(left, top, right, bottom, borderPaint);
+    }
+}

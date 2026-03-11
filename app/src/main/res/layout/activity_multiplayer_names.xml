@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/gradient_bg"
+    android:padding="24dp"
+    android:alpha="0"
+    android:translationY="50dp"
+    android:animateLayoutChanges="true"
+    android:id="@+id/mainContainer">
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/titleText"
+        android:text="@string/enter_player_names"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="32dp"
+        android:gravity="center" />
+
+    <!-- Player 1 -->
+    <EditText
+        android:id="@+id/player1Name"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:hint="@string/player_1_name"
+        android:background="@drawable/input_field_bg"
+        android:padding="12dp"
+        android:autofillHints="personName"
+        android:textColor="@android:color/white"
+        android:textColorHint="@color/player2Bg"
+        android:textSize="18sp"
+        android:inputType="textPersonName"
+        android:maxLength="5"
+        android:layout_marginBottom="20dp"
+        android:alpha="0"
+        tools:ignore="TouchTargetSizeCheck,VisualLintTextFieldSize"
+        android:translationY="30dp" />
+
+    <!-- Player 2 -->
+    <EditText
+        android:id="@+id/player2Name"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:hint="@string/player_2_name"
+        android:background="@drawable/input_field_bg"
+        android:padding="12dp"
+        android:autofillHints="personName"
+        android:textColor="@android:color/white"
+        android:textColorHint="@color/player2Bg"
+        android:textSize="18sp"
+        android:inputType="textPersonName"
+        android:maxLength="5"
+        android:layout_marginBottom="30dp"
+        android:alpha="0"
+        tools:ignore="TouchTargetSizeCheck,VisualLintTextFieldSize"
+        android:translationY="30dp" />
+
+    <!-- Start Game Button -->
+    <Button
+        android:id="@+id/startGameButton"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="@string/start_game"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:background="@drawable/btn_purple_gradient"
+        android:elevation="6dp"
+        android:alpha="0"
+        android:translationY="30dp"
+        tools:ignore="TouchTargetSizeCheck,VisualLintButtonSize"
+        />
+
+</LinearLayout>

@@ -10,10 +10,10 @@
         android:id="@+id/toastText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="karthikeya"
-       android:textSize="17dp"
+        android:text="@string/toast_text"
+       android:textSize="12sp"
         android:gravity="center"
         android:textStyle="bold"
-        android:textColor="#D8FFFFFF"/>
+        android:textColor="@color/toast_text_color"/>
 
 </LinearLayout>

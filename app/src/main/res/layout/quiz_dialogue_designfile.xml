@@ -3,10 +3,12 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     app:cardElevation="8dp"
     app:strokeColor="@color/white"
     app:strokeWidth="0dp"
     app:cardCornerRadius="20dp"
+    android:layout_gravity="center"
     android:background="@drawable/dialog_bg"
     android:backgroundTint="@color/white"
     android:layout_margin="7dp">
@@ -15,15 +17,18 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center"
         >
 
         <TextView
+            android:id="@+id/userPerformance"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Quiz completed"
+            android:text="@string/keep_practicing"
             android:textStyle="bold"
             android:textColor="@color/black"
-            android:textSize="40sp"
+            android:textSize="25sp"
             android:padding="10dp"
             android:layout_gravity="center"
             android:layout_marginTop="30dp"/>
@@ -32,14 +37,15 @@
             android:id="@+id/quizImage"
             android:layout_width="150dp"
             android:layout_height="150dp"
-            android:src="@drawable/quiz_score_dialogue"
+            android:contentDescription="@string/quiz_completed_dialog"
+            android:src="@drawable/full_score_image"
             android:layout_marginTop="7dp"
             android:layout_gravity="center"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Your Score : "
+            android:text="@string/your_score"
             android:textSize="30sp"
             android:textStyle="bold"
             android:textColor="#5D5555"
@@ -50,7 +56,7 @@
             android:id="@+id/dialogQuizScore"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="5/10"
+            android:text="@string/_5_10"
             android:textSize="50sp"
             android:textStyle="bold"
             android:textColor="#500ACC"
@@ -59,38 +65,25 @@
 
 
         <TextView
-            android:id="@+id/userPerformance"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Keep practicing ! 💪"
-            android:textSize="30sp"
-            android:textStyle="bold"
-            android:textColor="@color/black"
-            android:layout_marginTop="10dp"
-            android:layout_gravity="center"/>
-
-
-        <TextView
             android:id="@+id/returnBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Return"
+           android:text="@string/Quiz_back"
+          android:textAllCaps="false"
             android:textSize="20sp"
-            android:textColor="#4F16B6"
-            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textColor="@color/_4f16b6"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="15dp"
             android:layout_gravity="center"
-            android:padding="40dp"/>
-
-
-
-
-
-
-
+            android:paddingBottom="20dp"
+            android:background="@drawable/quiz_backbtn_bg"
+            android:padding="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            tools:ignore="TouchTargetSizeCheck"
+           />
 
     </LinearLayout>
-
-
-
 
 </com.google.android.material.card.MaterialCardView>

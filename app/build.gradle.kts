@@ -3,13 +3,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.learnly_skillbit_app"
-    compileSdk {
-        version = release(36)
-    }
+    namespace = "com.factifyft.app"
+    compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.example.learnly_skillbit_app"
+        applicationId = "com.factifyft.app"
         minSdk = 24
         targetSdk = 36
         versionCode = 1
@@ -20,7 +18,8 @@ android {
 
     buildTypes {
         release {
-            isMinifyEnabled = false
+            isMinifyEnabled = true
+            isShrinkResources=true
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
@@ -28,8 +27,8 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_11
-        targetCompatibility = JavaVersion.VERSION_11
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
 }
 
@@ -39,6 +38,9 @@ dependencies {
     implementation(libs.activity)
     implementation(libs.constraintlayout)
     implementation(libs.gridlayout)
+    implementation(libs.recyclerview)
+    implementation(libs.cardview)
+    implementation(libs.fragment)
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)

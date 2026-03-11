@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="daily_fact_sizes">
+        <item>@dimen/fact_size_40</item>
+        <item>@dimen/fact_size_48</item>
+        <item>@dimen/fact_size_56</item>
+        <item>@dimen/fact_size_60</item>
+        <item>@dimen/fact_size_72</item>
+        <item>@dimen/fact_size_80</item>
+    </array>
+
+    <dimen name="fact_size_40">40sp</dimen>
+    <dimen name="fact_size_48">48sp</dimen>
+    <dimen name="fact_size_56">56sp</dimen>
+    <dimen name="fact_size_60">60sp</dimen>
+    <dimen name="fact_size_72">72sp</dimen>
+    <dimen name="fact_size_80">80sp</dimen>
+</resources>

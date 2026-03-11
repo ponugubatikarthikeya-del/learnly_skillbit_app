@@ -1,7 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <!--  Daily Showing Facts -->
+    <string-array name="categories_list">
+        <item>Interesting</item>
+        <item>Oceans</item>
+        <item>Space</item>
+        <item>Mind</item>
+        <item>Psychology</item>
+        <item>Men</item>
+        <item>Women</item>
+        <item>Love</item>
+        <item>Unknown</item>
+        <item>Time and Universe</item>
+        <item>Nature Wonders</item>
+        <item>Mysteries</item>
+        <item>Animals</item>
+    </string-array>
+
+
+<!--      Daily Showing Facts-->
     <string-array name="daily_facts">
         <!-- Human Mind & Psychology -->
         <item>Your brain processes images 60,000 times faster than text.</item>
@@ -89,23 +106,6 @@
         <item>Modern elevators use AI to predict which floor you’ll go to next.</item>
         <item>The first alarm clock could only ring at one time — 4 a.m.</item>
 
-        <!-- Body & Health Secrets -->
-        <item>Human bones are stronger than steel of the same density.</item>
-        <item>Your stomach acid is strong enough to dissolve stainless steel.</item>
-        <item>The human body replaces all its skin cells every 27 days.</item>
-        <item>Your heart beats about 100,000 times each day.</item>
-        <item>Your liver can regenerate even if 75% of it is damaged.</item>
-        <item>The tongue print is unique to every individual, like a fingerprint.</item>
-        <item>The human nose can detect over a trillion different smells.</item>
-        <item>Laughing improves blood flow and boosts immunity.</item>
-        <item>Every minute, your body sheds around 30,000 dead skin cells.</item>
-        <item>When you blush, the lining of your stomach blushes too.</item>
-        <item>Your heartbeat changes slightly when you breathe in and out.</item>
-        <item>Your body produces enough heat in 30 minutes to boil a liter of water.</item>
-        <item>Humans have the same number of neck bones as giraffes — seven.</item>
-        <item>Your skin accounts for about 15% of your total body weight.</item>
-        <item>Every person has a unique tongue print that never changes.</item>
-
         <!-- Love -->
         <item>When you look into someone’s eyes you love, your heartbeats can sync up.</item>
         <item>Falling in love releases dopamine, the same chemical linked to addiction.</item>
@@ -117,6 +117,78 @@
         <item>Holding hands can actually relieve physical pain.</item>
         <item>When in love, your brain suppresses critical thinking toward that person.</item>
         <item>Oxytocin, the “love hormone,” increases trust and bonding in relationships.</item>
+
+        <!-- Human Mind & Psychology -->
+        <item>The brain rewires itself when learning something new, even in adulthood.</item>
+        <item>Your mind fills memory gaps with logical guesses without telling you.</item>
+        <item>Silence can feel uncomfortable because the brain expects constant input.</item>
+        <item>The brain processes familiar faces faster than unfamiliar ones.</item>
+        <item>Confidence often grows after action, not before it.</item>
+        <item>The mind remembers unfinished tasks better than completed ones.</item>
+        <item>Positive self-talk can measurably reduce stress levels.</item>
+        <item>The brain burns more energy when daydreaming than when focusing.</item>
+        <item>Your mind reacts to imagined fear almost like real fear.</item>
+        <item>Repetition strengthens neural connections permanently.</item>
+
+        <!-- Dreams & Sleep -->
+        <item>Dreams can combine memories from different years into one scene.</item>
+        <item>The brain stays partially active even during deep sleep.</item>
+        <item>Most dreams happen during the last hours of sleep.</item>
+        <item>Sleep helps the brain organize emotions from the day.</item>
+        <item>Dreams often solve problems subconsciously.</item>
+        <item>The body becomes temporarily paralyzed during dreams.</item>
+        <item>Missing sleep reduces decision-making accuracy.</item>
+        <item>Short naps can improve memory recall.</item>
+        <item>The brain creates stories in dreams using random signals.</item>
+        <item>Regular sleep schedules improve creativity.</item>
+
+        <!-- Ancient Civilizations -->
+        <item>Ancient builders used stars to align monuments accurately.</item>
+        <item>Some ancient cities had underground water systems.</item>
+        <item>Early calendars were based on moon cycles.</item>
+        <item>Ancient people tracked seasons using stone markers.</item>
+        <item>Clay tablets were used as notebooks thousands of years ago.</item>
+        <item>Ancient traders spread ideas along with goods.</item>
+        <item>Some civilizations used music in healing rituals.</item>
+        <item>Early architects used natural airflow for cooling buildings.</item>
+        <item>Ancient maps were more symbolic than accurate.</item>
+        <item>Some ancient cities were planned with grid layouts.</item>
+
+        <!-- Time & Universe -->
+        <item>Time moves slightly faster at higher altitudes.</item>
+        <item>Light from distant stars shows the universe’s past.</item>
+        <item>The universe is expanding in all directions.</item>
+        <item>Some stars are older than our solar system.</item>
+        <item>Gravity can bend the path of light.</item>
+        <item>Space has measurable temperature.</item>
+        <item>Time perception changes with speed and gravity.</item>
+        <item>The universe may contain more galaxies than stars in the Milky Way.</item>
+        <item>Cosmic radiation exists everywhere in space.</item>
+        <item>The night sky looks the same for months due to vast distances.</item>
+
+        <!-- Technology & Innovation -->
+        <item>Early computers filled entire rooms.</item>
+        <item>Touchscreens were invented before smartphones.</item>
+        <item>Artificial intelligence improves through feedback loops.</item>
+        <item>Modern chips contain billions of tiny switches.</item>
+        <item>Wi-Fi signals can pass through walls.</item>
+        <item>Digital data travels close to the speed of light.</item>
+        <item>Early programming was done using punch cards.</item>
+        <item>Voice assistants rely on pattern recognition.</item>
+        <item>Software updates can improve hardware performance.</item>
+        <item>Innovation often comes from combining existing ideas.</item>
+
+        <!-- Love & Human Connection -->
+        <item>Trust grows through consistent small actions.</item>
+        <item>Listening builds stronger emotional bonds than speaking.</item>
+        <item>Kind gestures activate reward centers in the brain.</item>
+        <item>Shared experiences strengthen relationships.</item>
+        <item>Emotional safety increases openness.</item>
+        <item>Smiles can improve social connection instantly.</item>
+        <item>Love changes how the brain processes risk.</item>
+        <item>Gratitude strengthens long-term relationships.</item>
+        <item>Emotional connection improves overall well-being.</item>
+        <item>Mutual respect sustains healthy love.</item>
 
         <!-- add more facts (keep them short & legal) -->
     </string-array>
@@ -272,7 +344,7 @@
             <item>There is a giant cloud of alcohol floating in space near the constellation Aquila.</item>
             <item>Some exoplanets orbit their stars so closely that a year lasts only a few hours.</item>
             <item>The coldest known place in the universe is the Boomerang Nebula, at -272°C.</item>
-            <item>The largest known star, UY Scuti, is nearly 1,700 times the size of the Sun.</item>
+            <item>The largest known star, UY Scutii, is nearly 1,700 times the size of the Sun.</item>
             <item>Space suits have about 14 layers to protect astronauts from radiation and micrometeoroids.</item>
             <item>The Sun’s magnetic field flips every 11 years during the solar cycle.</item>
             <item>There are rogue planets that drift through space without orbiting any star.</item>
@@ -333,115 +405,6 @@
             <item>In the far future, galaxies will drift so far apart that no light from them will reach us.</item>
             <item>Space expands faster than the speed of light — but only space itself, not objects within it.</item>
         </string-array>
-
-    <!-- fitness -->
-
-        <string-array name="fitnessFactsArray">
-            <item>Muscle growth happens during rest, not while you’re working out.</item>
-            <item>Hydration boosts performance — even 2% dehydration can reduce strength.</item>
-            <item>Strength training increases metabolism more effectively than cardio alone.</item>
-            <item>Consistency matters more than intensity for long-term fitness results.</item>
-            <item>Protein is essential for muscle repair after workouts.</item>
-            <item>Walking just 30 minutes a day can improve heart health and mood.</item>
-            <item>Men typically have more muscle mass due to higher testosterone levels.</item>
-            <item>Women burn fat more efficiently during endurance workouts than men.</item>
-            <item>Stretching after exercise helps reduce soreness and improve flexibility.</item>
-            <item>Compound exercises like squats and deadlifts work multiple muscles at once.</item>
-            <item>Sleep is as important as training — recovery builds real progress.</item>
-            <item>Women’s bodies recover faster from endurance workouts than men’s.</item>
-            <item>Building muscle increases fat burning even when you’re resting.</item>
-            <item>Men tend to lose fat faster because of higher lean muscle mass.</item>
-            <item>Core workouts help stabilize your spine and improve posture.</item>
-            <item>Bodyweight workouts can be as effective as gym training when done right.</item>
-            <item>Women benefit from resistance training just as much as men — it doesn’t make them bulky.</item>
-            <item>Drinking coffee before a workout can improve endurance and focus.</item>
-            <item>Men have larger hearts and lungs, giving them slightly higher oxygen capacity.</item>
-            <item>Women are generally more flexible due to hormonal and structural differences.</item>
-            <item>Progressive overload — slowly increasing resistance — drives muscle growth.</item>
-            <item>Skipping warm-ups increases your risk of injury.</item>
-            <item>Fitness isn’t just about looks — it boosts brain function and confidence.</item>
-            <item>Rest days are essential to avoid burnout and overtraining.</item>
-            <item>Women’s metabolism changes across their menstrual cycle, affecting performance.</item>
-            <item>Men build muscle faster, but women can sustain effort for longer durations.</item>
-            <item>HIIT workouts burn calories even hours after you finish exercising.</item>
-            <item>Strong glutes improve lower back stability and athletic performance.</item>
-            <item>Proper form is more important than lifting heavy weights.</item>
-            <item>Men generally store more fat around the abdomen, while women store it around hips and thighs.</item>
-            <item>Fitness improves sleep quality and reduces stress hormones.</item>
-            <item>Women need more iron due to monthly blood loss, especially if active.</item>
-            <item>Stretching improves blood circulation and reduces muscle tension.</item>
-            <item>Cardio strengthens the heart, while strength training strengthens the body.</item>
-            <item>Men’s bones are typically denser, but strength training improves bone health in everyone.</item>
-            <item>Balanced nutrition fuels better workouts than supplements alone.</item>
-            <item>Women’s bodies rely more on fat for fuel during long workouts.</item>
-            <item>Warm-ups prepare muscles and joints, reducing injury risks.</item>
-            <item>Drinking enough water supports muscle recovery and joint health.</item>
-            <item>Men experience faster recovery in short, high-intensity training.</item>
-            <item>Building strength helps both men and women prevent age-related muscle loss.</item>
-            <item>Fitness progress takes patience — small habits create big changes.</item>
-            <item>Women’s hearts beat faster on average, even at rest.</item>
-            <item>Regular strength training can improve posture and joint stability.</item>
-            <item>Cardio before weights can reduce strength performance; do it after.</item>
-            <item>Men burn more calories per minute due to higher muscle density.</item>
-            <item>Yoga improves balance, flexibility, and mental calm for both genders.</item>
-            <item>Overtraining can increase stress hormones and stall muscle growth.</item>
-            <item>Core strength helps prevent lower back pain.</item>
-            <item>Women adapt to endurance training more efficiently over time.</item>
-            <item>Stretching cold muscles can lead to strains — always warm up first.</item>
-            <item>Men have higher oxygen-carrying capacity, aiding sprint performance.</item>
-            <item>Women can handle higher rep ranges without as much fatigue.</item>
-            <item>Daily mobility work improves long-term joint health.</item>
-            <item>Proper breathing during exercise boosts oxygen flow and endurance.</item>
-            <item>Strength training reduces the risk of osteoporosis in women.</item>
-            <item>Men gain upper body strength more quickly, while women progress steadily overall.</item>
-            <item>Consistency and sleep are the secret ingredients to visible fitness gains.</item>
-            <item>Drinking water before meals can help control appetite naturally.</item>
-            <item>Fitness helps reduce symptoms of anxiety and depression.</item>
-            <item>Women generally recover faster between sets than men do.</item>
-            <item>Muscle weighs more than fat, so don’t rely only on the scale for progress.</item>
-            <item>Resistance bands are effective tools for both men and women.</item>
-            <item>Short, frequent workouts can be more beneficial than occasional long ones.</item>
-            <item>Men lose weight faster, but women maintain results longer with consistency.</item>
-            <item>Good posture improves breathing and workout efficiency.</item>
-            <item>Balanced training includes cardio, strength, and flexibility.</item>
-            <item>Women’s ligaments are more flexible, making joint stability training important.</item>
-            <item>Protein intake after workouts speeds up recovery and muscle repair.</item>
-            <item>Men and women both benefit from compound lifts for full-body strength.</item>
-            <item>Stretching before bed helps muscle recovery overnight.</item>
-            <item>Resting between sets allows your muscles to refuel energy stores.</item>
-            <item>Men’s testosterone levels peak in the morning, improving workout performance then.</item>
-            <item>Women have better muscle endurance at lower intensities.</item>
-            <item>Eating a mix of carbs and protein before exercise improves energy levels.</item>
-            <item>Posture correction exercises can eliminate long-term pain.</item>
-            <item>Women’s muscles are equally capable of strength gain when trained properly.</item>
-            <item>Strength training helps burn fat faster than steady-state cardio.</item>
-            <item>Men typically have larger muscle fibers, but training quality matters more.</item>
-            <item>Foam rolling helps reduce muscle stiffness and improves flexibility.</item>
-            <item>Skipping leg day affects balance and overall strength.</item>
-            <item>Women’s bodies tend to recover glycogen faster after endurance exercise.</item>
-            <item>Core exercises enhance performance in every type of sport.</item>
-            <item>Regular exercise strengthens your immune system.</item>
-            <item>Men respond faster to strength training but lose gains quicker without consistency.</item>
-            <item>Low-impact workouts like swimming protect joints while building endurance.</item>
-            <item>Fitness progress comes faster when paired with good nutrition.</item>
-            <item>Women benefit from lifting heavy — it boosts metabolism and confidence.</item>
-            <item>Stretching in the morning wakes up your muscles and joints.</item>
-            <item>Cardio should complement strength training, not replace it.</item>
-            <item>Proper footwear can prevent knee and ankle injuries during training.</item>
-            <item>Men tend to excel in short bursts of power, women in endurance events.</item>
-            <item>Drinking chocolate milk post-workout can aid muscle recovery.</item>
-            <item>Good form protects joints and builds strength more effectively.</item>
-            <item>Women’s bodies adapt better to heat during endurance activities.</item>
-            <item>Men benefit from flexibility and yoga as much as women do from strength training.</item>
-            <item>Mind-muscle connection improves the effectiveness of every exercise.</item>
-            <item>Tracking progress helps maintain motivation over time.</item>
-            <item>Women with more muscle mass burn calories even at rest.</item>
-            <item>Strong core muscles reduce the risk of injury in any physical activity.</item>
-            <item>Exercise releases endorphins that naturally boost happiness.</item>
-            <item>Men who prioritize flexibility gain strength longevity and injury resistance.</item>
-            <item>Fitness is not about perfection — it’s about progress, patience, and persistence.</item>
-        </string-array>
-
 
     <!-- love -->
 
@@ -552,215 +515,250 @@
 
  <!-- Men -->
 
-        <string-array name="menFactsArray">
-            <item>Men’s brains are about 10% larger on average, but women’s brains have more connections between hemispheres.</item>
-            <item>Men blink less often than women — roughly 14 times per minute compared to 19.</item>
-            <item>Men are more likely to be left-handed than women, statistically speaking.</item>
-            <item>Testosterone levels can temporarily rise when a man wins a competition — even in video games.</item>
-            <item>Men’s heartbeats are usually slightly slower than women’s.</item>
-            <item>Men have thicker skin — literally — about 25% thicker due to collagen density.</item>
-            <item>Men tend to lose body heat slower than women because of higher muscle mass.</item>
-            <item>Men are more likely to have red-green color blindness due to genetics.</item>
-            <item>Men produce about twice as much sweat as women when exposed to heat.</item>
-            <item>Men’s jawlines are shaped by testosterone levels during puberty.</item>
-            <item>Men’s immune systems can weaken temporarily under extreme stress.</item>
-            <item>Men are more prone to risk-taking behaviors, linked to dopamine response differences.</item>
-            <item>Men are more likely to snore due to narrower airways in the throat region.</item>
-            <item>Men’s voices deepen around age 13 due to vocal cord lengthening caused by testosterone.</item>
-            <item>On average, men have better spatial awareness but weaker color memory than women.</item>
-            <item>Men’s facial hair grows faster in the summer than in winter because of hormones.</item>
-            <item>Men’s hearts are typically heavier than women’s — by about 60 to 80 grams.</item>
-            <item>Men have a higher percentage of muscle mass and lower body fat on average.</item>
-            <item>Men’s bones are generally denser and stronger, especially in the arms and legs.</item>
-            <item>Men experience hair loss mainly due to sensitivity to dihydrotestosterone (DHT).</item>
-            <item>Men’s hearing tends to decline earlier than women’s, especially for high frequencies.</item>
-            <item>Men’s metabolism runs about 6–10% faster due to greater lean muscle mass.</item>
-            <item>Men are more likely to have a stronger grip strength than women at any age.</item>
-            <item>Men’s sense of smell is slightly weaker than women’s on average.</item>
-            <item>Men are biologically more sensitive to bright light exposure in the morning.</item>
-            <item>Men have higher red blood cell counts, allowing greater oxygen transport.</item>
-            <item>Men’s skin contains more sebaceous glands, making it oilier than women’s.</item>
-            <item>Men’s eyebrows grow faster and thicker because of testosterone levels.</item>
-            <item>Men have more sweat glands but fewer pain receptors per area of skin.</item>
-            <item>Men’s hearts beat around 70 beats per minute — slightly slower than women’s.</item>
-            <item>Men tend to store fat around the abdomen, while women store it around hips and thighs.</item>
-            <item>Men are more likely to remember visual details over verbal details.</item>
-            <item>Men’s lungs are on average 25% larger than women’s of the same height.</item>
-            <item>Men’s bodies have higher water content, around 60%, compared to women’s 55%.</item>
-            <item>Men generally have more active sweat glands in their hands and feet.</item>
-            <item>Men’s skin ages slower due to higher collagen content, despite less skincare use.</item>
-            <item>Men tend to have slightly thicker skull bones than women.</item>
-            <item>Men’s reaction times are often quicker in motion-based tasks.</item>
-            <item>Men’s smell of sweat changes subtly based on their stress level.</item>
-            <item>Men are more likely to develop baldness if their maternal grandfather was bald.</item>
-            <item>Men’s testosterone peaks in the morning and declines by evening.</item>
-            <item>Men’s nails grow slightly faster than women’s on average.</item>
-            <item>Men have better night vision because of higher rod cell density in the eyes.</item>
-            <item>Men’s hearts are more prone to disease due to cholesterol differences.</item>
-            <item>Men’s facial hair can indicate hormonal balance — patchy growth is common during puberty.</item>
-            <item>Men’s sense of direction is often stronger because of hippocampal structure differences.</item>
-            <item>Men are more likely to be diagnosed with color vision deficiencies at birth.</item>
-            <item>Men’s pain threshold can rise during competitive or adrenaline-filled activities.</item>
-            <item>Men experience slower skin wound healing compared to women.</item>
-            <item>Men’s eyebrows protect eyes better from sweat due to shape and thickness.</item>
-            <item>Men produce more earwax than women because of hormone differences.</item>
-            <item>Men’s body temperature regulation is more efficient during exercise.</item>
-            <item>Men are more likely to develop sleep apnea than women.</item>
-            <item>Men’s hearts are more responsive to physical training improvements.</item>
-            <item>Men’s facial structure continues to subtly change until around age 35.</item>
-            <item>Men have a denser network of blood vessels in muscles for oxygen delivery.</item>
-            <item>Men’s fingerprints tend to have thicker ridges than women’s.</item>
-            <item>Men’s veins appear more prominent due to lower subcutaneous fat.</item>
-            <item>Men are more likely to develop nearsightedness with age.</item>
-            <item>Men’s body odor changes with diet and testosterone fluctuations.</item>
-            <item>Men can detect motion better in peripheral vision than women.</item>
-            <item>Men’s vocal pitch can subtly reveal confidence levels subconsciously.</item>
-            <item>Men are less likely to feel cold due to higher basal metabolic rate.</item>
-            <item>Men’s adrenal glands release adrenaline faster in emergencies.</item>
-            <item>Men’s lungs are more efficient at oxygen absorption during exercise.</item>
-            <item>Men’s shoulders broaden during puberty due to skeletal growth plates.</item>
-            <item>Men tend to produce more lactic acid in muscles during exertion.</item>
-            <item>Men’s body hair pattern is genetically influenced by their mother’s side.</item>
-            <item>Men’s jaw muscles are naturally stronger due to testosterone effects.</item>
-            <item>Men tend to heal bone fractures faster because of denser bone tissue.</item>
-            <item>Men have fewer taste buds on average than women.</item>
-            <item>Men’s muscle fibers contract faster but fatigue sooner under sustained load.</item>
-            <item>Men’s voice changes start before facial hair appears during puberty.</item>
-            <item>Men are more likely to have a deeper belly button shape.</item>
-            <item>Men’s resting body temperature can be slightly lower than women’s.</item>
-            <item>Men’s body odor is affected by testosterone-linked skin bacteria.</item>
-            <item>Men tend to underestimate time intervals slightly compared to women.</item>
-            <item>Men’s legs are proportionally longer compared to torso than women’s.</item>
-            <item>Men’s hearts pump more blood per beat due to larger chamber size.</item>
-            <item>Men’s vocal cords vibrate slower, creating a deeper tone naturally.</item>
-            <item>Men’s fingertips have stronger grip friction due to skin structure.</item>
-            <item>Men’s stomach acid levels are higher, aiding faster digestion.</item>
-            <item>Men’s brains use more gray matter for problem-solving than women’s.</item>
-            <item>Men are more likely to remember the general idea of events than specific details.</item>
-            <item>Men’s skin produces more melanin when exposed to sunlight.</item>
-            <item>Men’s skeletal muscles respond faster to resistance training.</item>
-            <item>Men’s hand bones are on average longer and denser.</item>
-            <item>Men’s hearts are less responsive to emotional stress than women’s physiologically.</item>
-            <item>Men’s endurance improves significantly with consistent training routines.</item>
-            <item>Men’s knees are more prone to ligament injuries than women’s.</item>
-            <item>Men’s voice depth continues to evolve slightly into their 30s.</item>
-            <item>Men’s skin scars more easily due to collagen fiber patterning.</item>
-            <item>Men are more likely to have stronger upper body muscles than women.</item>
-            <item>Men’s arteries harden slightly earlier with age than women’s.</item>
-            <item>Men tend to be taller because of longer growth plate activity in puberty.</item>
-            <item>Men’s breathing rate is naturally lower than women’s at rest.</item>
-            <item>Men’s reflexes improve when testosterone levels rise.</item>
-            <item>Men’s lungs adapt faster to high altitude than women’s.</item>
-            <item>Men’s immune responses are more affected by sleep deprivation.</item>
-            <item>Men’s facial symmetry subtly shifts with aging hormone changes.</item>
-            <item>Men’s physical performance peaks around age 25 on average.</item>
-        </string-array>
+    <string-array name="menFactsArray">
+        <item>Men are statistically more likely to prefer goal-oriented tasks over open-ended ones.</item>
+        <item>Men tend to focus on one task at a time rather than multitasking.</item>
+        <item>Men are more likely to communicate directly when solving problems.</item>
+        <item>Men often process stress internally before expressing it outwardly.</item>
+        <item>Men are more likely to remember spatial layouts like routes and maps.</item>
+        <item>Men often prefer learning by doing rather than by listening.</item>
+        <item>Men are more likely to enjoy competitive environments.</item>
+        <item>Men typically respond faster to visual motion cues.</item>
+        <item>Men often interpret conversations more literally.</item>
+        <item>Men are more likely to take initiative in unfamiliar situations.</item>
+        <item>Men tend to associate confidence with competence in social settings.</item>
+        <item>Men are more likely to prefer factual discussions over emotional ones.</item>
+        <item>Men usually take longer to open up emotionally.</item>
+        <item>Men often express care through actions rather than words.</item>
+        <item>Men are more likely to enjoy strategy-based games.</item>
+        <item>Men often use silence as a form of processing.</item>
+        <item>Men are more likely to underestimate how much others notice their emotions.</item>
+        <item>Men typically prefer concise communication.</item>
+        <item>Men often rely on logic when making decisions.</item>
+        <item>Men are more likely to enjoy problem-solving challenges.</item>
+        <item>Men tend to value independence highly.</item>
+        <item>Men often measure success through achievement milestones.</item>
+        <item>Men are more likely to focus on outcomes rather than processes.</item>
+        <item>Men tend to prefer structured environments.</item>
+        <item>Men are often more comfortable with risk in decision-making.</item>
+        <item>Men usually process feedback privately before reacting.</item>
+        <item>Men are more likely to enjoy building or creating systems.</item>
+        <item>Men often show affection through protection and support.</item>
+        <item>Men are more likely to enjoy competitive puzzles.</item>
+        <item>Men often prefer direct problem resolution.</item>
+        <item>Men may take criticism personally but show it less.</item>
+        <item>Men often learn faster through trial and error.</item>
+        <item>Men are more likely to focus on efficiency.</item>
+        <item>Men usually respond well to clear expectations.</item>
+        <item>Men tend to analyze situations before reacting emotionally.</item>
+        <item>Men often value respect as a core social principle.</item>
+        <item>Men may express excitement subtly rather than openly.</item>
+        <item>Men often enjoy mastering a skill deeply.</item>
+        <item>Men are more likely to compartmentalize thoughts.</item>
+        <item>Men often prefer visual explanations over verbal ones.</item>
+
+        <item>Men often prefer goal-focused conversations.</item>
+        <item>Men are more likely to think silently before responding.</item>
+        <item>Men usually value independence in decision-making.</item>
+        <item>Men often communicate directly when solving problems.</item>
+        <item>Men tend to enjoy structured plans.</item>
+        <item>Men are more comfortable with clear rules.</item>
+        <item>Men often express care through actions.</item>
+        <item>Men typically focus on outcomes.</item>
+        <item>Men prefer concise explanations.</item>
+        <item>Men often enjoy strategy-based activities.</item>
+
+        <item>Men usually process emotions internally first.</item>
+        <item>Men are more likely to compartmentalize thoughts.</item>
+        <item>Men often value respect highly in relationships.</item>
+        <item>Men tend to show confidence through behavior.</item>
+        <item>Men usually prefer practical solutions.</item>
+        <item>Men are more likely to enjoy competitive challenges.</item>
+        <item>Men often learn best by doing.</item>
+        <item>Men tend to prioritize efficiency.</item>
+        <item>Men usually interpret words literally.</item>
+        <item>Men often prefer facts over opinions.</item>
+
+        <item>Men tend to stay calm in urgent situations.</item>
+        <item>Men often focus on one task at a time.</item>
+        <item>Men usually take responsibility seriously.</item>
+        <item>Men are more likely to value personal achievement.</item>
+        <item>Men often express pride quietly.</item>
+        <item>Men prefer problem-solving over discussion.</item>
+        <item>Men often enjoy mastering skills deeply.</item>
+        <item>Men usually prefer visual explanations.</item>
+        <item>Men tend to process feedback privately.</item>
+        <item>Men often appreciate straightforward honesty.</item>
+
+        <item>Men may take time to express feelings.</item>
+        <item>Men often associate success with progress.</item>
+        <item>Men tend to enjoy logic-based games.</item>
+        <item>Men often prefer predictable routines.</item>
+        <item>Men usually measure success personally.</item>
+        <item>Men are more likely to enjoy building systems.</item>
+        <item>Men often show loyalty through consistency.</item>
+        <item>Men prefer clear goals.</item>
+        <item>Men often respond better to direct feedback.</item>
+        <item>Men value trust deeply.</item>
+
+        <item>Men often keep emotions private.</item>
+        <item>Men are more likely to plan ahead.</item>
+        <item>Men usually enjoy solving puzzles.</item>
+        <item>Men tend to observe before acting.</item>
+        <item>Men often value personal space.</item>
+        <item>Men are more comfortable with silence.</item>
+        <item>Men usually communicate with purpose.</item>
+        <item>Men often think in steps.</item>
+        <item>Men tend to stay focused under pressure.</item>
+        <item>Men usually express happiness subtly.</item>
+
+        <item>Men often enjoy goal tracking.</item>
+        <item>Men usually prefer practical advice.</item>
+        <item>Men are more likely to enjoy structured debates.</item>
+        <item>Men tend to analyze situations logically.</item>
+        <item>Men often rely on reasoning.</item>
+        <item>Men value fairness strongly.</item>
+        <item>Men usually prefer independence in tasks.</item>
+        <item>Men often approach challenges methodically.</item>
+        <item>Men tend to appreciate clear expectations.</item>
+        <item>Men often value achievement milestones.</item>
+
+        <item>Men are more likely to enjoy responsibility.</item>
+        <item>Men usually focus on improvement.</item>
+        <item>Men often prefer calm environments.</item>
+        <item>Men tend to internalize motivation.</item>
+        <item>Men usually enjoy measurable progress.</item>
+        <item>Men often express care through support.</item>
+        <item>Men tend to think in solutions.</item>
+        <item>Men usually prefer certainty.</item>
+        <item>Men often value reliability.</item>
+        <item>Men tend to respect competence.</item>
+
+    </string-array>
+
 
     <!-- Women -->
+    <string-array name="womenFactsArray">
+        <item>Women are generally better at interpreting emotional cues.</item>
+        <item>Women tend to multitask more comfortably than men.</item>
+        <item>Women often communicate with emotional context.</item>
+        <item>Women are more likely to remember personal details about others.</item>
+        <item>Women tend to notice subtle changes in social behavior.</item>
+        <item>Women often process emotions through conversation.</item>
+        <item>Women are more likely to express empathy openly.</item>
+        <item>Women usually remember conversations in greater detail.</item>
+        <item>Women often rely on intuition when making decisions.</item>
+        <item>Women are more sensitive to tone and body language.</item>
+        <item>Women often value emotional connection in communication.</item>
+        <item>Women are more likely to notice facial expressions quickly.</item>
+        <item>Women tend to use storytelling in conversations.</item>
+        <item>Women are often more expressive with emotions.</item>
+        <item>Women usually build strong social networks.</item>
+        <item>Women are more likely to seek emotional support.</item>
+        <item>Women tend to process experiences holistically.</item>
+        <item>Women are more attentive to interpersonal harmony.</item>
+        <item>Women often balance logic with emotional insight.</item>
+        <item>Women are more likely to recognize subtle emotional shifts.</item>
+        <item>Women tend to value communication quality over brevity.</item>
+        <item>Women often excel at collaborative tasks.</item>
+        <item>Women usually adapt communication based on the listener.</item>
+        <item>Women are more likely to express appreciation verbally.</item>
+        <item>Women often use facial expressions to reinforce meaning.</item>
+        <item>Women tend to be strong at relationship maintenance.</item>
+        <item>Women are more likely to remember birthdays and events.</item>
+        <item>Women often notice environmental details faster.</item>
+        <item>Women usually express emotions through language.</item>
+        <item>Women are more likely to respond emotionally to stories.</item>
+        <item>Women often prioritize emotional safety in relationships.</item>
+        <item>Women tend to resolve conflicts through discussion.</item>
+        <item>Women often show care through listening.</item>
+        <item>Women are more likely to interpret silence emotionally.</item>
+        <item>Women usually notice changes in mood quickly.</item>
+        <item>Women often use empathy to guide decisions.</item>
+        <item>Women tend to express joy openly.</item>
+        <item>Women often remember how experiences made them feel.</item>
+        <item>Women usually value mutual understanding.</item>
+        <item>Women often create emotional bonds faster.</item>
 
+        <item>Women often communicate with emotional awareness.</item>
+        <item>Women tend to notice subtle social cues.</item>
+        <item>Women usually remember personal details.</item>
+        <item>Women often express emotions openly.</item>
+        <item>Women tend to value emotional connection.</item>
+        <item>Women usually multitask comfortably.</item>
+        <item>Women often communicate through stories.</item>
+        <item>Women tend to notice changes quickly.</item>
+        <item>Women usually interpret tone carefully.</item>
+        <item>Women often value empathy in relationships.</item>
 
-        <string-array name="womenFactsArray">
-            <item>Women generally have a stronger immune system than men due to hormonal and genetic factors.</item>
-            <item>Women’s hearts beat faster on average than men’s — around 78 beats per minute.</item>
-            <item>Women’s skin ages slower because of higher estrogen levels that preserve collagen longer.</item>
-            <item>Women have more taste buds, giving them a better sense of flavor and texture.</item>
-            <item>Women’s brains are wired with more connections between left and right hemispheres, improving multitasking.</item>
-            <item>Women blink more often than men — about 19 times per minute compared to 14.</item>
-            <item>Women’s pain tolerance increases during childbirth due to natural endorphin release.</item>
-            <item>Women’s hearts are smaller but pump blood faster to maintain circulation efficiency.</item>
-            <item>Women have a stronger sense of smell, especially during their reproductive years.</item>
-            <item>Women’s memories for faces and emotions are generally sharper than men’s.</item>
-            <item>Women can detect more shades of red and orange due to genetic differences on the X chromosome.</item>
-            <item>Women’s skin is thinner than men’s, making it more sensitive to temperature and touch.</item>
-            <item>Women have a higher percentage of body fat, which supports hormonal balance and fertility.</item>
-            <item>Women’s hearing is slightly better than men’s, especially at high frequencies.</item>
-            <item>Women’s immune response helps them recover faster from viral infections.</item>
-            <item>Women are more likely to experience cold hands and feet due to different blood flow regulation.</item>
-            <item>Women’s bones are lighter and more flexible than men’s, aiding agility.</item>
-            <item>Women are more likely to have stronger verbal and emotional intelligence.</item>
-            <item>Women’s eyes are more sensitive to color contrast and detail.</item>
-            <item>Women are biologically wired to notice facial expressions faster than men.</item>
-            <item>Women’s skin contains less collagen after menopause, which can lead to visible aging signs.</item>
-            <item>Women tend to have better endurance at low-intensity exercise than men.</item>
-            <item>Women’s brains use more white matter, improving communication between brain regions.</item>
-            <item>Women’s sense of hearing remains sharp for longer into old age.</item>
-            <item>Women have a natural advantage in fine motor control and balance tasks.</item>
-            <item>Women’s hearts are more adaptable to emotional stress and recovery.</item>
-            <item>Women’s skin is more prone to dehydration because of lower oil gland activity.</item>
-            <item>Women’s voices naturally rise slightly in pitch during ovulation due to hormonal changes.</item>
-            <item>Women’s hair grows slower than men’s but tends to be thicker in texture.</item>
-            <item>Women can distinguish a wider range of emotional tones in voices.</item>
-            <item>Women’s bodies retain iron differently, leading to lower average iron stores.</item>
-            <item>Women’s pain sensitivity fluctuates with hormone cycles.</item>
-            <item>Women have better peripheral vision because of wider visual fields.</item>
-            <item>Women are biologically more resistant to certain age-related diseases.</item>
-            <item>Women’s lungs are smaller but more efficient at oxygen exchange.</item>
-            <item>Women’s immune cells stay more active longer with age compared to men’s.</item>
-            <item>Women’s heart disease symptoms often differ, appearing as fatigue or nausea.</item>
-            <item>Women’s hair naturally grows faster during summer months.</item>
-            <item>Women’s body temperature slightly rises during ovulation.</item>
-            <item>Women’s metabolism slows down more with age compared to men’s.</item>
-            <item>Women tend to store fat around the hips and thighs for reproductive energy needs.</item>
-            <item>Women’s sense of taste is more sensitive to bitterness and sourness.</item>
-            <item>Women’s digestive systems absorb nutrients more efficiently during pregnancy.</item>
-            <item>Women’s joints are more flexible due to higher levels of collagen and elastin.</item>
-            <item>Women’s brains are slightly smaller in volume but denser in neuron packing.</item>
-            <item>Women’s left and right brain hemispheres communicate faster through a larger corpus callosum.</item>
-            <item>Women’s skin temperature changes more rapidly in response to emotion or stress.</item>
-            <item>Women tend to handle chronic pain better than men through adaptive brain processing.</item>
-            <item>Women’s sweat glands activate less often, making them sweat less overall.</item>
-            <item>Women have naturally higher HDL (“good”) cholesterol levels than men.</item>
-            <item>Women’s eyesight adapts to low light faster than men’s on average.</item>
-            <item>Women are better at recognizing voices, especially of other women.</item>
-            <item>Women’s hair contains less sulfur, which affects its softness and flexibility.</item>
-            <item>Women’s skin has a slightly higher pH level, influencing how skincare works.</item>
-            <item>Women’s bodies retain more water during hormonal shifts, causing mild bloating.</item>
-            <item>Women are less likely to lose hair completely, even with aging.</item>
-            <item>Women’s lungs recover faster after quitting smoking than men’s lungs.</item>
-            <item>Women’s nails grow slower but are more flexible and resistant to breaking.</item>
-            <item>Women tend to feel colder in air-conditioned environments due to body heat differences.</item>
-            <item>Women’s hearts can beat faster when listening to emotional music.</item>
-            <item>Women’s skin bruises more easily due to thinner dermal layers.</item>
-            <item>Women are biologically more sensitive to painkillers’ effects than men.</item>
-            <item>Women’s eyebrows naturally grow closer together during adolescence.</item>
-            <item>Women’s metabolism burns more fat during rest than carbohydrates.</item>
-            <item>Women’s hearing sensitivity is highest between ages 20 and 40.</item>
-            <item>Women’s muscle fibers recover faster from light exercise than men’s.</item>
-            <item>Women’s body produces more oxytocin during emotional bonding.</item>
-            <item>Women’s brains release more serotonin during acts of kindness.</item>
-            <item>Women are more likely to smile in social situations due to empathy response.</item>
-            <item>Women’s eyes contain more cone cells, improving color vision.</item>
-            <item>Women have slower sweat evaporation, helping retain skin moisture.</item>
-            <item>Women’s bones contain less calcium after menopause, requiring extra dietary care.</item>
-            <item>Women’s heartbeat rhythm can shift during the menstrual cycle.</item>
-            <item>Women tend to experience milder hangovers due to metabolic enzyme differences.</item>
-            <item>Women’s skin is more reactive to seasonal humidity changes.</item>
-            <item>Women have better natural insulation in colder weather because of fat distribution.</item>
-            <item>Women’s immune responses can make them more prone to autoimmune diseases.</item>
-            <item>Women’s sleep cycles are slightly shorter than men’s on average.</item>
-            <item>Women’s tears contain more protein and hormones than men’s tears.</item>
-            <item>Women can process emotional facial expressions faster than men.</item>
-            <item>Women’s nails grow faster on their dominant hand.</item>
-            <item>Women’s bodies adjust more efficiently to temperature changes during pregnancy.</item>
-            <item>Women are more sensitive to caffeine’s effects due to hormonal influence.</item>
-            <item>Women’s eyes dilate more when viewing something they find emotionally touching.</item>
-            <item>Women’s digestive systems work slower, aiding nutrient absorption.</item>
-            <item>Women’s pupils are more responsive to changes in emotional states.</item>
-            <item>Women’s hair reflects light differently, giving it more natural shine.</item>
-            <item>Women’s pain perception varies depending on estrogen levels.</item>
-            <item>Women have higher oxytocin surges during physical affection.</item>
-            <item>Women’s immune systems react faster to vaccines.</item>
-            <item>Women’s muscle flexibility allows them to perform better in yoga and dance.</item>
-            <item>Women’s eyes are more likely to tear up in response to empathy triggers.</item>
-            <item>Women’s memory for emotional experiences is stronger and lasts longer.</item>
-            <item>Women’s hearts handle low blood pressure more efficiently during rest.</item>
-            <item>Women’s bones are less dense but more elastic than men’s, reducing fracture risk.</item>
-            <item>Women’s skin regenerates faster after minor cuts or scrapes.</item>
-            <item>Women’s heartbeat often synchronizes with close emotional partners over time.</item>
-            <item>Women’s perception of warmth increases when they feel emotionally supported.</item>
-        </string-array>
+        <item>Women are more likely to share experiences.</item>
+        <item>Women tend to express appreciation verbally.</item>
+        <item>Women often build strong social bonds.</item>
+        <item>Women usually rely on intuition.</item>
+        <item>Women tend to be emotionally expressive.</item>
+        <item>Women often process emotions through discussion.</item>
+        <item>Women usually value emotional safety.</item>
+        <item>Women tend to remember conversations vividly.</item>
+        <item>Women often notice facial expressions.</item>
+        <item>Women usually adapt communication styles.</item>
 
-   <!-- UnSolved Mysteries -->
+        <item>Women often prioritize harmony.</item>
+        <item>Women tend to be attentive listeners.</item>
+        <item>Women usually sense emotional shifts.</item>
+        <item>Women often show care through words.</item>
+        <item>Women tend to value understanding.</item>
+        <item>Women usually remember meaningful moments.</item>
+        <item>Women often connect deeply with stories.</item>
+        <item>Women tend to express feelings clearly.</item>
+        <item>Women usually value shared experiences.</item>
+        <item>Women often maintain relationships actively.</item>
+
+        <item>Women tend to notice emotional patterns.</item>
+        <item>Women usually communicate with warmth.</item>
+        <item>Women often prioritize cooperation.</item>
+        <item>Women tend to resolve conflicts through dialogue.</item>
+        <item>Women usually read between the lines.</item>
+        <item>Women often express encouragement.</item>
+        <item>Women tend to build trust through conversation.</item>
+        <item>Women usually value emotional honesty.</item>
+        <item>Women often reflect on feelings.</item>
+        <item>Women tend to nurture connections.</item>
+
+        <item>Women often sense social dynamics quickly.</item>
+        <item>Women usually value emotional clarity.</item>
+        <item>Women tend to share feelings naturally.</item>
+        <item>Women often prioritize emotional balance.</item>
+        <item>Women usually value listening.</item>
+        <item>Women tend to communicate thoughtfully.</item>
+        <item>Women often notice emotional details.</item>
+        <item>Women usually express care consistently.</item>
+        <item>Women tend to value closeness.</item>
+        <item>Women often express joy openly.</item>
+
+        <item>Women tend to be emotionally observant.</item>
+        <item>Women usually sense sincerity.</item>
+        <item>Women often value meaningful conversations.</item>
+        <item>Women tend to express support verbally.</item>
+        <item>Women usually prioritize emotional comfort.</item>
+        <item>Women often notice tone shifts.</item>
+        <item>Women tend to connect emotionally first.</item>
+        <item>Women usually express understanding.</item>
+        <item>Women often appreciate emotional depth.</item>
+        <item>Women tend to communicate with empathy.</item>
+
+        <item>Women usually remember how situations felt.</item>
+        <item>Women often respond emotionally to stories.</item>
+        <item>Women tend to value compassion.</item>
+        <item>Women usually seek emotional alignment.</item>
+        <item>Women often notice mood changes.</item>
+        <item>Women tend to prioritize emotional trust.</item>
+        <item>Women usually communicate openly.</item>
+        <item>Women often value connection over outcome.</item>
+        <item>Women tend to foster emotional bonds.</item>
+        <item>Women usually value emotional understanding.</item>
+    </string-array>
+
+    <!-- UnSolved Mysteries -->
 
         <string-array name="unsolved_mysteries_of_science">
             <item>No one fully understands why humans need sleep — scientists know its effects but not its true purpose.</item>
@@ -998,7 +996,7 @@
             <item>Some deserts bloom with flowers only once every few years after rare rains.</item>
             <item>The air after a storm smells fresh due to a chemical called ozone.</item>
             <item>There are more trees on Earth than stars in the Milky Way galaxy.</item>
-            <item>Some plants, like the Mimosa pudica, can move their leaves when touched.</item>
+            <item>Some plants, like the Mimosa Judica, can move their leaves when touched.</item>
             <item>The ocean’s deepest point, the Mariana Trench, is deeper than Mount Everest is tall.</item>
             <item>Butterflies taste food with their feet.</item>
             <item>The Earth’s magnetic field protects all life from harmful solar radiation.</item>
@@ -1031,7 +1029,7 @@
             <item>Some caves have crystals so large they can weigh over 50 tons.</item>
             <item>Giraffes have the same number of neck bones as humans — just much longer ones.</item>
             <item>About 70% of Earth’s surface is covered by water, but only 1% is drinkable freshwater.</item>
-            <item>Some animals, like tardigrades, can survive in space and extreme conditions.</item>
+            <item>Some animals, like retrogrades, can survive in space and extreme conditions.</item>
             <item>The Sahara Desert expands southward by about 48 kilometers every year.</item>
             <item>Rainforests are home to more than half of all known animal and plant species.</item>
             <item>Some flowers only bloom once in their lifetime, then die immediately after.</item>
@@ -1099,7 +1097,7 @@
             <item>Parrots can learn and use words in context, not just mimic sounds.</item>
             <item>Camels can close their nostrils to keep out sand during storms.</item>
             <item>Dogs can detect certain diseases like cancer through scent.</item>
-            <item>Cats have a special reflective layer in their eyes called the tapetum lucidum that helps them see in near darkness.</item>
+            <item>Cats have a special reflective layer in their eyes called the tapetum lucid um that helps them see in near darkness.</item>
             <item>The heart of a shrimp is located in its head.</item>
             <item>Starfish have no brain but can regenerate lost arms.</item>
             <item>Male seahorses, not females, carry and give birth to the babies.</item>
@@ -1170,7 +1168,7 @@
             <item>Chameleons don’t change color to match surroundings but to communicate mood and temperature.</item>
             <item>Orangutans build a new nest every night high up in the trees.</item>
             <item>Spiders can produce up to seven different kinds of silk for different uses.</item>
-            <item>Antarctic icefish have clear blood due to lack of hemoglobin.</item>
+            <item>Antarctic ice fish have clear blood due to lack of hemoglobin.</item>
             <item>Some parrots live longer than humans — up to 90 years.</item>
             <item>Cats can make over 100 different sounds, while dogs can make about 10.</item>
             <item>Fireflies produce light through a chemical reaction called bioluminescence.</item>
@@ -1235,7 +1233,7 @@
             <item>Your brain sometimes invents details to fill gaps in memory — this is called confabulation.</item>
             <item>Most of what you “see” is your brain’s interpretation, not direct vision.</item>
             <item>The smell of chocolate increases theta brain waves, which trigger relaxation.</item>
-            <item>People remember unfinished tasks better than completed ones — known as the Zeigarnik effect.</item>
+            <item>People remember unfinished tasks better than completed ones — known as the Zernike effect.</item>
             <item>Humans tend to overestimate short-term results and underestimate long-term growth.</item>
             <item>Your mind can create false memories that feel completely real.</item>
             <item>The brain produces more than 50,000 thoughts per day on average.</item>
@@ -1289,8 +1287,8 @@
     <!-- Mysteries -->
 
         <string-array name="mysteriesFactsArray">
-            <item>The Voynich Manuscript remains undeciphered despite centuries of study.</item>
-            <item>The Voynich Manuscript remains the world’s most mysterious unreadable book.</item>
+            <item>The Yvonnick Manuscript remains undeciphered despite centuries of study.</item>
+            <item>The Yvonnick Manuscript remains the world’s most mysterious unreadable book.</item>
             <item>No one knows exactly how the giant stones of Stonehenge were transported thousands of years ago.</item>
             <item>The Bermuda Triangle has inspired mystery after ships and planes vanished there under unexplained circumstances.</item>
             <item>The origin of dark matter and dark energy, which make up 95% of the universe, is still unknown.</item>
@@ -1309,7 +1307,7 @@
             <item>The Nazca Lines in Peru form massive animal shapes only visible from above, made over 1,500 years ago.</item>
             <item>We don’t know what causes ball lightning, a glowing sphere that sometimes appears during storms.</item>
             <item>The “Wow! Signal” detected in 1977 remains the strongest unexplained radio signal from space.</item>
-            <item>Lake Vostok in Antarctica has been sealed under ice for millions of years — and may contain unknown life forms.</item>
+            <item>Lake Vos tok in Antarctica has been sealed under ice for millions of years — and may contain unknown life forms.</item>
             <item>Earth’s magnetic field has reversed many times in history, but the cause and timing remain unpredictable.</item>
             <item>The mechanism that triggers earthquakes is well known, but why some are far stronger than predicted isn’t.</item>
             <item>Scientists have detected neutrinos coming from unknown cosmic sources.</item>
@@ -1317,7 +1315,7 @@
             <item>There are massive “gravity holes” on Earth where the planet’s pull is mysteriously weaker.</item>
             <item>Deep below the ocean floor, microbes live in extreme conditions — scientists still don’t know how they survive.</item>
             <item>Ancient maps show landmasses that were supposedly unknown at the time they were drawn.</item>
-            <item>The Piri Reis map from 1513 shows parts of Antarctica centuries before it was officially discovered.</item>
+            <item>The Pari Reins map from 1513 shows parts of Antarctica centuries before it was officially discovered.</item>
             <item>Some meteorites contain amino acids, the building blocks of life, hinting that life may have come from space.</item>
             <item>There’s a mysterious radio burst from deep space that repeats every 16 days, and its source is still unknown.</item>
             <item>Some regions of the ocean remain completely unexplored — over 80% of it is still unmapped.</item>

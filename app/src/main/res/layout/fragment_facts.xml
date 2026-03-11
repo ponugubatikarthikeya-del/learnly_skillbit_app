@@ -4,45 +4,48 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true"
-    android:background="@color/pageBagrounds"
+    android:background="@color/pageBackgrounds"
     tools:context=".fragments.FactsFragment">
 
     <LinearLayout
         android:orientation="vertical"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="20dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingTop="10dp">
+        android:layout_height="wrap_content">
 
         <!-- Title -->
         <TextView
-            android:text="Hello,User"
-            android:textSize="35sp"
-            android:textStyle="bold"
-            android:textColor="#FFFFFF"
-            android:layout_gravity="start"
-            android:padding="10dp"
+            android:id="@+id/HelloNameView"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:text="@string/hello_buddy"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:layout_gravity="start"
+            android:padding="15dp"/>
 
         <!-- Title -->
         <TextView
-            android:text="What are you looking for today"
-            android:textSize="21sp"
+            android:text="@string/what_are_you_looking_for_today"
+            android:textSize="17sp"
             android:textStyle="bold"
-            android:textColor="#FFFFFF"
+            android:textColor="@color/white"
             android:layout_gravity="start"
-            android:layout_marginStart="10dp"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
         <!-- Section 1: Interesting Facts -->
         <TextView
-            android:text="Interesting Facts"
+            android:text="@string/interesting_facts"
             android:textSize="30sp"
             android:textStyle="bold"
+            android:layout_marginStart="5dp"
             android:padding="10dp"
-            android:textColor="#FFBB33"
+            android:textColor="@color/interesting_factTextBg"
             android:layout_marginTop="20dp"
             android:layout_marginBottom="8dp"
             android:layout_width="wrap_content"
@@ -61,9 +64,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
+            android:layout_marginStart="5dp"
             android:padding="10dp"
-            android:text="Psychology Facts"
-            android:textColor="#FF4081"
+            android:text="@string/psychology_facts"
+            android:textColor="@color/PsychologyTextBg"
             android:textSize="30sp"
             android:textStyle="bold" />
 
@@ -78,10 +82,11 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Unknown Facts"
+            android:text="@string/unknown_facts"
             android:textSize="30sp"
             android:textStyle="bold"
-            android:textColor="#7BBF2B"
+            android:textColor="@color/unknown_factsTextBg"
+            android:layout_marginStart="5dp"
             android:padding="10dp"
             android:layout_marginBottom="8dp" />
 
@@ -90,7 +95,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:layout_marginBottom="16dp"
+            android:layout_marginBottom="8dp"
             android:nestedScrollingEnabled="false" />
 
 
