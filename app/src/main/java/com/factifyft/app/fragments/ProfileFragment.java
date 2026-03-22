@@ -18,7 +18,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.factifyft.app.R;
-import com.factifyft.app.customToast;
+import com.factifyft.app.utils.customToast;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.card.MaterialCardView;
 

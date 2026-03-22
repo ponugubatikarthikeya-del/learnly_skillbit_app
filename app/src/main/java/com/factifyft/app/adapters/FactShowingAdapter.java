@@ -1,4 +1,4 @@
-package com.factifyft.app.displayFacts;
+package com.factifyft.app.adapters;
 
 import android.content.ClipData;
 import android.content.ClipboardManager;
@@ -21,7 +21,7 @@ import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.factifyft.app.R;
-import com.factifyft.app.customToast;
+import com.factifyft.app.utils.customToast;
 
 import java.util.HashSet;
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.factifyft.app;
+package com.factifyft.app.activities;
 
 import android.animation.ObjectAnimator;
 import android.annotation.SuppressLint;
@@ -16,11 +16,13 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.factifyft.app.R;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-public class ticComVsManView extends AppCompatActivity {
+public class ticComVsManViewActivity extends AppCompatActivity {
 
     private boolean gameActive=true;
     final Button[] buttons = new Button[9];
@@ -42,7 +44,7 @@ public class ticComVsManView extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_tic_toc_toe_game_screen);
 
         statusText = findViewById(R.id.statusText);
         TextView titleText = findViewById(R.id.titleText);
@@ -76,7 +78,7 @@ public class ticComVsManView extends AppCompatActivity {
                     .alpha(0f)
                     .setDuration(500)
                     .withEndAction(() -> {
-                        Intent intent_b = new Intent(ticComVsManView.this, ticGameHomePage.class);
+                        Intent intent_b = new Intent(ticComVsManViewActivity.this, TicGameTypeSelectActivity.class);
                         intent_b.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
                         startActivity(intent_b);
                         overridePendingTransition(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
@@ -245,7 +247,7 @@ public class ticComVsManView extends AppCompatActivity {
 
     private void showWinDialog(String winner) {
         View dialogView = getLayoutInflater().inflate(
-                R.layout.tic_game_dialogbox,
+                R.layout.dialog_tic_game_over,
                 findViewById(android.R.id.content),
                 false
         );

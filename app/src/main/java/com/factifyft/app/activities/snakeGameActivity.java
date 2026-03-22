@@ -1,4 +1,4 @@
-package com.factifyft.app;
+package com.factifyft.app.activities;
 
 import android.os.Bundle;
 import android.view.View;
@@ -7,6 +7,8 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.factifyft.app.R;
+import com.factifyft.app.utils.GameView;
 import com.google.android.material.button.MaterialButton;
 
 public class snakeGameActivity extends AppCompatActivity {
@@ -18,7 +20,7 @@ public class snakeGameActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.snake_game_activity);
+        setContentView(R.layout.activity_snake_game_show);
         // Bind views
         scoreText = findViewById(R.id.scoreText);
         btnStart = findViewById(R.id.btnStart);

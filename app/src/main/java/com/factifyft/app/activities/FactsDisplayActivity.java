@@ -1,4 +1,4 @@
-package com.factifyft.app.showingFactsScreen;
+package com.factifyft.app.activities;
 
 import android.content.Context;
 import android.content.Intent;
@@ -14,7 +14,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 
-import com.factifyft.app.displayFacts.FactShowingAdapter;
+import com.factifyft.app.adapters.FactShowingAdapter;
 import com.factifyft.app.R;
 
 import java.util.ArrayList;

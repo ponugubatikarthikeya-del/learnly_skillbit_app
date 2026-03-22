@@ -17,9 +17,9 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.factifyft.app.R;
-import com.factifyft.app.showingFactsScreen.FactCategory;
-import com.factifyft.app.showingFactsScreen.FactsCategoryAdapter;
-import com.factifyft.app.showingFactsScreen.FactsDisplayActivity;
+import com.factifyft.app.data.FactCategory;
+import com.factifyft.app.adapters.FactsCategoryAdapter;
+import com.factifyft.app.activities.FactsDisplayActivity;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.factifyft.app;
+package com.factifyft.app.activities;
 
 import android.app.Dialog;
 import android.content.res.ColorStateList;
@@ -11,6 +11,7 @@ import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
+import com.factifyft.app.R;
 import com.google.android.material.button.MaterialButton;
 
 import java.util.ArrayList;
@@ -21,7 +22,7 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Objects;
 
-public class quiz_Activity extends AppCompatActivity {
+public class QuizShowActivity extends AppCompatActivity {
 
     private TextView questionText, scoreText, questionsTextView;
     private MaterialButton option1, option2, option3, option4;
@@ -41,7 +42,7 @@ public class quiz_Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_quiz);
+        setContentView(R.layout.activity_quiz_show);
 
 
         questionText = findViewById(R.id.question_text);
@@ -200,7 +201,7 @@ public class quiz_Activity extends AppCompatActivity {
      //inflate the custom view
 //        LayoutInflater inflater=LayoutInflater.from(this);
         View dialogView = getLayoutInflater().inflate(
-                R.layout.quiz_dialogue_designfile,
+                R.layout.dialog_quiz_complete,
                 findViewById(android.R.id.content),
                 false
         );

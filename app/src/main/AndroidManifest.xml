@@ -16,7 +16,7 @@
         android:theme="@style/Theme.Learnly_skillbit_app">
 
         <activity
-            android:name=".splash_screen"
+            android:name=".activities.splashScreenActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,18 +24,18 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".HomeScreen" android:exported="false" />
-        <activity android:name=".Quiz_items" android:exported="false" />
-        <activity android:name=".quiz_Activity" android:exported="false" />
-        <activity android:name=".snakeGameActivity" android:exported="false" />
-        <activity android:name=".overView_screen" android:exported="false" />
-        <activity android:name=".ticGameHomePage" android:exported="false" />
-        <activity android:name=".ticComVsManView" android:exported="false" />
-        <activity android:name=".MultiPlayer" android:exported="false" />
-        <activity android:name=".MultiplayerNamesActivity" android:exported="false" />
+        <activity android:name=".activities.DashBoardActivity" android:exported="false" />
+        <activity android:name=".activities.QuizTypeSelectActivity" android:exported="false" />
+        <activity android:name=".activities.QuizShowActivity" android:exported="false" />
+        <activity android:name=".activities.snakeGameActivity" android:exported="false" />
+        <activity android:name=".activities.LoadingActivity" android:exported="false" />
+        <activity android:name=".activities.TicGameTypeSelectActivity" android:exported="false" />
+        <activity android:name=".activities.ticComVsManViewActivity" android:exported="false" />
+        <activity android:name=".activities.MultiPlayerTicGameActivity" android:exported="false" />
+        <activity android:name=".activities.MultiplayerNamesActivity" android:exported="false" />
 
         <activity
-            android:name=".showingFactsScreen.FactsDisplayActivity"
+            android:name=".activities.FactsDisplayActivity"
             android:exported="false" />
 
     </application>

@@ -18,7 +18,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.factifyft.app.R;
-import com.factifyft.app.favoritePackage.FavoriteAdapter;
+import com.factifyft.app.adapters.FavoriteAdapter;
 
 import java.util.ArrayList;
 import java.util.HashSet;
