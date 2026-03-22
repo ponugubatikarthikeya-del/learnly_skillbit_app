@@ -1,4 +1,4 @@
-package com.factifyft.app.showingFactsScreen;
+package com.factifyft.app.adapters;
 
 
 import android.content.Context;
@@ -14,6 +14,7 @@ import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.factifyft.app.R;
+import com.factifyft.app.data.FactCategory;
 
 import java.util.List;
 
@@ -41,7 +42,7 @@ public class FactsCategoryAdapter extends RecyclerView.Adapter<FactsCategoryAdap
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_fact_category, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.fact_category_design, parent, false);
         return new ViewHolder(view);
     }
 

@@ -1,4 +1,4 @@
-package com.factifyft.app;
+package com.factifyft.app.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,6 +7,9 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.factifyft.app.R;
+import com.factifyft.app.utils.customToast;
 
 public class MultiplayerNamesActivity extends AppCompatActivity {
     @Override
@@ -54,7 +57,7 @@ public class MultiplayerNamesActivity extends AppCompatActivity {
             if (p1.isEmpty() || p2.isEmpty()) {
               customToast.showToast(this, getString(R.string.enter_both_names), Toast.LENGTH_SHORT);
             } else {
-                Intent intent = new Intent(this, MultiPlayer.class);
+                Intent intent = new Intent(this, MultiPlayerTicGameActivity.class);
                 intent.putExtra(getString(R.string.intent_player1), p1);
                 intent.putExtra(getString(R.string.intent_player2), p2);
                 startActivity(intent);

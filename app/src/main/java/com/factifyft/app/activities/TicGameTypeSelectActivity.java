@@ -1,4 +1,4 @@
-package com.factifyft.app;
+package com.factifyft.app.activities;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
@@ -8,14 +8,16 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class ticGameHomePage extends AppCompatActivity {
+import com.factifyft.app.R;
+
+public class TicGameTypeSelectActivity extends AppCompatActivity {
 
     Button multiplayerButton, computerButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.mean_game);
+        setContentView(R.layout.activity_tic_game_type_select);
 
         multiplayerButton = findViewById(R.id.multiplayerButton);
         computerButton = findViewById(R.id.computerButton);
@@ -24,12 +26,12 @@ public class ticGameHomePage extends AppCompatActivity {
         setButtonEffect(computerButton);
 
         multiplayerButton.setOnClickListener(v -> {
-            Intent i = new Intent(ticGameHomePage.this, MultiplayerNamesActivity.class);
+            Intent i = new Intent(TicGameTypeSelectActivity.this, MultiplayerNamesActivity.class);
             startActivity(i);
         });
 
         computerButton.setOnClickListener(v -> {
-            Intent i = new Intent(ticGameHomePage.this, ticComVsManView.class);
+            Intent i = new Intent(TicGameTypeSelectActivity.this, ticComVsManViewActivity.class);
             startActivity(i);
         });
     }

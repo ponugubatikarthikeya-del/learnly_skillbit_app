@@ -1,4 +1,4 @@
-package com.factifyft.app;
+package com.factifyft.app.activities;
 
 import android.os.Bundle;
 
@@ -6,6 +6,7 @@ import androidx.activity.OnBackPressedCallback;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
+import com.factifyft.app.R;
 import com.factifyft.app.fragments.DailyFragment;
 import com.factifyft.app.fragments.FactsFragment;
 import com.factifyft.app.fragments.FavoriteFragment;
@@ -13,7 +14,7 @@ import com.factifyft.app.fragments.GamesFragment;
 import com.factifyft.app.fragments.ProfileFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-public class HomeScreen extends AppCompatActivity {
+public class DashBoardActivity extends AppCompatActivity {
 
     BottomNavigationView bottomNavigationView;
     Fragment currentFragment;
@@ -28,7 +29,7 @@ public class HomeScreen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 //        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        setContentView(R.layout.activity_home_screen);
+        setContentView(R.layout.activity_dashboard);
 
         bottomNavigationView = findViewById(R.id.bottom_navigation);
 

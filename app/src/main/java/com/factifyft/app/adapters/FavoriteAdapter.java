@@ -1,4 +1,4 @@
-package com.factifyft.app.favoritePackage;
+package com.factifyft.app.adapters;
 
 import android.content.ClipData;
 import android.content.ClipboardManager;
@@ -34,7 +34,7 @@ public class FavoriteAdapter extends RecyclerView.Adapter<FavoriteAdapter.VH> {
     @NonNull
     @Override
     public VH onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_favorite, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.fav_item_design, parent, false);
         return new VH(view);
     }
 

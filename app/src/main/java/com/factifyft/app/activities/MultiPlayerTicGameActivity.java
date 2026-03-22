@@ -1,4 +1,4 @@
-package com.factifyft.app;
+package com.factifyft.app.activities;
 
 import android.animation.ObjectAnimator;
 import android.annotation.SuppressLint;
@@ -15,7 +15,10 @@ import android.widget.FrameLayout;
 import android.widget.GridLayout;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
-public class MultiPlayer extends AppCompatActivity {
+
+import com.factifyft.app.R;
+
+public class MultiPlayerTicGameActivity extends AppCompatActivity {
 
     final Button[] buttons = new Button[9];
     boolean playerX = true;
@@ -38,7 +41,7 @@ public class MultiPlayer extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_tic_toc_toe_game_screen);
 
         // Get names from previous screen
         Intent intent = getIntent();
@@ -103,7 +106,7 @@ public class MultiPlayer extends AppCompatActivity {
                     .alpha(0f)
                     .setDuration(500)
                     .withEndAction(() -> {
-                        Intent intent_b = new Intent(MultiPlayer.this, ticGameHomePage.class);
+                        Intent intent_b = new Intent(MultiPlayerTicGameActivity.this, TicGameTypeSelectActivity.class);
                         intent_b.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
                         startActivity(intent_b);
                         overridePendingTransition(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
@@ -201,7 +204,7 @@ private void showDrawDialog(){
 
     private void showWinDialog(String winner) {
         View dialogView = getLayoutInflater().inflate(
-                R.layout.tic_game_dialogbox,
+                R.layout.dialog_tic_game_over,
                 findViewById(android.R.id.content),
                 false
         );
@@ -242,7 +245,7 @@ private void showDrawDialog(){
         // BACK BUTTON
         btnBack.setOnClickListener(v -> {
             dialog.dismiss();
-           Intent intent=new Intent(MultiPlayer.this,ticGameHomePage.class);
+           Intent intent=new Intent(MultiPlayerTicGameActivity.this, TicGameTypeSelectActivity.class);
            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
            startActivity(intent);
            finish(); // go back to previous screen

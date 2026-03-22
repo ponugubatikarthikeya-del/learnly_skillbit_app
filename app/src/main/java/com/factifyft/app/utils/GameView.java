@@ -1,4 +1,4 @@
-package com.factifyft.app;
+package com.factifyft.app.utils;
 
 import android.app.Activity;
 import android.app.Dialog;
@@ -16,6 +16,8 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.core.content.ContextCompat;
+
+import com.factifyft.app.R;
 
 import java.util.ArrayList;
 import java.util.Random;
@@ -275,7 +277,7 @@ public class GameView extends SurfaceView implements Runnable, SurfaceHolder.Cal
         LayoutInflater inflater = LayoutInflater.from(context);
 
         View dialogView = inflater.inflate(
-                R.layout.gameover_dialog,
+                R.layout.dialog_snake_game_over,
                 activity.findViewById(android.R.id.content),
                 false
         );

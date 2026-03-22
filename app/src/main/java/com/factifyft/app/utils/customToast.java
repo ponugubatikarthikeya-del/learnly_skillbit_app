@@ -1,4 +1,4 @@
-package com.factifyft.app;
+package com.factifyft.app.utils;
 
 import android.app.Activity;
 import android.content.Context;
@@ -7,6 +7,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.factifyft.app.R;
 
 public class customToast {
 

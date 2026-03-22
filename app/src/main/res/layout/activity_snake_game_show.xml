@@ -53,7 +53,7 @@
             app:layout_constraintEnd_toEndOf="parent" />
 
         <!-- SNAKE GAME VIEW -->
-        <com.factifyft.app.GameView
+        <com.factifyft.app.utils.GameView
             android:id="@+id/gameView"
             android:layout_width="0dp"
             android:layout_height="0dp"

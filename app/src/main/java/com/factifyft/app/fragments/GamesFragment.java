@@ -10,9 +10,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.factifyft.app.ticGameHomePage;
-import com.factifyft.app.Quiz_items;
-import com.factifyft.app.snakeGameActivity;
+import com.factifyft.app.activities.TicGameTypeSelectActivity;
+import com.factifyft.app.activities.QuizTypeSelectActivity;
+import com.factifyft.app.activities.snakeGameActivity;
 import com.factifyft.app.R;
 import com.google.android.material.card.MaterialCardView;
 
@@ -30,7 +30,7 @@ View view= inflater.inflate(R.layout.fragment_games, container, false);
 
         //going to quiz activity
         btnQuiz.setOnClickListener(view1 -> {
-            Intent intent=new Intent(requireActivity(), Quiz_items.class);
+            Intent intent=new Intent(requireActivity(), QuizTypeSelectActivity.class);
             startActivity(intent);
         });
 
@@ -41,7 +41,7 @@ View view= inflater.inflate(R.layout.fragment_games, container, false);
       });
 
      btnTic.setOnClickListener(view1 -> {
-         Intent intent=new Intent(requireActivity(), ticGameHomePage.class);
+         Intent intent=new Intent(requireActivity(), TicGameTypeSelectActivity.class);
          startActivity(intent);
      });
 

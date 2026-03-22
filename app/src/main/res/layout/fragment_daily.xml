@@ -51,12 +51,12 @@
 
             <include
                 android:id="@+id/card_front"
-                layout="@layout/card_front" />
+                layout="@layout/daily_card_front_side_view" />
 
 
             <include
                 android:id="@+id/card_back"
-                layout="@layout/card_back" />
+                layout="@layout/daily_card_back_side_view" />
 
 
         </FrameLayout>
