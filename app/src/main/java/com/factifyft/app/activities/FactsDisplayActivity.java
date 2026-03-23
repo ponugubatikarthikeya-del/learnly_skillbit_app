@@ -98,6 +98,17 @@ public class FactsDisplayActivity extends AppCompatActivity {
         } else if (catLower.equalsIgnoreCase(getString(R.string.cat_animals))) {
             factArray = getResources().getStringArray(R.array.animalsFactsArray);
 
+        } else if (catLower.equalsIgnoreCase(getString(R.string.did_you_known))) {
+            factArray = getResources().getStringArray(R.array.did_you_knownFactsArray);
+
+        } else if (catLower.equalsIgnoreCase(getString(R.string.Human_behaviour))) {
+            factArray = getResources().getStringArray(R.array.Human_behaviourFactsArray);
+
+        } else if (catLower.equalsIgnoreCase(getString(R.string.Human_Habits))) {
+            factArray = getResources().getStringArray(R.array.habit_facts);
+
+        } else if (catLower.equalsIgnoreCase(getString(R.string.world_hidden))) {
+            factArray = getResources().getStringArray(R.array.world_hidden_facts);
         } else {
             list.add(getString(R.string.no_facts_available));
             return list;

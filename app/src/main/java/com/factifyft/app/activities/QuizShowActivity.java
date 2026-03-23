@@ -78,6 +78,21 @@ public class QuizShowActivity extends AppCompatActivity {
             options = getResources().getStringArray(R.array.universeOptions);
             correctAnswers = getResources().getStringArray(R.array.universeAnswers);
 
+        } else if (qt.equalsIgnoreCase(getString(R.string.quiz_basic_science))) {
+            questions = getResources().getStringArray(R.array.basic_science_questions);
+            options = getResources().getStringArray(R.array.basic_science_options);
+            correctAnswers = getResources().getStringArray(R.array.basic_science_answers);
+
+        } else if (qt.equalsIgnoreCase(getString(R.string.quiz_sports))) {
+            questions = getResources().getStringArray(R.array.sports_basics_questions);
+            options = getResources().getStringArray(R.array.sports_basics_options);
+            correctAnswers = getResources().getStringArray(R.array.sports_basics_answers);
+
+        } else if (qt.equalsIgnoreCase(getString(R.string.quiz_general_knowledge))) {
+            questions = getResources().getStringArray(R.array.general_knowledge_questions);
+            options = getResources().getStringArray(R.array.general_knowledge_options);
+            correctAnswers = getResources().getStringArray(R.array.general_knowledge_answers);
+
         } else {
             questions = new String[]{ getString(R.string.quiz_not_found) };
             options = new String[]{ getString(R.string.quiz_default_options) };

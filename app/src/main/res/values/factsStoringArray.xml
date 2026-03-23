@@ -17,6 +17,402 @@
         <item>Animals</item>
     </string-array>
 
+<!--    world hidden facts-->
+
+        <string-array name="world_hidden_facts">
+
+            <item>There are underground cities in different parts of the world built centuries ago for protection.</item>
+            <item>Some rivers flow beneath other rivers without mixing immediately.</item>
+            <item>There are places where you can stand in two different time zones at once.</item>
+            <item>Hidden caves exist that have never been fully explored by humans.</item>
+            <item>Some deserts were once covered with water and full of life.</item>
+            <item>There are natural rock formations that look like man-made structures.</item>
+            <item>Deep in the oceans, there are mountains taller than many on land.</item>
+            <item>Some forests are so dense that sunlight barely reaches the ground.</item>
+            <item>There are lakes hidden beneath ice sheets in polar regions.</item>
+            <item>Ancient pathways still exist beneath modern cities.</item>
+
+            <item>There are islands that appear and disappear due to volcanic activity.</item>
+            <item>Some places on Earth experience nearly continuous daylight or darkness for months.</item>
+            <item>There are hidden waterfalls inside caves around the world.</item>
+            <item>Some valleys remain untouched due to difficult access.</item>
+            <item>There are natural bridges formed entirely by erosion over time.</item>
+            <item>Some regions have colorful soil due to mineral composition.</item>
+            <item>There are underwater caves that stretch for long distances.</item>
+            <item>Some cliffs reveal layers of Earth’s history like a timeline.</item>
+            <item>There are locations where magnetic fields can affect compasses unusually.</item>
+            <item>Some ancient ruins remain hidden under dense vegetation.</item>
+
+            <item>There are natural hot springs heated by underground activity.</item>
+            <item>Some islands are formed entirely by coral growth.</item>
+            <item>There are hidden valleys surrounded by high mountains.</item>
+            <item>Some caves contain crystals that grew over thousands of years.</item>
+            <item>There are regions where the ground naturally releases steam.</item>
+            <item>Some forests contain trees that are thousands of years old.</item>
+            <item>There are lakes that are extremely clear due to low particle content.</item>
+            <item>Some places experience sudden weather changes due to geography.</item>
+            <item>There are hidden rock paintings created by ancient civilizations.</item>
+            <item>Some mountains have internal cave systems yet to be fully mapped.</item>
+
+            <item>There are places where sand dunes produce sounds when the wind moves them.</item>
+            <item>Some rivers change direction depending on seasonal flow.</item>
+            <item>There are hidden ecosystems inside caves with unique species.</item>
+            <item>Some natural formations resemble animals or faces.</item>
+            <item>There are glaciers that slowly reshape landscapes over time.</item>
+            <item>Some areas have naturally occurring arches carved by wind and water.</item>
+            <item>There are lakes that appear pink due to natural microorganisms.</item>
+            <item>Some regions have underground rivers that connect to distant bodies of water.</item>
+            <item>There are cliffs that rise sharply from flat landscapes.</item>
+            <item>Some islands are home to species found nowhere else on Earth.</item>
+
+            <item>There are deserts with hidden underground water reserves.</item>
+            <item>Some caves contain underground lakes with crystal-clear water.</item>
+            <item>There are forests that change colors dramatically with seasons.</item>
+            <item>Some mountains contain valuable minerals deep within.</item>
+            <item>There are natural stone pillars formed over thousands of years.</item>
+            <item>Some coastlines have hidden sea caves only visible at low tide.</item>
+            <item>There are regions where fog regularly covers the landscape.</item>
+            <item>Some islands are formed by layers of volcanic lava.</item>
+            <item>There are hidden canyons carved by ancient rivers.</item>
+            <item>Some locations have unique rock balancing formations.</item>
+
+            <item>There are valleys where sound travels unusually far.</item>
+            <item>Some areas have natural terraces shaped by water flow.</item>
+            <item>There are caves where temperature remains constant year-round.</item>
+            <item>Some landscapes were shaped by ancient glaciers.</item>
+            <item>There are hidden waterfalls that only appear during rainy seasons.</item>
+            <item>Some regions have rare plants adapted to extreme conditions.</item>
+            <item>There are mountains that were once part of the ocean floor.</item>
+            <item>Some lakes have no visible outlet but maintain water levels.</item>
+            <item>There are hidden plateaus high above surrounding land.</item>
+            <item>Some deserts have areas of solid rock instead of sand.</item>
+
+            <item>There are natural formations that glow under certain conditions.</item>
+            <item>Some caves are formed by flowing lava instead of water.</item>
+            <item>There are islands created entirely by sediment deposits.</item>
+            <item>Some forests grow on top of ancient volcanic land.</item>
+            <item>There are hidden springs that provide fresh water in dry regions.</item>
+            <item>Some areas have naturally colored rock layers.</item>
+            <item>There are underwater ridges that stretch across oceans.</item>
+            <item>Some regions have natural wind tunnels through rock formations.</item>
+            <item>There are valleys formed by tectonic plate movement.</item>
+            <item>Some lakes freeze on the surface while remaining liquid below.</item>
+
+            <item>There are cliffs that change color based on sunlight.</item>
+            <item>Some caves contain formations that resemble frozen waterfalls.</item>
+            <item>There are hidden ecosystems beneath dense jungle canopies.</item>
+            <item>Some regions have natural stone circles formed by erosion.</item>
+            <item>There are mountains that continue to grow slowly over time.</item>
+            <item>Some landscapes are shaped by strong seasonal winds.</item>
+            <item>There are islands that formed from coral reefs over time.</item>
+            <item>Some rivers create natural boundaries between regions.</item>
+            <item>There are hidden lagoons separated from the sea by land barriers.</item>
+            <item>Some cliffs have caves carved by continuous wave action.</item>
+
+            <item>There are areas where underground water creates sinkholes.</item>
+            <item>Some forests contain hidden lakes surrounded by trees.</item>
+            <item>There are natural formations that look different from different angles.</item>
+            <item>Some valleys trap cold air, making them cooler than nearby areas.</item>
+            <item>There are mountains with peaks above the clouds most of the year.</item>
+            <item>Some regions have natural salt flats that stretch for kilometers.</item>
+            <item>There are hidden river sources deep within mountain ranges.</item>
+            <item>Some landscapes appear unchanged for thousands of years.</item>
+            <item>There are natural basins formed by erosion over long periods.</item>
+            <item>Some areas have unique geological patterns visible from above.</item>
+
+        </string-array>
+
+<!-- human habits facts -->
+
+        <string-array name="habit_facts">
+
+            <item>Habits are formed through repeated actions over time.</item>
+            <item>Small daily actions can lead to significant long-term changes.</item>
+            <item>Consistency is more important than intensity when building habits.</item>
+            <item>Habits often begin with a simple trigger or cue.</item>
+            <item>Repeating a behavior in the same context helps it become automatic.</item>
+            <item>Tracking progress can increase habit consistency.</item>
+            <item>Starting with easy habits increases the chance of success.</item>
+            <item>Habits reduce the need for constant decision-making.</item>
+            <item>Linking a new habit to an existing one can make it easier to adopt.</item>
+            <item>Environment plays a big role in shaping habits.</item>
+
+            <item>Removing distractions can help strengthen positive habits.</item>
+            <item>Habits can be formed faster when they are enjoyable.</item>
+            <item>Setting clear goals helps maintain consistent habits.</item>
+            <item>Breaking big tasks into small steps supports habit building.</item>
+            <item>Positive reinforcement encourages habit repetition.</item>
+            <item>Habits become stronger when practiced regularly at the same time.</item>
+            <item>Visual reminders can help maintain new habits.</item>
+            <item>Accountability increases the likelihood of sticking to habits.</item>
+            <item>Habits can change gradually with consistent effort.</item>
+            <item>Celebrating small wins can strengthen motivation.</item>
+
+            <item>Repeating a habit daily can make it feel natural over time.</item>
+            <item>Habits often follow a pattern of cue, action, and reward.</item>
+            <item>Replacing a bad habit with a better one is more effective than stopping it alone.</item>
+            <item>Simple routines can improve productivity.</item>
+            <item>Habits can influence overall lifestyle and mindset.</item>
+            <item>Keeping habits simple makes them easier to maintain.</item>
+            <item>Planning ahead can support consistent habits.</item>
+            <item>Habits are easier to build when they align with personal goals.</item>
+            <item>Regular practice helps habits become automatic.</item>
+            <item>Focusing on one habit at a time improves success rates.</item>
+
+            <item>Habits can be influenced by social surroundings.</item>
+            <item>Making habits visible can increase commitment.</item>
+            <item>Reducing effort required can make habits easier to follow.</item>
+            <item>Morning routines can set the tone for the day.</item>
+            <item>Even short daily habits can create long-term impact.</item>
+            <item>Habits can improve efficiency by saving time and energy.</item>
+            <item>Repeating behaviors in the same place strengthens habit formation.</item>
+            <item>Habits can shape long-term success patterns.</item>
+            <item>Consistency builds confidence in maintaining habits.</item>
+            <item>Habits can be adjusted based on changing goals.</item>
+
+            <item>Simple checklists can help track habits effectively.</item>
+            <item>Habits often become easier with repetition.</item>
+            <item>Reducing barriers can improve habit consistency.</item>
+            <item>Habits can help manage time better.</item>
+            <item>Building habits gradually prevents burnout.</item>
+            <item>Daily repetition strengthens habit memory.</item>
+            <item>Habits can improve focus when distractions are minimized.</item>
+            <item>Setting reminders can support new habits.</item>
+            <item>Habits are easier to maintain when they are enjoyable.</item>
+            <item>Routine actions can reduce stress in daily life.</item>
+
+            <item>Habits can influence overall productivity levels.</item>
+            <item>Practicing habits regularly improves discipline.</item>
+            <item>Habits can be strengthened through consistency.</item>
+            <item>Starting small helps maintain long-term habits.</item>
+            <item>Habits can shape personal growth over time.</item>
+            <item>Repeating actions builds familiarity and comfort.</item>
+            <item>Habits can be influenced by daily schedules.</item>
+            <item>Maintaining habits requires regular effort.</item>
+            <item>Habits can simplify complex tasks through routine.</item>
+            <item>Positive habits can improve daily performance.</item>
+
+            <item>Habits can develop through gradual improvement.</item>
+            <item>Repeating behaviors increases efficiency.</item>
+            <item>Habits can help achieve long-term goals.</item>
+            <item>Sticking to routines improves consistency.</item>
+            <item>Habits can reduce decision fatigue.</item>
+            <item>Creating a structured routine supports habit building.</item>
+            <item>Habits can influence mindset and attitude.</item>
+            <item>Practicing habits regularly builds stability.</item>
+            <item>Habits can improve organization skills.</item>
+            <item>Consistency helps habits become automatic.</item>
+
+            <item>Habits can be reinforced through repetition.</item>
+            <item>Maintaining habits requires patience and persistence.</item>
+            <item>Habits can improve efficiency over time.</item>
+            <item>Simple habits can lead to significant improvements.</item>
+            <item>Habits can be shaped by daily choices.</item>
+            <item>Building habits takes time and effort.</item>
+            <item>Habits can improve focus and attention.</item>
+            <item>Repeating small actions builds long-term consistency.</item>
+            <item>Habits can support better time management.</item>
+            <item>Positive routines can improve daily structure.</item>
+
+            <item>Habits can evolve with changing goals.</item>
+            <item>Consistency is key to maintaining habits.</item>
+            <item>Habits can create a sense of stability.</item>
+            <item>Repeating actions helps habits become second nature.</item>
+            <item>Habits can improve overall efficiency.</item>
+            <item>Small improvements can strengthen habits.</item>
+            <item>Habits can help maintain discipline.</item>
+            <item>Regular practice supports habit growth.</item>
+            <item>Habits can influence daily productivity.</item>
+            <item>Building habits step by step increases success.</item>
+
+        </string-array>
+
+<!--    human behavior facts -->
+
+        <string-array name="Human_behaviourFactsArray">
+
+            <item>People tend to remember the beginning and ending of an experience more than the middle.</item>
+            <item>Humans naturally look for patterns, even where none exist.</item>
+            <item>First impressions are often formed within seconds of meeting someone.</item>
+            <item>People are more likely to trust individuals who smile genuinely.</item>
+            <item>Humans often mimic the body language of people they feel comfortable with.</item>
+            <item>Most people check their phones without realizing it out of habit.</item>
+            <item>People tend to value things more when they have put effort into them.</item>
+            <item>Humans are more motivated by rewards than by avoiding losses in many situations.</item>
+            <item>People are more likely to agree with ideas that feel familiar.</item>
+            <item>Eye contact can increase feelings of connection during conversations.</item>
+
+            <item>People often remember emotionally charged events more clearly.</item>
+            <item>Humans tend to follow the behavior of a group in uncertain situations.</item>
+            <item>People are more likely to help others when they feel personally responsible.</item>
+            <item>Compliments can improve mood and increase cooperation.</item>
+            <item>People often prefer simple choices over complex ones.</item>
+            <item>Humans tend to avoid information that challenges their beliefs.</item>
+            <item>People are more likely to complete tasks when they are clearly defined.</item>
+            <item>Listening to others carefully can build stronger relationships.</item>
+            <item>People often judge situations based on recent experiences.</item>
+            <item>Humans tend to overestimate how much others notice their mistakes.</item>
+
+            <item>People feel happier when they have a sense of progress.</item>
+            <item>Humans are more likely to remember things that are unusual or surprising.</item>
+            <item>People often behave differently when they know they are being observed.</item>
+            <item>Small wins can boost motivation significantly.</item>
+            <item>Humans tend to prefer stories over plain facts.</item>
+            <item>People are more likely to say yes after agreeing to a small request first.</item>
+            <item>Being part of a group can influence decision-making.</item>
+            <item>People often associate certain smells with memories.</item>
+            <item>Humans can quickly adapt to new routines over time.</item>
+            <item>People tend to like others who share similar interests.</item>
+
+            <item>People are more likely to remember visual information than text alone.</item>
+            <item>Humans often make decisions based on emotions and justify them with logic.</item>
+            <item>People feel more comfortable with predictability.</item>
+            <item>Curiosity increases when information is incomplete.</item>
+            <item>People are more likely to trust familiar faces.</item>
+            <item>Humans tend to focus more on negative feedback than positive.</item>
+            <item>People often repeat behaviors that are rewarded.</item>
+            <item>Humans can form habits through repeated actions over time.</item>
+            <item>People are more likely to engage with content that feels personal.</item>
+            <item>Attention spans can decrease when too many distractions are present.</item>
+
+            <item>People often remember how something made them feel more than what happened.</item>
+            <item>Humans tend to prefer immediate rewards over delayed ones.</item>
+            <item>People are influenced by how choices are presented to them.</item>
+            <item>Humans are more likely to act when instructions are clear and simple.</item>
+            <item>People often follow routines to reduce mental effort.</item>
+            <item>Confidence can influence how others perceive a person’s abilities.</item>
+            <item>People tend to avoid tasks that feel overwhelming.</item>
+            <item>Humans are naturally curious about other people’s lives.</item>
+            <item>People are more likely to remember stories with emotional elements.</item>
+            <item>Humans often rely on past experiences to make quick decisions.</item>
+
+            <item>People are more engaged when they feel involved in a process.</item>
+            <item>Humans tend to prefer choices that require less effort.</item>
+            <item>People often interpret information based on their existing beliefs.</item>
+            <item>Humans can experience motivation boosts from social support.</item>
+            <item>People are more likely to take action when goals are specific.</item>
+            <item>Humans tend to notice changes more than constants.</item>
+            <item>People often feel satisfaction after completing tasks.</item>
+            <item>Humans are influenced by the opinions of people they respect.</item>
+            <item>People are more likely to remember things they actively engage with.</item>
+            <item>Humans tend to prefer clarity over ambiguity.</item>
+
+            <item>People often judge situations quickly based on limited information.</item>
+            <item>Humans can become more productive when working in short focused bursts.</item>
+            <item>People are more likely to trust information that is easy to understand.</item>
+            <item>Humans tend to repeat behaviors that feel rewarding.</item>
+            <item>People often feel motivated when they track their progress.</item>
+            <item>Humans can develop preferences based on repeated exposure.</item>
+            <item>People are more likely to act when they feel confident.</item>
+            <item>Humans tend to avoid uncertainty when possible.</item>
+            <item>People often respond positively to recognition and appreciation.</item>
+            <item>Humans are more likely to engage with interactive experiences.</item>
+
+            <item>People often feel more connected through shared experiences.</item>
+            <item>Humans tend to remember information linked to strong emotions.</item>
+            <item>People are more likely to follow through on public commitments.</item>
+            <item>Humans often prefer environments that feel familiar and safe.</item>
+            <item>People can become more focused when distractions are minimized.</item>
+            <item>Humans are influenced by how information is framed.</item>
+            <item>People tend to make quicker decisions under time pressure.</item>
+            <item>Humans often value feedback that helps them improve.</item>
+            <item>People are more likely to engage with content that feels relevant.</item>
+            <item>Humans tend to seek balance between effort and reward.</item>
+
+        </string-array>
+
+
+
+<!--    did you know facts-->
+
+        <string-array name="did_you_knownFactsArray">
+
+            <item>Did you know? The human brain processes images much faster than text.</item>
+            <item>Did you know? Octopuses can solve simple puzzles and open jars.</item>
+            <item>Did you know? A single bolt of lightning contains enough energy to power a home for days.</item>
+            <item>Did you know? Some plants can move in response to touch.</item>
+            <item>Did you know? The Moon has moonquakes similar to earthquakes.</item>
+            <item>Did you know? Dolphins have unique whistles that act like names.</item>
+            <item>Did you know? The Earth rotates at about 1,670 km per hour at the equator.</item>
+            <item>Did you know? Bees can recognize human faces.</item>
+            <item>Did you know? The human body contains about 60% water.</item>
+            <item>Did you know? Some volcanoes erupt underwater without being noticed on land.</item>
+
+            <item>Did you know? Penguins can jump several feet out of the water.</item>
+            <item>Did you know? Sound cannot travel in a vacuum.</item>
+            <item>Did you know? Trees can communicate through underground fungal networks.</item>
+            <item>Did you know? A group of owls is called a parliament.</item>
+            <item>Did you know? Your fingernails grow faster in warm weather.</item>
+            <item>Did you know? The Milky Way galaxy contains billions of stars.</item>
+            <item>Did you know? Some fish can produce their own light.</item>
+            <item>Did you know? The human eye blinks around 15–20 times per minute.</item>
+            <item>Did you know? The Sahara Desert was once a green, fertile land.</item>
+            <item>Did you know? Butterflies remember experiences from their caterpillar stage.</item>
+
+            <item>Did you know? Water expands when it freezes, unlike most substances.</item>
+            <item>Did you know? There are more possible passwords than grains of sand on Earth.</item>
+            <item>Did you know? Some birds can fly nonstop for days during migration.</item>
+            <item>Did you know? The heart creates enough pressure to pump blood several meters.</item>
+            <item>Did you know? Ants have been farming fungi for millions of years.</item>
+            <item>Did you know? The tallest trees can grow over 100 meters high.</item>
+            <item>Did you know? There are lakes that can change color naturally.</item>
+            <item>Did you know? The human brain continues developing into the mid-20s.</item>
+            <item>Did you know? Some animals can detect earthquakes before they happen.</item>
+            <item>Did you know? Ice can sometimes appear blue due to light absorption.</item>
+
+            <item>Did you know? The fastest land animal can reach speeds over 90 km/h.</item>
+            <item>Did you know? Some metals are liquid at room temperature.</item>
+            <item>Did you know? There are more microorganisms on Earth than stars in the galaxy.</item>
+            <item>Did you know? Some frogs glow under ultraviolet light.</item>
+            <item>Did you know? The human skeleton is constantly renewing itself.</item>
+            <item>Did you know? There are deserts where it can snow.</item>
+            <item>Did you know? Plants release oxygen during photosynthesis.</item>
+            <item>Did you know? Some spiders can travel through the air using silk.</item>
+            <item>Did you know? The brain uses electrical signals to communicate within the body.</item>
+
+            <item>Did you know? A single cloud can weigh thousands of tons.</item>
+            <item>Did you know? Some animals can survive extreme cold by slowing their metabolism.</item>
+            <item>Did you know? The Earth’s magnetic field helps protect life from solar winds.</item>
+            <item>Did you know? Certain mushrooms can glow in the dark.</item>
+            <item>Did you know? The human body produces millions of new cells every second.</item>
+            <item>Did you know? Some birds use tools to find food.</item>
+            <item>Did you know? There are more than 8 million species of life on Earth.</item>
+            <item>Did you know? The ocean contains most of the Earth’s living space.</item>
+            <item>Did you know? Some animals can see ultraviolet light.</item>
+            <item>Did you know? The human ear can detect a wide range of sounds.</item>
+
+            <item>Did you know? The Sun is about 150 million kilometers away from Earth.</item>
+            <item>Did you know? Some fish can breathe air for short periods.</item>
+            <item>Did you know? The Earth has a molten core deep beneath its surface.</item>
+            <item>Did you know? Certain plants can trap and digest insects.</item>
+            <item>Did you know? The human skin renews itself regularly.</item>
+            <item>Did you know? There are caves that stretch for hundreds of kilometers.</item>
+            <item>Did you know? Some animals migrate thousands of kilometers each year.</item>
+            <item>Did you know? The human body has over 600 muscles.</item>
+            <item>Did you know? Rainbows are formed by light bending through water droplets.</item>
+            <item>Did you know? Some insects can lift many times their body weight.</item>
+
+            <item>Did you know? There are underwater mountains taller than Everest.</item>
+            <item>Did you know? Some animals can regenerate lost limbs.</item>
+            <item>Did you know? The human brain can store vast amounts of information.</item>
+            <item>Did you know? Certain birds can mimic complex sounds.</item>
+            <item>Did you know? There are storms on other planets that last for years.</item>
+            <item>Did you know? The human body maintains a constant internal temperature.</item>
+            <item>Did you know? Some plants can survive in very dry environments.</item>
+            <item>Did you know? The Earth completes one orbit around the Sun every year.</item>
+            <item>Did you know? Some sea creatures live in complete darkness deep underwater.</item>
+
+            <item>Did you know? The human eye adapts quickly to changes in light.</item>
+            <item>Did you know? Some animals use camouflage to blend into their surroundings.</item>
+            <item>Did you know? The human body can heal many minor injuries on its own.</item>
+            <item>Did you know? There are forests that have existed for thousands of years.</item>
+            <item>Did you know? Some birds travel across continents during migration.</item>
+            <item>Did you know? Certain materials can bend without breaking.</item>
+            <item>Did you know? The human brain works even during sleep.</item>
+            <item>Did you know? Some animals can sense changes in weather conditions.</item>
+
+        </string-array>
+
 
 <!--      Daily Showing Facts-->
     <string-array name="daily_facts">

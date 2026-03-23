@@ -171,6 +171,121 @@
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
 
+
+
+<!--            science-->
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/quizScience"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="12dp"
+                app:cardCornerRadius="16dp"
+                app:cardBackgroundColor="@color/quiz_itemsBg"
+                app:strokeWidth="0dp"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="30dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/ScienceText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/quiz_basic_science"
+                        android:textColor="@color/white"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="12dp"/>
+
+                    <ImageView
+                        android:layout_width="220dp"
+                        android:layout_height="180dp"
+                        android:src="@drawable/qui_universebg"
+                        android:scaleType="fitCenter" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+
+<!--            sports-->
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/quizSports"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="12dp"
+                app:cardCornerRadius="16dp"
+                app:cardBackgroundColor="@color/quiz_itemsBg"
+                app:strokeWidth="0dp"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="30dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/sportText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/quiz_sports"
+                        android:textColor="@color/white"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="12dp"/>
+
+                    <ImageView
+                        android:layout_width="220dp"
+                        android:layout_height="180dp"
+                        android:src="@drawable/qui_universebg"
+                        android:scaleType="fitCenter" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+
+<!--            general knowledge-->
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/quizKnowledge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="12dp"
+                app:cardCornerRadius="16dp"
+                app:cardBackgroundColor="@color/quiz_itemsBg"
+                app:strokeWidth="0dp"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="30dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/knowledgeText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/quiz_general_knowledge"
+                        android:textColor="@color/white"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="12dp"/>
+
+                    <ImageView
+                        android:layout_width="220dp"
+                        android:layout_height="180dp"
+                        android:src="@drawable/qui_universebg"
+                        android:scaleType="fitCenter" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
 
