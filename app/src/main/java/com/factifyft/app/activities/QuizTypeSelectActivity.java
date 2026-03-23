@@ -24,10 +24,18 @@ public class QuizTypeSelectActivity extends AppCompatActivity {
         TextView psychologyText= findViewById(R.id.psychologyText);
         TextView technologyText= findViewById(R.id.technologyText);
         TextView UniverseText= findViewById(R.id.UniverseText);
+        TextView scienceText= findViewById(R.id.ScienceText);
+        TextView sportsText= findViewById(R.id.sportText);
+        TextView knowledgeText= findViewById(R.id.knowledgeText);
+
+
         ImageButton QuizButtonBack=findViewById(R.id.quizBackButton);
         MaterialCardView quizPsychology = findViewById(R.id.quizPsychology);
         MaterialCardView quizTechnology = findViewById(R.id.quizTechnology);
         MaterialCardView quizUniverse = findViewById(R.id.quizUniverse);
+        MaterialCardView quizScience = findViewById(R.id.quizScience);
+        MaterialCardView quizSports = findViewById(R.id.quizSports);
+        MaterialCardView quizKnowledge = findViewById(R.id.quizKnowledge);
 
 
         quizPsychology.setOnClickListener(view -> {
@@ -56,6 +64,34 @@ public class QuizTypeSelectActivity extends AppCompatActivity {
             intent.putExtra(getString(R.string.quiz_type_key), UniverseText.getText().toString());
             startActivity(intent);
         });
+
+        quizScience.setOnClickListener(view -> {
+            if(!isCardClickable) return;
+            isCardClickable = false; //block further cards
+            view.postDelayed(()-> isCardClickable = true, 300);
+            Intent intent = new Intent(QuizTypeSelectActivity.this, QuizShowActivity.class);
+            intent.putExtra(getString(R.string.quiz_type_key), scienceText.getText().toString());
+            startActivity(intent);
+        });
+
+        quizSports.setOnClickListener(view -> {
+            if(!isCardClickable) return;
+            isCardClickable = false; //block further cards
+            view.postDelayed(()-> isCardClickable = true, 300);
+            Intent intent = new Intent(QuizTypeSelectActivity.this, QuizShowActivity.class);
+            intent.putExtra(getString(R.string.quiz_type_key), sportsText.getText().toString());
+            startActivity(intent);
+        });
+
+         quizKnowledge.setOnClickListener(view -> {
+            if(!isCardClickable) return;
+            isCardClickable = false; //block further cards
+            view.postDelayed(()-> isCardClickable = true, 300);
+            Intent intent = new Intent(QuizTypeSelectActivity.this, QuizShowActivity.class);
+            intent.putExtra(getString(R.string.quiz_type_key), knowledgeText.getText().toString());
+            startActivity(intent);
+        });
+
         QuizButtonBack.setOnClickListener(view -> finish());
     }
     @Override

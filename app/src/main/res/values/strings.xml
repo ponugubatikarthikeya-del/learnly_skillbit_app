@@ -101,6 +101,7 @@
     <string name="cat_mysteries">Mysteries</string>
     <string name="cat_animals">Animals</string>
     <string name="cat_category">category</string>
+    <string name="cat_hidden_facts">Hidden</string>
 
 
     <string name="lastFactCount">lastFactCount</string>
@@ -191,4 +192,15 @@
     <string name="Quiz_back">Back</string>
 
 
+<!--    update app-->
+
+    <string name="did_you_known">Did you know ?</string>
+    <string name="Human_behaviour">Human Behavior</string>
+    <string name="Human_Habits">Human Habits</string>
+    <string name="world_hidden">Hidden Talks</string>
+
+
+    <string name="quiz_sports">Sports</string>
+    <string name="quiz_basic_science">Science</string>
+    <string name="quiz_general_knowledge">General Knowledge</string>
 </resources>

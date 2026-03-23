@@ -41,6 +41,8 @@ public class FactsFragment extends Fragment {
         RecyclerView recyclerInteresting = view.findViewById(R.id.recyclerInteresting);
         RecyclerView recyclerPsychology = view.findViewById(R.id.recyclerPsychology);
         RecyclerView recyclerUnknown = view.findViewById(R.id.recyclerUnKnown);
+        RecyclerView recyclerHidden = view.findViewById(R.id.recyclerHidden);
+
 
         //set same height and width for recycler view
         DisplayMetrics displayMetrics =new DisplayMetrics();
@@ -52,13 +54,14 @@ public class FactsFragment extends Fragment {
         recyclerInteresting.setLayoutManager(new GridLayoutManager(requireContext(), 2));
         recyclerPsychology.setLayoutManager(new GridLayoutManager(requireContext(), 2));
         recyclerUnknown.setLayoutManager(new GridLayoutManager(requireContext(), 2));
+        recyclerHidden.setLayoutManager(new GridLayoutManager(requireContext(), 2));
 
 
         // --- Interesting Facts ---
         List<FactCategory> interestingList = new ArrayList<>();
         interestingList.add(new FactCategory(getString(R.string.cat_oceans), R.drawable.ocean_bg, getString(R.string.cat_interesting)));
         interestingList.add(new FactCategory(getString(R.string.cat_space), R.drawable.space_bg, getString(R.string.cat_interesting)));
-        interestingList.add(new FactCategory(getString(R.string.cat_time_universe), R.drawable.time_bg,  getString(R.string.cat_unknown)));
+        interestingList.add(new FactCategory(getString(R.string.cat_time_universe), R.drawable.time_bg,  getString(R.string.cat_interesting)));
         interestingList.add(new FactCategory(getString(R.string.cat_mind), R.drawable.mind_bg , getString(R.string.cat_interesting)));
 
         // --- Psychology Facts ---
@@ -66,13 +69,18 @@ public class FactsFragment extends Fragment {
         psychologyList.add(new FactCategory(getString(R.string.cat_men), R.drawable.men_bg, getString(R.string.cat_psychology)));
         psychologyList.add(new FactCategory(getString(R.string.cat_women), R.drawable.women_bg,  getString(R.string.cat_psychology)));
         psychologyList.add(new FactCategory(getString(R.string.cat_love), R.drawable.love_bg,  getString(R.string.cat_psychology)));
+        psychologyList.add(new FactCategory(getString(R.string.Human_behaviour), R.drawable.human_behaviour_img,getString(R.string.cat_psychology)));
+        psychologyList.add(new FactCategory(getString(R.string.Human_Habits), R.drawable.habits_facts_img,getString(R.string.cat_psychology)));
 
         // --- Unknown Facts ---
         List<FactCategory> unknownList = new ArrayList<>();
         unknownList.add(new FactCategory(getString(R.string.cat_nature_wonders), R.drawable.nature_bg, getString(R.string.cat_unknown)));
-        unknownList.add(new FactCategory(getString(R.string.cat_mysteries),R.drawable.mystery_bg, getString(R.string.cat_unknown)));
         unknownList.add(new FactCategory(getString(R.string.cat_animals), R.drawable.animals_bg, getString(R.string.cat_unknown)));
 
+        List<FactCategory> HiddenList= new ArrayList<>();
+        HiddenList.add(new FactCategory(getString(R.string.world_hidden),R.drawable.hidden_talk_img,getString(R.string.cat_hidden_facts)));
+        HiddenList.add(new FactCategory(getString(R.string.cat_mysteries),R.drawable.mystery_bg,getString(R.string.cat_hidden_facts)));
+        HiddenList.add(new FactCategory(getString(R.string.did_you_known),R.drawable.do_you_known_img,getString(R.string.cat_unknown)));
 
         FactsCategoryAdapter adapterInteresting = new FactsCategoryAdapter(requireContext(), interestingList, category -> {
             Intent i = new Intent(requireContext(), FactsDisplayActivity.class);
@@ -93,10 +101,16 @@ public class FactsFragment extends Fragment {
             startActivity(i);
         },width);
 
+        FactsCategoryAdapter adapterHidden = new FactsCategoryAdapter(requireContext(), HiddenList, category -> {
+            Intent i = new Intent(requireContext(), FactsDisplayActivity.class);
+            i.putExtra(getString(R.string.cat_category), category.getName());
+            startActivity(i);
+        },width);
 
         recyclerInteresting.setAdapter(adapterInteresting);
         recyclerPsychology.setAdapter(adapterPsychology);
         recyclerUnknown.setAdapter(adapterUnknown);
+        recyclerHidden.setAdapter(adapterHidden);
 
         return view;
     }

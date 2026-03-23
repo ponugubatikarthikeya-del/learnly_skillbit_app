@@ -98,6 +98,25 @@
             android:layout_marginBottom="8dp"
             android:nestedScrollingEnabled="false" />
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hidden Facts"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="@color/noFavoriteTextBg"
+            android:layout_marginStart="5dp"
+            android:padding="10dp"
+            android:layout_marginBottom="8dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerHidden"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="8dp"
+            android:nestedScrollingEnabled="false" />
+
 
     </LinearLayout>
 </androidx.core.widget.NestedScrollView>
