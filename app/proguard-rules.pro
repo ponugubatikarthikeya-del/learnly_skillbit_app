@@ -19,3 +19,13 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
+
+# Prevent obfuscation of Activities so Class.forName works
+-keep public class * extends android.app.Activity
+
+# Google Play Services Ads
+-keep public class com.google.android.gms.ads.** { public *; }
+-keep public class com.google.ads.** { public *; }
+
+# Keep your own adapter classes if they use Native Ads
+-keep class com.factifyft.app.adapters.** { *; }

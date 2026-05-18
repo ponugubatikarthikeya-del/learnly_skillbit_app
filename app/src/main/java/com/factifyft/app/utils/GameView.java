@@ -12,6 +12,7 @@ import android.view.LayoutInflater;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -24,12 +25,11 @@ import java.util.Random;
 
 public class GameView extends SurfaceView implements Runnable, SurfaceHolder.Callback {
 
-    private boolean dialogShown = false;
+    private volatile boolean dialogShown = false;
+    private volatile boolean isPaused = false;
 
-    // Public direction enum so activity can set
     public enum Direction {UP, DOWN, LEFT, RIGHT}
 
-    // Listener interface for score update
     public interface OnScoreChangeListener {
         void onScoreChanged(int newScore);
     }
@@ -38,7 +38,7 @@ public class GameView extends SurfaceView implements Runnable, SurfaceHolder.Cal
     private volatile boolean running = false;
     private SurfaceHolder holder;
 
-    private final int rows = 15;         // grid size (15x15)
+    private final int rows = 15;
     private final int cols = 15;
     private Paint gridPaint, snakePaint, foodPaint, bgPaint, borderPaint;
     private ArrayList<Point> snake;
@@ -46,7 +46,7 @@ public class GameView extends SurfaceView implements Runnable, SurfaceHolder.Cal
     private Direction currentDirection = Direction.RIGHT;
     private final Random random = new Random();
     private int score = 0;
-    private boolean isGameOver = false;
+    private volatile boolean isGameOver = false;
 
     private OnScoreChangeListener scoreListener;
 
@@ -89,13 +89,11 @@ public class GameView extends SurfaceView implements Runnable, SurfaceHolder.Cal
         borderPaint.setStrokeWidth(6);
     }
 
-    // Allow MainActivity to set a callback to show score
     public void setOnScoreChangeListener(OnScoreChangeListener listener) {
         this.scoreListener = listener;
     }
 
     public void changeDirection(Direction dir) {
-        // Prevent immediate reverse (classic rule)
         if ((currentDirection == Direction.UP && dir == Direction.DOWN) ||
                 (currentDirection == Direction.DOWN && dir == Direction.UP) ||
                 (currentDirection == Direction.LEFT && dir == Direction.RIGHT) ||
@@ -108,10 +106,10 @@ public class GameView extends SurfaceView implements Runnable, SurfaceHolder.Cal
     public void resetGame() {
         dialogShown = false;
         isGameOver = false;
+        isPaused = false;
         score = 0;
         notifyScore();
         snake = new ArrayList<>();
-        // start with length 4 in center
         int startX = cols / 2;
         int startY = rows / 2;
         snake.add(new Point(startX, startY));
@@ -123,15 +121,16 @@ public class GameView extends SurfaceView implements Runnable, SurfaceHolder.Cal
     }
 
     private void placeFood() {
-        // pick random empty spot
         while (true) {
             int x = random.nextInt(cols);
             int y = random.nextInt(rows);
             boolean clash = false;
-            for (Point p : snake) {
-                if (p.x == x && p.y == y) {
-                    clash = true;
-                    break;
+            if (snake != null) {
+                for (Point p : snake) {
+                    if (p.x == x && p.y == y) {
+                        clash = true;
+                        break;
+                    }
                 }
             }
             if (!clash) {
@@ -147,7 +146,9 @@ public class GameView extends SurfaceView implements Runnable, SurfaceHolder.Cal
 
     @Override
     public void surfaceCreated(@NonNull SurfaceHolder holder) {
-        resetGame();
+        if (snake == null) {
+            resetGame();
+        }
     }
 
     @Override
@@ -156,12 +157,12 @@ public class GameView extends SurfaceView implements Runnable, SurfaceHolder.Cal
 
     @Override
     public void surfaceDestroyed(@NonNull SurfaceHolder holder) {
-        running=false;
-        pause(); // ensure stop the Thread
+        pause();
     }
 
     public void pause() {
         running = false;
+        isPaused = true;
         if (gameThread != null) {
             try {
                 gameThread.join();
@@ -174,19 +175,18 @@ public class GameView extends SurfaceView implements Runnable, SurfaceHolder.Cal
     public void resume() {
         if (running) return;
         running = true;
+        isPaused = false;
         gameThread = new Thread(this);
         gameThread.start();
     }
 
-    // Core loop
     @Override
     public void run() {
-        long updateDelay = 200; // movement speed: 200ms
+        long updateDelay = 200;
         long lastTime = System.currentTimeMillis();
 
         while (running) {
-
-            if (!holder.getSurface().isValid()) {
+            if (!holder.getSurface().isValid() || isPaused) {
                 android.os.SystemClock.sleep(20);
                 continue;
             }
@@ -194,13 +194,18 @@ public class GameView extends SurfaceView implements Runnable, SurfaceHolder.Cal
             long now = System.currentTimeMillis();
 
             if (now - lastTime >= updateDelay) {
-
                 update();
 
                 if (isGameOver && !dialogShown) {
                     dialogShown = true;
-                    Activity activity = (Activity) getContext();
-                    activity.runOnUiThread(() -> showGameAlertdialog(score));
+                    Context context = getContext();
+                    if (context instanceof Activity activity) {
+                        activity.runOnUiThread(() -> {
+                            if (!activity.isFinishing() && !activity.isDestroyed()) {
+                                showGameAlertdialog(score);
+                            }
+                        });
+                    }
                 }
 
                 Canvas canvas = holder.lockCanvas();
@@ -211,40 +216,26 @@ public class GameView extends SurfaceView implements Runnable, SurfaceHolder.Cal
 
                 lastTime = now;
             }
-
-            android.os.SystemClock.sleep(16);   // ← No warnings!
+            android.os.SystemClock.sleep(16);
         }
     }
 
-    // Update snake position, check collisions, food eaten
     private void update() {
-        if (snake == null || snake.isEmpty()) return;
-        if(isGameOver) return;
-        // compute new head position
+        if (snake == null || snake.isEmpty() || isGameOver || isPaused) return;
+
         Point head = new Point(snake.get(0).x, snake.get(0).y);
         switch (currentDirection) {
-            case UP:
-                head.y -= 1;
-                break;
-            case DOWN:
-                head.y += 1;
-                break;
-            case LEFT:
-                head.x -= 1;
-                break;
-            case RIGHT:
-                head.x += 1;
-                break;
+            case UP: head.y -= 1; break;
+            case DOWN: head.y += 1; break;
+            case LEFT: head.x -= 1; break;
+            case RIGHT: head.x += 1; break;
         }
 
-        // Check wall collision => resetGame (game over behavior)
         if (head.x < 0 || head.x >= cols || head.y < 0 || head.y >= rows) {
-            // game over: restart
             isGameOver = true;
             return;
         }
 
-        // Check self-collision
         for (Point p : snake) {
             if (p.x == head.x && p.y == head.y) {
                 isGameOver = true;
@@ -252,17 +243,13 @@ public class GameView extends SurfaceView implements Runnable, SurfaceHolder.Cal
             }
         }
 
-        // Add head
         snake.add(0, head);
 
-        // Check for food
         if (food != null && head.x == food.x && head.y == food.y) {
             score += 1;
             notifyScore();
-            // grow: do not remove tail
             placeFood();
         } else {
-            // normal move: remove tail
             snake.remove(snake.size() - 1);
         }
     }
@@ -272,15 +259,8 @@ public class GameView extends SurfaceView implements Runnable, SurfaceHolder.Cal
         if (!(context instanceof Activity activity)) return;
 
         final Dialog dialog = new Dialog(context);
-
-        // FIX: use LayoutInflater.from(context)
         LayoutInflater inflater = LayoutInflater.from(context);
-
-        View dialogView = inflater.inflate(
-                R.layout.dialog_snake_game_over,
-                activity.findViewById(android.R.id.content),
-                false
-        );
+        View dialogView = inflater.inflate(R.layout.dialog_snake_game_over, activity.findViewById(android.R.id.content), false);
 
         TextView gameScoreView = dialogView.findViewById(R.id.gameScore);
         TextView exitBtn = dialogView.findViewById(R.id.exitBtn);
@@ -293,49 +273,43 @@ public class GameView extends SurfaceView implements Runnable, SurfaceHolder.Cal
 
         if (dialog.getWindow() != null) {
             DisplayMetrics metrics = context.getResources().getDisplayMetrics();
-            int width = (int) (metrics.widthPixels * 0.925);
-            int height = (int) (metrics.heightPixels * 0.650);
-            dialog.getWindow().setLayout(width, height);
+            int width = (int) (metrics.widthPixels * 0.9);
+            dialog.getWindow().setLayout(width, ViewGroup.LayoutParams.WRAP_CONTENT);
             dialog.getWindow().getAttributes().windowAnimations = R.style.animation;
             dialog.getWindow().setBackgroundDrawableResource(android.R.color.transparent);
         }
 
         exitBtn.setOnClickListener(v -> {
             dialog.dismiss();
-            activity.finish();
+            AdManager.showInterstitialAd(activity, activity::finish);
         });
 
         restartBtn.setOnClickListener(v -> {
             dialog.dismiss();
-            resetGame();
+            AdManager.showRewardedAd(activity, reward -> {}, this::resetGame);
         });
 
         dialog.show();
     }
-    // Draw everything
+
     private void drawGame(Canvas canvas) {
         if (snake == null) return;
 
-        // clear background
         canvas.drawColor(ContextCompat.getColor(getContext(), R.color.snake_canvas_bg));
-//        canvas.drawColor(Color.parseColor("#E8F7FF"));
 
-        int width = canvas.getWidth() - 48; // margins
-        int height = canvas.getHeight() - 48;
-        int size = Math.min(width, height);
-        int left = 24;
-        int top = 24;
+        int totalWidth = canvas.getWidth();
+        int totalHeight = canvas.getHeight();
+        int size = Math.min(totalWidth - 48, totalHeight - 48);
+        if (size <= 0) return;
+
+        int left = (totalWidth - size) / 2;
+        int top = (totalHeight - size) / 2;
         int right = left + size;
         int bottom = top + size;
-
-        // compute cell size
-        // computed at runtime
         int cellSize = size / cols;
 
-        // draw board background
         canvas.drawRect(left, top, right, bottom, bgPaint);
 
-        // draw grid lines
         for (int r = 0; r <= rows; r++) {
             int y = top + r * cellSize;
             canvas.drawLine(left, y, right, y, gridPaint);
@@ -345,14 +319,12 @@ public class GameView extends SurfaceView implements Runnable, SurfaceHolder.Cal
             canvas.drawLine(x, top, x, bottom, gridPaint);
         }
 
-        // draw snake
         for (Point p : snake) {
             int px = left + p.x * cellSize;
             int py = top + p.y * cellSize;
-            canvas.drawRect(px + 4, py + 4, px + cellSize - 4, py + cellSize - 4, snakePaint);
+            canvas.drawRect(px + 2, py + 2, px + cellSize - 2, py + cellSize - 2, snakePaint);
         }
 
-        // draw food
         if (food != null) {
             float cx = left + food.x * cellSize + cellSize / 2f;
             float cy = top + food.y * cellSize + cellSize / 2f;
@@ -360,7 +332,6 @@ public class GameView extends SurfaceView implements Runnable, SurfaceHolder.Cal
             canvas.drawCircle(cx, cy, radius, foodPaint);
         }
 
-        // border
         canvas.drawRect(left, top, right, bottom, borderPaint);
     }
 }

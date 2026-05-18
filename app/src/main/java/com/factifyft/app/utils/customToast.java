@@ -1,6 +1,5 @@
 package com.factifyft.app.utils;
 
-import android.app.Activity;
 import android.content.Context;
 import android.view.Gravity;
 import android.view.LayoutInflater;
@@ -12,23 +11,22 @@ import com.factifyft.app.R;
 
 public class customToast {
 
-    public static void showToast(Context context, String message,int duration) {
+    public static void showToast(Context context, String message, int duration) {
+        if (context == null) return;
+        
         LayoutInflater inflater = LayoutInflater.from(context);
-        View layout = inflater.inflate(R.layout.toast_msg_deisgn,
-                ((Activity) context).findViewById(android.R.id.content),
-                false
-        );
+        // Do not cast context to Activity, and do not use Activity root for Toast inflation
+        View layout = inflater.inflate(R.layout.toast_msg_deisgn, null);
 
-//        View layout = inflater.inflate(R.layout.toast_msg_deisgn, null,false);
-        TextView textView=layout.findViewById(R.id.toastText);
-        textView.setText(message);
+        TextView textView = layout.findViewById(R.id.toastText);
+        if (textView != null) {
+            textView.setText(message);
+        }
 
-        Toast toast = new Toast(context);
-        toast.setGravity(Gravity.BOTTOM|Gravity.CENTER_HORIZONTAL,0,100);
+        Toast toast = new Toast(context.getApplicationContext());
+        toast.setGravity(Gravity.BOTTOM | Gravity.CENTER_HORIZONTAL, 0, 100);
         toast.setDuration(duration);
         toast.setView(layout);
         toast.show();
-
     }
-
 }

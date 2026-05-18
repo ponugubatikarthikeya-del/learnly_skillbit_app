@@ -1,6 +1,5 @@
 package com.factifyft.app.fragments;
 
-
 import static android.content.Context.MODE_PRIVATE;
 
 import android.animation.Animator;
@@ -13,16 +12,19 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.DecelerateInterpolator;
-import android.widget.ImageButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.factifyft.app.R;
+import com.factifyft.app.utils.customToast;
+import com.google.android.material.button.MaterialButton;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -33,8 +35,6 @@ import java.util.Locale;
 import java.util.Random;
 import java.util.Set;
 
-
-
 public class DailyFragment extends Fragment {
 
     private View frontView;
@@ -42,187 +42,172 @@ public class DailyFragment extends Fragment {
     private boolean isFrontVisible = true;
     private TextView factText;
     private boolean appStart = true;
-    private long lastShareClick,lastCopyClick;
+    private long lastShareClick = 0;
+    private long lastCopyClick = 0;
     private SharedPreferences prefs;
-    private ImageButton dailyLike;
+    private MaterialButton dailyLike;
+    private String currentFact;
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
         View root = inflater.inflate(R.layout.fragment_daily, container, false);
 
         View cardContainer = root.findViewById(R.id.cardContainer);
         frontView = root.findViewById(R.id.card_front);
         backView = root.findViewById(R.id.card_back);
+        
+        // Find views within the root or backView
         factText = backView.findViewById(R.id.factTextViewBack);
-        dailyLike = root.findViewById(R.id.dailyLike);
-        ImageButton dailyShare = root.findViewById(R.id.dailyShare);
-        ImageButton DailyBtn_copy = root.findViewById(R.id.DailyBtn_copy);
-
+        dailyLike = backView.findViewById(R.id.dailyLike);
+        MaterialButton dailyShare = backView.findViewById(R.id.dailyShare);
+        MaterialButton dailyBtnCopy = backView.findViewById(R.id.DailyBtn_copy);
 
         // 3D distance setup
         float scale = getResources().getDisplayMetrics().density;
-        cardContainer.setCameraDistance(8000 * scale);
+        if (cardContainer != null) {
+            cardContainer.setCameraDistance(8000 * scale);
+        }
 
         prefs = requireContext().getSharedPreferences(getString(R.string.prefs_facts), MODE_PRIVATE);
 
-//        prefs = requireContext().getSharedPreferences(PREFS_NAME, MODE_PRIVATE);
+        loadDailyFact();
 
-        //you use this to avoid repeating facts.when selecting a new fact,you skip any that are already
-        //in the set
-        Set<String> showedFacts =new HashSet<>(prefs.getStringSet(getString(R.string.showed_facts), new HashSet<>()));
+        if (factText != null) {
+            factText.setText(currentFact);
+        }
 
-        //Every time the app opens,you compare today's date to last date.if thy are different,it
-        //mean a new day has started,so you should show a new fact
+        updateLikeButtonIcon();
+
+        // Initial visibility
+        if (frontView != null && backView != null) {
+            frontView.setVisibility(isFrontVisible ? View.VISIBLE : View.GONE);
+            backView.setVisibility(isFrontVisible ? View.GONE : View.VISIBLE);
+        }
+
+        if (cardContainer != null) {
+            cardContainer.setOnClickListener(v -> {
+                if (isFrontVisible) flipToBack();
+                else flipToFront();
+            });
+        }
+
+        if (dailyLike != null) {
+            dailyLike.setOnClickListener(v -> toggleLike());
+        }
+
+        if (dailyShare != null) {
+            dailyShare.setOnClickListener(v -> shareFact());
+        }
+
+        if (dailyBtnCopy != null) {
+            dailyBtnCopy.setOnClickListener(v -> copyFact());
+        }
+
+        return root;
+    }
+
+    private void loadDailyFact() {
+        Set<String> showedFacts = new HashSet<>(prefs.getStringSet(getString(R.string.showed_facts), new HashSet<>()));
         String lastDate = prefs.getString(getString(R.string.lastDate), "");
         String today = new SimpleDateFormat(getString(R.string.dd_mm_yyyy), Locale.getDefault()).format(new Date());
 
-        //storing facts in array (daily facts)
         String[] facts = getResources().getStringArray(R.array.daily_facts);
-
-        //even if the user opens the app multiple times in one day,you want to show the same fact all day long.
-        //so you save it and reuse it until the next day
-        String currentFact;
-
-        //check if new facts added when you add new facts it automatically add new facts and showing new facts
-        int LastFactCount = prefs.getInt(getString(R.string.lastFactCount), 0);   //allFacts=facts
-        int currentFactCount = facts.length;
-        if (currentFactCount > LastFactCount) {
-            //new facts added
-            prefs.edit().putInt(getString(R.string.lastFactCount), currentFactCount).apply();
+        int lastFactCount = prefs.getInt(getString(R.string.lastFactCount), 0);
+        if (facts.length > lastFactCount) {
+            prefs.edit().putInt(getString(R.string.lastFactCount), facts.length).apply();
         }
 
         if (!today.equals(lastDate)) {
-            //daily showing new Fact
             List<String> unUsedFacts = new ArrayList<>();
             for (String fact : facts) {
                 if (!showedFacts.contains(fact)) {
                     unUsedFacts.add(fact);
                 }
             }
-            //pick to random fact from unUsedFacts
-            Random random = new Random();
+
             if (unUsedFacts.isEmpty()) {
-                currentFact =getString(R.string.facts_over);
+                currentFact = getString(R.string.facts_over);
             } else {
-                currentFact = unUsedFacts.get(random.nextInt(unUsedFacts.size()));
+                currentFact = unUsedFacts.get(new Random().nextInt(unUsedFacts.size()));
+                showedFacts.add(currentFact);
             }
 
-            //save to prefs
-            showedFacts.add(currentFact);
             prefs.edit()
                     .putString(getString(R.string.lastDate), today)
                     .putString(getString(R.string.currentFact_key), currentFact)
-//                    .putString("lastDate", today)
-//                    .putString("currentFact", currentFact)
                     .putStringSet(getString(R.string.showed_facts), showedFacts)
                     .apply();
-        }else{
+        } else {
             currentFact = prefs.getString(getString(R.string.currentFact_key), getString(R.string.noFacts_today));
-
-//            currentFact=prefs.getString("currentFact","no facts available in this day");
         }
-        //show Fact text
-        if(factText != null){
-        factText.setText(currentFact);}
+    }
 
-        Set<String> saved = new HashSet<>(prefs.getStringSet(getString(R.string.prefs_fav_set), new HashSet<>()));
-//        Set<String> saved= new HashSet<>(prefs.getStringSet(PREF_KEY_FAV_SET, new HashSet<>()));
-
-         //check favorites status
+    private void updateLikeButtonIcon() {
+        if (dailyLike == null || currentFact == null) return;
+        Set<String> saved = prefs.getStringSet(getString(R.string.prefs_fav_set), new HashSet<>());
         String key = getString(R.string.daily_prefix) + normalizeFact(currentFact);
-//        String key = "daily|" + normalizeFact(currentFact);
-        if (saved.contains(key)) { //if you can get error then see this place
-            dailyLike.setImageResource(R.drawable.baseline_favorite_24);
-        } else {
-            dailyLike.setImageResource(R.drawable.baseline_favorite_border_24);
+        dailyLike.setIconResource(saved.contains(key) ? R.drawable.baseline_favorite_24 : R.drawable.baseline_favorite_border_24);
+    }
+
+    private void toggleLike() {
+        if (currentFact == null || currentFact.equals(getString(R.string.noFacts_today)) || currentFact.equals(getString(R.string.facts_over))) {
+            return;
         }
+        String key = getString(R.string.daily_prefix) + normalizeFact(currentFact);
+        Set<String> currentFavs = new HashSet<>(prefs.getStringSet(getString(R.string.prefs_fav_set), new HashSet<>()));
 
-        //show front or back view
-        if (isFrontVisible) {
-            frontView.setVisibility(View.VISIBLE);
-            backView.setVisibility(View.INVISIBLE);
+        if (currentFavs.contains(key)) {
+            currentFavs.remove(key);
+            dailyLike.setIconResource(R.drawable.baseline_favorite_border_24);
         } else {
-            frontView.setVisibility(View.INVISIBLE);
-            backView.setVisibility(View.VISIBLE);
+            currentFavs.add(key);
+            dailyLike.setIconResource(R.drawable.baseline_favorite_24);
+            customToast.showToast(requireContext(), getString(R.string.Liked_toast), Toast.LENGTH_SHORT);
         }
+        prefs.edit().putStringSet(getString(R.string.prefs_fav_set), currentFavs).apply();
+    }
 
-        // click listener to flip
-        cardContainer.setOnClickListener(v -> {
-            if (isFrontVisible) flipToBack();
-            else flipToFront();
-        });
-        //like button logic
-        dailyLike.setOnClickListener(v -> {
-            // load existing set
-            if (saved.contains(key)) {
-                // remove
-                saved.remove(key);
-                dailyLike.setImageResource(R.drawable.baseline_favorite_border_24); // outline icon
+    private void shareFact() {
+        long now = System.currentTimeMillis();
+        if (now - lastShareClick < 1000) return;
+        lastShareClick = now;
 
-            } else {
-                // add
-                saved.add(key);
-                dailyLike.setImageResource(R.drawable.baseline_favorite_24); // filled icon
+        if (factText == null) return;
+        String factToShare = factText.getText().toString();
+        Intent share = new Intent(Intent.ACTION_SEND);
+        share.setType("text/plain");
+        share.putExtra(Intent.EXTRA_TEXT, factToShare);
+        startActivity(Intent.createChooser(share, getString(R.string.share_fact_via)));
+    }
 
-            }
-            prefs.edit().putStringSet(getString(R.string.prefs_fav_set), new HashSet<>(saved)).apply();
-//            prefs.edit().putStringSet(PREF_KEY_FAV_SET,new HashSet<>(saved)).apply();
-            // No broadcast needed — FavoriteFragment listens to SharedPreferences changes.
-        });
+    private void copyFact() {
+        long now = System.currentTimeMillis();
+        if (now - lastCopyClick < 1000) return;
+        lastCopyClick = now;
 
-        //share button logic
-       lastShareClick=0;
-       lastCopyClick=0;
-        dailyShare.setOnClickListener(v -> {
-                long now=System.currentTimeMillis();
-                if(now-lastShareClick<1000){
-                    return;
-                }
-                lastShareClick=now;
-            String factToShare = factText.getText().toString();
-            Intent share = new Intent(Intent.ACTION_SEND);
-            share.setType("text/plain");
-            share.putExtra(Intent.EXTRA_TEXT, factToShare);
-            startActivity(Intent.createChooser(share, getString(R.string.share_fact_via)));
-//            startActivity(Intent.createChooser(share, "Share fact via"));
-        });
-
-        DailyBtn_copy.setOnClickListener(v -> {
-            long now=System.currentTimeMillis();
-            if(now-lastCopyClick<1000) {
-                return;
-            }
-            lastCopyClick=now;
-            //get the factText for fact
-            String factToCopy = factText.getText().toString();
-
-            //get clipBoard manager from fragments's context
-            ClipboardManager clipboard = (ClipboardManager) requireContext().getSystemService(Context.CLIPBOARD_SERVICE);
-
-            //create a clipData with the fact
+        if (factText == null) return;
+        String factToCopy = factText.getText().toString();
+        ClipboardManager clipboard = (ClipboardManager) requireContext().getSystemService(Context.CLIPBOARD_SERVICE);
+        if (clipboard != null) {
             ClipData clip = ClipData.newPlainText(getString(R.string.clipboard_label_fact), factToCopy);
-//            ClipData clip = ClipData.newPlainText("fact", factToCopy);
-            //set the clip  with the copied text
-            if(clipboard != null){
-            clipboard.setPrimaryClip(clip);}
-//            customToast.showToast(requireContext(),"Copied",Toast.LENGTH_SHORT);
-        });
-
-        return root;
+            clipboard.setPrimaryClip(clip);
+            customToast.showToast(requireContext(), getString(R.string.copied_text), Toast.LENGTH_SHORT);
+        }
     }
 
-    private String normalizeFact(String fact){
-        return fact.trim().replaceAll("\\s+", " ").toLowerCase(Locale.ROOT);
+    private String normalizeFact(String fact) {
+        return fact != null ? fact.trim().replaceAll("\\s+", " ").toLowerCase(Locale.ROOT) : "";
     }
+
     private void flipToBack() {
-        if(frontView == null || backView == null) return;
+        if (frontView == null || backView == null) return;
         ObjectAnimator frontFlipOut = ObjectAnimator.ofFloat(frontView, "rotationY", 0f, 90f);
-        frontFlipOut.setDuration(200);
+        frontFlipOut.setDuration(250);
         frontFlipOut.setInterpolator(new DecelerateInterpolator());
+        
         ObjectAnimator backFlipIn = ObjectAnimator.ofFloat(backView, "rotationY", -90f, 0f);
-        backFlipIn.setDuration(200);
+        backFlipIn.setDuration(250);
         backFlipIn.setInterpolator(new DecelerateInterpolator());
 
         frontFlipOut.addListener(new AnimatorListenerAdapter() {
@@ -232,22 +217,22 @@ public class DailyFragment extends Fragment {
                 backView.setVisibility(View.VISIBLE);
                 backView.setRotationY(-90f);
                 backFlipIn.start();
+                isFrontVisible = false;
                 prefs.edit().putBoolean(getString(R.string.isFrontVisible), false).apply();
             }
         });
 
         frontFlipOut.start();
-        isFrontVisible = false;
     }
 
     private void flipToFront() {
-        if(frontView == null || backView == null) return;
+        if (frontView == null || backView == null) return;
         ObjectAnimator backFlipOut = ObjectAnimator.ofFloat(backView, "rotationY", 0f, 90f);
-        backFlipOut.setDuration(200);
+        backFlipOut.setDuration(250);
         backFlipOut.setInterpolator(new DecelerateInterpolator());
 
         ObjectAnimator frontFlipIn = ObjectAnimator.ofFloat(frontView, "rotationY", -90f, 0f);
-        frontFlipIn.setDuration(200);
+        frontFlipIn.setDuration(250);
         frontFlipIn.setInterpolator(new DecelerateInterpolator());
 
         backFlipOut.addListener(new AnimatorListenerAdapter() {
@@ -257,12 +242,12 @@ public class DailyFragment extends Fragment {
                 frontView.setVisibility(View.VISIBLE);
                 frontView.setRotationY(-90f);
                 frontFlipIn.start();
+                isFrontVisible = true;
                 prefs.edit().putBoolean(getString(R.string.isFrontVisible), true).apply();
             }
         });
 
         backFlipOut.start();
-        isFrontVisible = true;
     }
 
     @Override
@@ -270,30 +255,22 @@ public class DailyFragment extends Fragment {
         super.onPause();
         prefs.edit().putBoolean(getString(R.string.isFrontVisible), isFrontVisible).apply();
     }
+
     @Override
     public void onResume() {
         super.onResume();
-        SharedPreferences prefs = requireContext().getSharedPreferences(getString(R.string.prefs_facts), Context.MODE_PRIVATE);
-//        SharedPreferences prefs = requireContext().getSharedPreferences(PREFS_NAME, MODE_PRIVATE);
-
         if (appStart) {
-            //Always show front view when app starts
-            frontView.setVisibility(View.VISIBLE);
-            backView.setVisibility(View.INVISIBLE);
             isFrontVisible = true;
-            prefs.edit().putBoolean(getString(R.string.isFrontVisible), true).apply();
-            appStart = false; //reset flag after resume
+            appStart = false;
         } else {
-            //restore the last visible side when navigating between fragments
             isFrontVisible = prefs.getBoolean(getString(R.string.isFrontVisible), true);
-            if (isFrontVisible) {
-                frontView.setVisibility(View.VISIBLE);
-                backView.setVisibility(View.INVISIBLE);
-            } else {
-                frontView.setVisibility(View.INVISIBLE);
-                backView.setVisibility(View.VISIBLE);
-            }
         }
 
+        if (frontView != null && backView != null) {
+            frontView.setVisibility(isFrontVisible ? View.VISIBLE : View.GONE);
+            backView.setVisibility(isFrontVisible ? View.GONE : View.VISIBLE);
+            frontView.setRotationY(0f);
+            backView.setRotationY(0f);
+        }
     }
 }

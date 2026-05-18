@@ -6,150 +6,215 @@ import android.content.SharedPreferences;
 import android.net.ConnectivityManager;
 import android.net.Network;
 import android.net.NetworkCapabilities;
+import android.net.Uri;
 import android.os.Bundle;
-import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.inputmethod.InputMethodManager;
+import android.widget.Button;
 import android.widget.EditText;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+
 import com.factifyft.app.R;
+import com.factifyft.app.utils.AdManager;
 import com.factifyft.app.utils.customToast;
+import com.google.android.gms.ads.nativead.NativeAd;
+import com.google.android.gms.ads.nativead.NativeAdView;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.card.MaterialCardView;
 
 public class ProfileFragment extends Fragment {
-   private SharedPreferences sp;
 
+    private SharedPreferences sp;
+    private NativeAd loadedNativeAd;
+    private FrameLayout adContainer;
+
+    @Nullable
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-       View view = inflater.inflate(R.layout.fragment_profile, container, false);
-// Load saved name
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
+                             @Nullable Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.fragment_profile, container, false);
+
         sp = requireContext().getSharedPreferences("UserProfile", Context.MODE_PRIVATE);
 
-       MaterialCardView profileFav=view.findViewById(R.id.profileScreen_favorite);
-       MaterialCardView moreAppsToTry=view.findViewById(R.id.moreAppsToTry);
-       MaterialCardView appPrivacyBtn=view.findViewById(R.id.appPrivacyBtn);
-       MaterialCardView appTermsBtn=view.findViewById(R.id.appTermsBtn);
+        setupProfileHeader(view);
+        setupActionCards(view);
+        
+        adContainer = view.findViewById(R.id.profile_native_ad_container);
+        loadAndShowNativeAd();
 
-        TextView tvUsername =view.findViewById(R.id.textUserName);
+        return view;
+    }
+
+    private void setupProfileHeader(View view) {
+        TextView tvUsername = view.findViewById(R.id.textUserName);
         EditText etUsername = view.findViewById(R.id.EditNameUser);
-        ImageView ivEdit = view.findViewById(R.id.imageNameEdit);
-        ImageView ivSave = view.findViewById(R.id.imageNameEditDone);
+        View ivEdit = view.findViewById(R.id.imageNameEdit);
+        View ivSave = view.findViewById(R.id.imageNameEditDone);
 
-// Load saved name
         tvUsername.setText(sp.getString("username", "Buddy"));
 
-// ✏️ Edit clicked
         ivEdit.setOnClickListener(v -> {
             etUsername.setText(tvUsername.getText().toString());
-
-            tvUsername.setVisibility(View.GONE);
-            ivEdit.setVisibility(View.GONE);
-
-            etUsername.setVisibility(View.VISIBLE);
-            ivSave.setVisibility(View.VISIBLE);
-
+            toggleEditMode(true, tvUsername, etUsername, ivEdit, ivSave);
+            
             etUsername.requestFocus();
-            //keyboard controls
-            InputMethodManager imm = (InputMethodManager)
-                    requireContext().getSystemService(Context.INPUT_METHOD_SERVICE);
-            imm.showSoftInput(etUsername, InputMethodManager.SHOW_IMPLICIT);
-
+            InputMethodManager imm = (InputMethodManager) requireContext().getSystemService(Context.INPUT_METHOD_SERVICE);
+            if (imm != null) {
+                imm.showSoftInput(etUsername, InputMethodManager.SHOW_IMPLICIT);
+            }
         });
 
-// ✔️ Tick clicked → SAVE
         ivSave.setOnClickListener(v -> {
             String newName = etUsername.getText().toString().trim();
-
             if (newName.isEmpty()) {
                 etUsername.setError("Enter name");
                 return;
             }
 
-            // Save to SharedPreferences
             sp.edit().putString("username", newName).apply();
-
-            // Update UI
             tvUsername.setText(newName);
-
-            etUsername.setVisibility(View.GONE);
-            ivSave.setVisibility(View.GONE);
-
-            tvUsername.setVisibility(View.VISIBLE);
-            ivEdit.setVisibility(View.VISIBLE);
-        });
-
-        profileFav.setOnClickListener(view1 -> {
-           BottomNavigationView bottomNavigationView=requireActivity().findViewById(R.id.bottom_navigation);
-           bottomNavigationView.setSelectedItemId(R.id.bottom_favorite);
-       });
-      //App more apps to try
-
-        moreAppsToTry.setOnClickListener(v -> {
-            if (isInternetAvailable()) {
-                openUrlSafely(getString(R.string.developer_apps_url));
-            } else {
-                customToast.showToast(requireContext(), getString(R.string.no_internet_connection), Toast.LENGTH_SHORT);
+            toggleEditMode(false, tvUsername, etUsername, ivEdit, ivSave);
+            
+            InputMethodManager imm = (InputMethodManager) requireContext().getSystemService(Context.INPUT_METHOD_SERVICE);
+            if (imm != null) {
+                imm.hideSoftInputFromWindow(etUsername.getWindowToken(), 0);
             }
         });
-        appPrivacyBtn.setOnClickListener( v->{
-                if(isInternetAvailable()) {
-                    openUrlSafely(getString(R.string.privacy_policy_url));
-                } else {
-                    customToast.showToast(requireContext(), getString(R.string.no_internet_connection), Toast.LENGTH_SHORT);
-//
-                }
-       } );
-
-        appTermsBtn.setOnClickListener( v->{
-
-            if(isInternetAvailable()) {
-             openUrlSafely(getString(R.string.terms_url));
-            } else {
-                customToast.showToast(requireContext(), getString(R.string.no_internet_connection), Toast.LENGTH_SHORT);
-            }
-        } );
-
-       return view;
-
     }
 
-    @Override
-    public void onResume(){
-        super.onResume();
+    private void toggleEditMode(boolean editing, TextView tv, EditText et, View edit, View save) {
+        tv.setVisibility(editing ? View.GONE : View.VISIBLE);
+        edit.setVisibility(editing ? View.GONE : View.VISIBLE);
+        et.setVisibility(editing ? View.VISIBLE : View.GONE);
+        save.setVisibility(editing ? View.VISIBLE : View.GONE);
     }
 
-    private void openUrlSafely(String url) {
-        if (isInternetAvailable()) {
-            Intent intent = new Intent(Intent.ACTION_VIEW, android.net.Uri.parse(url));
-            requireActivity().startActivity(intent);
-        } else {
-            customToast.showToast(requireContext(), getString(R.string.check_network), Toast.LENGTH_SHORT);
+    private void setupActionCards(View view) {
+        MaterialCardView profileFav = view.findViewById(R.id.profileScreen_favorite);
+        MaterialCardView moreApps = view.findViewById(R.id.moreAppsToTry);
+        MaterialCardView privacyBtn = view.findViewById(R.id.appPrivacyBtn);
+        MaterialCardView termsBtn = view.findViewById(R.id.appTermsBtn);
+
+        profileFav.setOnClickListener(v -> {
+            BottomNavigationView bnv = requireActivity().findViewById(R.id.bottom_navigation);
+            if (bnv != null) bnv.setSelectedItemId(R.id.bottom_favorite);
+        });
+
+        moreApps.setOnClickListener(v -> openExternalUrl(getString(R.string.developer_apps_url)));
+        privacyBtn.setOnClickListener(v -> openExternalUrl(getString(R.string.privacy_policy_url)));
+        termsBtn.setOnClickListener(v -> openExternalUrl(getString(R.string.terms_url)));
+    }
+
+    private void openExternalUrl(String url) {
+        if (!isInternetAvailable()) {
+            customToast.showToast(requireContext(), getString(R.string.no_internet_connection), Toast.LENGTH_SHORT);
+            return;
+        }
+        try {
+            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(url)));
+        } catch (Exception e) {
+            customToast.showToast(requireContext(), "Unable to open link", Toast.LENGTH_SHORT);
         }
     }
 
-
     private boolean isInternetAvailable() {
-        ConnectivityManager cm = (ConnectivityManager) requireContext()
-                .getSystemService(Context.CONNECTIVITY_SERVICE);
-
+        ConnectivityManager cm = (ConnectivityManager) requireContext().getSystemService(Context.CONNECTIVITY_SERVICE);
         if (cm == null) return false;
+        Network network = cm.getActiveNetwork();
+        if (network == null) return false;
+        NetworkCapabilities caps = cm.getNetworkCapabilities(network);
+        return caps != null && (caps.hasTransport(NetworkCapabilities.TRANSPORT_WIFI) || caps.hasTransport(NetworkCapabilities.TRANSPORT_CELLULAR));
+    }
 
-        Network nw = cm.getActiveNetwork();
-        if (nw == null) return false;
+    private void loadAndShowNativeAd() {
+        // 1. Context safety check
+        Context context = getContext();
+        if (context == null) return;
 
-        NetworkCapabilities nc = cm.getNetworkCapabilities(nw);
-        return nc != null && (
-                nc.hasTransport(NetworkCapabilities.TRANSPORT_WIFI) ||
-                        nc.hasTransport(NetworkCapabilities.TRANSPORT_CELLULAR) ||
-                        nc.hasTransport(NetworkCapabilities.TRANSPORT_ETHERNET)
-        );
+        // 2. Use the new NativeAdCallback to handle Success and Failure
+        AdManager.loadNativeAd(context, new AdManager.NativeAdCallback() {
+            @Override
+            public void onLoaded(NativeAd nativeAd) {
+                // Check if fragment is still attached to UI before updating
+                if (isAdded() && getView() != null) {
+                    loadedNativeAd = nativeAd;
+                    displayNativeAd(nativeAd);
+                } else {
+                    nativeAd.destroy();
+                }
+            }
+
+            @Override
+            public void onFailure() {
+                // THE FIX: If ad fails (No Internet), hide the container globally
+                if (isAdded() && adContainer != null) {
+                    adContainer.setVisibility(View.GONE);
+                }
+            }
+        });
+    }
+
+    private void displayNativeAd(NativeAd nativeAd) {
+        if (adContainer == null) return;
+
+        // Inflate the layout
+        NativeAdView adView = (NativeAdView) LayoutInflater.from(requireContext())
+                .inflate(R.layout.native_ad_layout, adContainer, false);
+
+        populateNativeAdView(nativeAd, adView);
+
+        adContainer.removeAllViews();
+        adContainer.addView(adView);
+
+        // Now it's safe to show the container
+        adContainer.setVisibility(View.VISIBLE);
+    }
+
+    private void populateNativeAdView(NativeAd nativeAd, NativeAdView adView) {
+        adView.setHeadlineView(adView.findViewById(R.id.ad_headline));
+        adView.setBodyView(adView.findViewById(R.id.ad_body));
+        adView.setCallToActionView(adView.findViewById(R.id.ad_call_to_action));
+        adView.setIconView(adView.findViewById(R.id.ad_app_icon));
+        adView.setAdvertiserView(adView.findViewById(R.id.ad_advertiser));
+        adView.setMediaView(adView.findViewById(R.id.ad_media));
+
+        if (adView.getHeadlineView() instanceof TextView tv) tv.setText(nativeAd.getHeadline());
+        if (adView.getBodyView() instanceof TextView tv) tv.setText(nativeAd.getBody());
+        if (adView.getCallToActionView() instanceof Button btn) btn.setText(nativeAd.getCallToAction());
+
+        if (nativeAd.getIcon() != null && adView.getIconView() instanceof ImageView iv) {
+            iv.setImageDrawable(nativeAd.getIcon().getDrawable());
+            iv.setVisibility(View.VISIBLE);
+        } else if (adView.getIconView() != null) {
+            adView.getIconView().setVisibility(View.GONE);
+        }
+
+        if (nativeAd.getAdvertiser() != null && adView.getAdvertiserView() instanceof TextView tv) {
+            tv.setText(nativeAd.getAdvertiser());
+            tv.setVisibility(View.VISIBLE);
+        } else if (adView.getAdvertiserView() != null) {
+            adView.getAdvertiserView().setVisibility(View.GONE);
+        }
+
+        adView.setNativeAd(nativeAd);
+    }
+
+    @Override
+    public void onDestroyView() {
+        super.onDestroyView();
+        if (loadedNativeAd != null) {
+            loadedNativeAd.destroy();
+            loadedNativeAd = null;
+        }
+        adContainer = null;
     }
 }

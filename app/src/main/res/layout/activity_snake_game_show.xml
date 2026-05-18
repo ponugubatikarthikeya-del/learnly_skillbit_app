@@ -1,155 +1,161 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/snake_viewPage_bg">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+    <!-- Back Button -->
+    <ImageButton
+        android:id="@+id/btnSnakeGmBack"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="@string/back"
+        android:src="@drawable/back_arrow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@android:color/white" />
 
-        <!-- Title -->
-        <TextView
-            android:id="@+id/titleText"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="@string/snake_game"
-            android:textSize="34sp"
-            android:textStyle="bold"
-            android:gravity="center"
-            android:textColor="@color/snake_textActivity"
-            android:layout_marginTop="28dp"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+    <!-- Title -->
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text="@string/snake_game"
+        android:textColor="@color/snake_textActivity"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/scoreText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="@string/score_0"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titleText" />
 
-        <TextView
-            android:id="@+id/offlineText"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="@string/offline"
-            android:textSize="20sp"
-            android:textColor="@color/black"
-            app:layout_constraintEnd_toEndOf="@+id/titleText"
-            app:layout_constraintStart_toStartOf="@+id/titleText"
-            app:layout_constraintTop_toBottomOf="@id/titleText" />
+    <!-- SNAKE GAME VIEW -->
+    <com.factifyft.app.utils.GameView
+        android:id="@+id/gameView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toTopOf="@id/controlContainer"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/scoreText" />
 
-        <!-- Score -->
-        <TextView
-            android:id="@+id/scoreText"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="@string/score_0"
-            android:textSize="22sp"
-            android:textColor="@color/snakeGame_scoreBg"
-            android:gravity="center"
-            android:layout_marginTop="12dp"
-            app:layout_constraintTop_toBottomOf="@id/offlineText"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+    <!-- START BUTTON (centered on GameView) -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnStart"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/snake_green"
+        android:text="@string/start"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:cornerRadius="30dp"
+        app:layout_constraintBottom_toBottomOf="@id/gameView"
+        app:layout_constraintEnd_toEndOf="@id/gameView"
+        app:layout_constraintStart_toStartOf="@id/gameView"
+        app:layout_constraintTop_toTopOf="@id/gameView" />
 
-        <!-- SNAKE GAME VIEW -->
-        <com.factifyft.app.utils.GameView
-            android:id="@+id/gameView"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginTop="25dp"
-            android:layout_marginBottom="18dp"
-            app:layout_constraintTop_toBottomOf="@id/scoreText"
-            app:layout_constraintBottom_toTopOf="@id/controlContainer"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintDimensionRatio="1:1" />
+    <!-- CONTROL BUTTONS -->
+    <LinearLayout
+        android:id="@+id/controlContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@id/ad_container"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
 
-        <!-- START BUTTON (centered on GameView) -->
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnStart"
-            android:layout_width="160dp"
-            android:layout_height="60dp"
-            android:text="@string/start"
-            android:textColor="@color/snakeGame_startBg"
-            android:textStyle="bold"
-            android:textSize="18sp"
-            app:cornerRadius="30dp"
-            android:visibility="visible"
-            app:layout_constraintTop_toTopOf="@id/gameView"
-            app:layout_constraintBottom_toBottomOf="@id/gameView"
-            app:layout_constraintStart_toStartOf="@id/gameView"
-            app:layout_constraintEnd_toEndOf="@id/gameView" />
+        <!-- Up Button -->
+        <ImageButton
+            android:id="@+id/btnUp"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:background="@drawable/button_dark"
+            android:contentDescription="@string/sGame_button_up"
+            android:scaleType="center"
+            android:src="@drawable/baseline_arrow_drop_up_24"
+            app:tint="@color/snakeGm_controlBtn_arrowCl"
+            tools:ignore="TouchTargetSizeCheck" />
 
-        <!-- CONTROL BUTTONS -->
         <LinearLayout
-            android:id="@+id/controlContainer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
+            android:layout_marginTop="8dp"
             android:gravity="center"
-            android:layout_marginBottom="80dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent">
+            android:orientation="horizontal">
 
-            <!-- Up Button -->
             <ImageButton
-                android:id="@+id/btnUp"
+                android:id="@+id/btnLeft"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/button_dark"
+                android:contentDescription="@string/sGame_button_left"
+                android:scaleType="center"
+                android:src="@drawable/baseline_arrow_left_24"
+                app:tint="@color/snakeGm_controlBtn_arrowCl"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <ImageButton
+                android:id="@+id/btnDown"
                 android:layout_width="72dp"
                 android:layout_height="72dp"
                 android:background="@drawable/button_dark"
-                android:src="@drawable/baseline_arrow_drop_up_24"
-                android:contentDescription="@string/sGame_button_up"
+                android:contentDescription="@string/sGame_button_down"
+                android:scaleType="center"
+                android:src="@drawable/baseline_arrow_drop_down_24"
                 app:tint="@color/snakeGm_controlBtn_arrowCl"
-                android:scaleType="center" />
+                tools:ignore="TouchTargetSizeCheck" />
 
-            <!-- Left / Down / Right Buttons -->
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="center"
-                android:layout_marginTop="8dp">
-
-                <ImageButton
-                    android:id="@+id/btnLeft"
-                    android:layout_width="72dp"
-                    android:layout_height="72dp"
-                    android:background="@drawable/button_dark"
-                    android:src="@drawable/baseline_arrow_left_24"
-                    android:contentDescription="@string/sGame_button_left"
-                    app:tint="@color/snakeGm_controlBtn_arrowCl"
-                    android:scaleType="center"
-                    android:layout_marginEnd="8dp" />
-
-                <ImageButton
-                    android:id="@+id/btnDown"
-                    android:layout_width="72dp"
-                    android:layout_height="72dp"
-                    android:background="@drawable/button_dark"
-                    android:src="@drawable/baseline_arrow_drop_down_24"
-                    android:contentDescription="@string/sGame_button_down"
-                    app:tint="@color/snakeGm_controlBtn_arrowCl"
-                    android:scaleType="center" />
-
-                <ImageButton
-                    android:id="@+id/btnRight"
-                    android:layout_width="72dp"
-                    android:layout_height="72dp"
-                    android:background="@drawable/button_dark"
-                    android:src="@drawable/baseline_arrow_right_48"
-                    android:contentDescription="@string/sGame_button_right"
-                    app:tint="@color/snakeGm_controlBtn_arrowCl"
-                    android:scaleType="center"
-                    android:layout_marginStart="8dp" />
-
-            </LinearLayout>
+            <ImageButton
+                android:id="@+id/btnRight"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/button_dark"
+                android:contentDescription="@string/sGame_button_right"
+                android:scaleType="center"
+                android:src="@drawable/baseline_arrow_right_48"
+                app:tint="@color/snakeGm_controlBtn_arrowCl"
+                tools:ignore="TouchTargetSizeCheck" />
 
         </LinearLayout>
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
 
-</FrameLayout>
+    <FrameLayout
+        android:id="@+id/ad_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
