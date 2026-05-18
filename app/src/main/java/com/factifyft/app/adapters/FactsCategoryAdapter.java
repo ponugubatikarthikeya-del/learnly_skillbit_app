@@ -1,8 +1,5 @@
 package com.factifyft.app.adapters;
 
-
-import android.content.Context;
-import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,33 +7,26 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.factifyft.app.R;
 import com.factifyft.app.data.FactCategory;
+import com.google.android.material.card.MaterialCardView;
 
 import java.util.List;
 
 public class FactsCategoryAdapter extends RecyclerView.Adapter<FactsCategoryAdapter.ViewHolder> {
 
-    private final Context context;
     private final List<FactCategory> categories;
     private final OnCategoryClickListener listener;
-
-    private final int width; //height removed
-
 
     public interface OnCategoryClickListener {
         void onCategoryClick(FactCategory category);
     }
 
-    public FactsCategoryAdapter(Context context, List<FactCategory> categories, OnCategoryClickListener listener,int width) {  //height removed
-        this.context = context;
+    public FactsCategoryAdapter(List<FactCategory> categories, OnCategoryClickListener listener) {
         this.categories = categories;
         this.listener = listener;
-        this.width=width;
-//       this.height=height;
     }
 
     @NonNull
@@ -47,24 +37,16 @@ public class FactsCategoryAdapter extends RecyclerView.Adapter<FactsCategoryAdap
     }
 
     @Override
-    public void onBindViewHolder(ViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         FactCategory category = categories.get(position);
         holder.title.setText(category.getName());
         holder.image.setImageResource(category.getImageRes());
 
-        //set fixed card sizes
-        int cardWidth=(int) (width/2.0) - dpToPx(16,context);
-        int cardHeight=dpToPx(160,context);
-        ViewGroup.LayoutParams params=holder.card.getLayoutParams();
-        params.width=cardWidth;
-        params.height=cardHeight;
-        holder.card.setLayoutParams(params);
-
-        holder.card.setOnClickListener(v -> listener.onCategoryClick(category));
-    }
-
-    private int dpToPx(int i, Context context) {
-        return (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, i, context.getResources().getDisplayMetrics());
+        holder.card.setOnClickListener(v -> {
+            if (listener != null) {
+                listener.onCategoryClick(category);
+            }
+        });
     }
 
     @Override
@@ -75,7 +57,7 @@ public class FactsCategoryAdapter extends RecyclerView.Adapter<FactsCategoryAdap
     public static class ViewHolder extends RecyclerView.ViewHolder {
         final TextView title;
         final ImageView image;
-        final CardView card;
+        final MaterialCardView card;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -85,4 +67,3 @@ public class FactsCategoryAdapter extends RecyclerView.Adapter<FactsCategoryAdap
         }
     }
 }
-

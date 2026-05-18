@@ -1782,6 +1782,65 @@
         </string-array>
 
 
+<!--    loading screen quotes-->
 
+        <string-array name="loading_quotes">
+
+            <item>Did you know? Learning never stops.</item>
+            <item>Small facts can spark big ideas.</item>
+            <item>Curiosity makes every fact interesting.</item>
+            <item>Knowledge grows one fact at a time.</item>
+            <item>Every second, there’s something new to learn.</item>
+            <item>Facts today, wisdom tomorrow.</item>
+            <item>Stay curious, stay ahead.</item>
+            <item>Learning is a daily habit.</item>
+            <item>Simple facts can surprise you.</item>
+            <item>Your brain loves new information.</item>
+
+            <item>Every fact adds value to your mind.</item>
+            <item>Knowledge is the real superpower.</item>
+            <item>Smart minds keep learning.</item>
+            <item>A single fact can change your thinking.</item>
+            <item>Discover something new every day.</item>
+            <item>Learning is never wasted.</item>
+            <item>Facts make conversations better.</item>
+            <item>Curiosity leads to discovery.</item>
+            <item>Keep exploring new ideas.</item>
+            <item>Every fact has a story.</item>
+
+            <item>Short facts, big impact.</item>
+            <item>Expand your mind daily.</item>
+            <item>New facts, new perspectives.</item>
+            <item>Learning can be fun and simple.</item>
+            <item>Knowledge builds confidence.</item>
+            <item>Every detail matters.</item>
+            <item>Facts help you see the world differently.</item>
+            <item>Stay informed, stay smart.</item>
+            <item>Your brain enjoys challenges.</item>
+            <item>Facts connect ideas.</item>
+
+            <item>Learn something useful today.</item>
+            <item>Smart habits start with learning.</item>
+            <item>Every fact is a step forward.</item>
+            <item>Curiosity keeps your mind active.</item>
+            <item>Explore beyond the obvious.</item>
+            <item>Facts make learning easy.</item>
+            <item>Think better with more knowledge.</item>
+            <item>Learning is a lifelong journey.</item>
+            <item>Small knowledge, big difference.</item>
+            <item>Facts shape understanding.</item>
+
+            <item>Stay sharp with new facts.</item>
+            <item>Learning fuels creativity.</item>
+            <item>Every fact counts.</item>
+            <item>Knowledge grows with curiosity.</item>
+            <item>Discover, learn, repeat.</item>
+            <item>Facts bring clarity.</item>
+            <item>Keep your mind active.</item>
+            <item>Learning never goes out of style.</item>
+            <item>Smart thinking starts here.</item>
+            <item>Facts unlock new ideas.</item>
+
+        </string-array>
 
 </resources>

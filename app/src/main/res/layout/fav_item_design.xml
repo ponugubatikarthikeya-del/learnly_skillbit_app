@@ -1,82 +1,91 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.google.android.material.card.MaterialCardView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="8dp"
-    android:clickable="true"
-    android:focusable="true"
-    app:cardCornerRadius="8dp"
-    app:cardElevation="6dp"
-    app:strokeWidth="0dp">
+    android:layout_marginHorizontal="20dp"
+    android:layout_marginVertical="10dp"
+    app:cardBackgroundColor="@color/surface"
+    app:cardCornerRadius="24dp"
+    app:cardElevation="2dp"
+    app:strokeWidth="1dp"
+    app:strokeColor="@color/outline_variant">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:padding="20dp">
 
-        <!-- FACT TEXT -->
         <TextView
             android:id="@+id/favoriteTextFact"
             android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:padding="12dp"
-            android:gravity="center"
-            android:text="@string/fact_text"
-            android:textColor="@color/black"
-            android:textStyle="bold"
-            android:textSize="17sp"
-            android:background="@drawable/facts_page_bg"
-            android:contentDescription="@string/fact_text"/>
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="6dp"
+            android:minHeight="80dp"
+            android:textColor="@color/on_surface"
+            android:textSize="14sp"
+            android:fontFamily="@font/montserrat"
+            tools:text="This is a saved fact that looks great in the list." />
 
-        <!-- ACTION BUTTON ROW -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/outline_variant"
+            android:alpha="0.3" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:padding="10dp"
-            android:gravity="center"
-            android:weightSum="3"
-            android:background="@color/white">
+            android:layout_marginTop="12dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
 
-            <!-- COPY BUTTON -->
-            <ImageButton
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/Favorite"
+                android:textSize="12sp"
+                android:textAllCaps="true"
+                android:letterSpacing="0.1"
+                android:textColor="@color/primary"
+                android:alpha="0.6" />
+
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/favoriteCopy"
-                android:layout_width="0dp"
-                android:layout_height="48dp"
-                android:layout_weight="1"
-                android:background="@android:color/transparent"
-                android:minWidth="48dp"
-                android:minHeight="48dp"
-                android:src="@drawable/round_content_copy_24"
-                app:tint="@color/favorites_copyBg"
-                android:contentDescription="@string/copy_view"/>
+                style="@style/Widget.Material3.Button.IconButton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:contentDescription="@string/copybtn"
+                app:icon="@drawable/round_content_copy_24"
+                app:iconSize="20dp"
+                app:iconTint="@color/on_surface_variant"
+                tools:ignore="TouchTargetSizeCheck" />
 
-            <!-- LIKE BUTTON -->
-            <ImageButton
-                android:id="@+id/favoriteBtnLike"
-                android:layout_width="0dp"
-                android:layout_height="48dp"
-                android:layout_weight="1"
-                android:background="@android:color/transparent"
-                android:minWidth="48dp"
-                android:minHeight="48dp"
-                android:src="@drawable/baseline_favorite_24"
-                android:contentDescription="@string/like"/>
-
-            <!-- SHARE BUTTON -->
-            <ImageButton
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/favoriteBtnShare"
-                android:layout_width="0dp"
-                android:layout_height="48dp"
-                android:layout_weight="1"
-                android:background="@android:color/transparent"
-                android:minWidth="48dp"
-                android:minHeight="48dp"
-                android:src="@drawable/baseline_share_24"
-                app:tint="@color/favorites_shareColor"
-                android:contentDescription="@string/share"/>
+                style="@style/Widget.Material3.Button.IconButton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:contentDescription="@string/share"
+                app:icon="@drawable/baseline_share_24"
+                app:iconSize="20dp"
+                app:iconTint="@color/primary"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/favoriteBtnLike"
+                style="@style/Widget.Material3.Button.IconButton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:contentDescription="@string/likeBtn"
+                app:icon="@drawable/baseline_favorite_24"
+                app:iconSize="20dp"
+                app:iconTint="@color/red"
+                tools:ignore="TouchTargetSizeCheck" />
 
         </LinearLayout>
     </LinearLayout>

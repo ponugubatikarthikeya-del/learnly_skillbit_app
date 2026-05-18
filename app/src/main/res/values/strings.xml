@@ -51,8 +51,12 @@
     <string name="Buddy_name">Buddy</string>
     <string name="privacy_policy">Privacy Policy</string>
     <string name="terms_and_conditions">Terms and conditions</string>
+    <string name="Terms">Terms</string>
     <string name="more_apps_to_try">More apps to try</string>
+    <string name="More_Apps">More Apps</string>
     <string name="enter_arrow">Enter Arrow</string>
+
+    <string name="app_logo_desc">App Logo</string>
 
     <!-- java files strings -->
     <string name="facts_over">facts are over wait a moment i will set new facts for you</string>
@@ -133,8 +137,8 @@
 
     <!-- URLs -->
     <string name="developer_apps_url">https://play.google.com/store/apps/dev?id=8374043554473360551</string>
-    <string name="privacy_policy_url">https://factifypt.netlify.app/</string>
-    <string name="terms_url">https://factifypt.netlify.app/terms</string>
+    <string name="privacy_policy_url">https://factifyft.netlify.app/</string>
+    <string name="terms_url">https://factifyft.netlify.app/terms</string>
 
     <!-- Network messages -->
     <string name="check_network">Please check your network</string>
@@ -187,20 +191,60 @@
     <string name="editSymbol">editSymbol</string>
     <string name="welcome_user">Hello, %1$s</string>
     <string name="won_symbol">won symbol</string>
-    <string name="more_games_coming_soon">More Games Coming Soon ...</string>
+    <string name="more_games_coming_soon">More Games Coming Soon …</string>
     <string name="choose_your_avatar">Choose your Avatar</string>
     <string name="Quiz_back">Back</string>
+    <string name="tap_to_reveal">Tap to Reveal</string>
+    <string name="play_again">Play Again</string>
 
 
-<!--    update app-->
+    <!--    update app-->
 
     <string name="did_you_known">Did you know ?</string>
     <string name="Human_behaviour">Human Behavior</string>
     <string name="Human_Habits">Human Habits</string>
     <string name="world_hidden">Hidden Talks</string>
 
-
     <string name="quiz_sports">Sports</string>
-    <string name="quiz_basic_science">Science</string>
+    <string name="quiz_science">Science</string>
     <string name="quiz_general_knowledge">General Knowledge</string>
+    <string name="quiz_knowledge">General Knowledge</string>
+    <string name="hidden_facts">Hidden Facts</string>
+
+    <string name="copy">copied</string>
+    <string name="connection_restored_returning_in_3s">Connection Restored! Returning in 3s…</string>
+    <string name="connection_restored_returning_in">"Connection Restored! Returning in %1$d sec… "</string>
+    <string name="connection_lost_again_waiting">Connection lost again. Waiting…</string>
+    <string name="search_facts">Search facts...</string>
+    <string name="choose_a_category_to_start">Choose a category to start</string>
+    <string name="_8_10">8/10</string>
+    <string name="carddesignicon">cardDesignIcon</string>
+    <string name="copybtn">copyBtn</string>
+    <string name="likeBtn">likeBtn</string>
+    <string name="quizicon">quizIcon</string>
+    <string name="challenge_your_mind">Challenge your mind</string>
+    <string name="gamearrow">gameArrow</string>
+    <string name="snakegmicon">snakeGmIcon</string>
+    <string name="classic_retro_fun">Classic retro fun</string>
+    <string name="ticgmicon">ticGmIcon</string>
+    <string name="play_with_friends">Play with friends</string>
+    <string name="likeicon">likeIcon</string>
+    <string name="privacyicon">privacyIcon</string>
+    <string name="movearrow">moveArrow</string>
+    <string name="termsicon">termsIcon</string>
+    <string name="appstryicon">appsTryIcon</string>
+    <string name="ad">Ad</string>
+    <string name="completediocn">completedIocn</string>
+
+    <!-- Unlock Dialog -->
+    <string name="unlock_category">Unlock %1$s</string>
+    <string name="unlock_message">Watch a short video to unlock this quiz category and start playing!</string>
+    <string name="unlock_wait_message">Please wait a few seconds to open another lock...</string>
+    <string name="unlock_no_internet">No internet connection. Please check your network.</string>
+    <string name="watch_ad_to_unlock">WATCH AD TO UNLOCK</string>
+    <string name="maybe_later">Maybe Later</string>
+    <string name="ad_not_ready">Ad is not ready yet, please try again</string>
+    <string name="lockicon">lockIcon</string>
+
+
 </resources>

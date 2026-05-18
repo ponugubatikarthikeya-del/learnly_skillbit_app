@@ -1,54 +1,90 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<androidx.coordinatorlayout.widget.CoordinatorLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/pageBackgrounds"
-    android:paddingTop="30dp">
+    android:background="@color/background">
 
-    <!-- Top Action Bar -->
-    <RelativeLayout
-        android:id="@+id/relative_action"
+    <!-- APP BAR -->
+    <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
-        android:layout_height="55dp"
-        android:background="@color/fact_header_bg">
+        android:layout_height="wrap_content"
+        android:background="#0F172A"
+        android:theme="@style/ThemeOverlay.Material3.Dark"
+        app:elevation="0dp"
+        android:paddingTop="40dp">
 
-        <ImageButton
-            android:id="@+id/FactDisplayBack"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:layout_alignParentStart="true"
-            android:layout_centerVertical="true"
-            android:background="@android:color/transparent"
-            android:clickable="true"
-            android:contentDescription="@string/move_backSide"
-            android:focusable="true"
-            android:scaleType="centerInside"
-            android:src="@drawable/back_arrow"
-            app:tint="@color/white" />
-
-        <TextView
-            android:id="@+id/display_category_title"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_marginStart="10dp"
-            android:layout_toEndOf="@id/FactDisplayBack"
-            android:padding="5dp"
-            android:text="@string/category"
-            android:textColor="@color/white"
-            android:textSize="25sp" />
-    </RelativeLayout>
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="8dp">
 
-    <!-- Recycler Container -->
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/FactDisplayRecycle"
+            <ImageButton
+                android:id="@+id/FactDisplayBack"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="@string/back"
+                android:src="@drawable/back_arrow"
+                app:tint="#F8FAFC" />
+
+            <TextView
+                android:id="@+id/display_category_title"
+                style="@style/TextAppearance.Material3.TitleLarge"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:text="@string/category"
+                android:textColor="#F8FAFC"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <com.google.android.material.search.SearchBar
+            android:id="@+id/search_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginBottom="16dp"
+            android:hint="@string/search_facts"
+            android:visibility="gone" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <!-- CONTENT -->
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/relative_action"
-        android:layout_marginTop="0dp"
-        android:clipToPadding="false"
-        android:contentDescription="@string/fact_list"
-        android:padding="8dp" />
-</RelativeLayout>
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <!-- RECYCLER VIEW -->
+
+        <!-- AD CONTAINER -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/FactDisplayRecycle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:clipToPadding="false"
+            android:paddingBottom="60dp"
+            app:layout_constraintBottom_toTopOf="@id/ad_container"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <FrameLayout
+            android:id="@+id/ad_container"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:minHeight="50dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

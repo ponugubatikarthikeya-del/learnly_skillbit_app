@@ -4,21 +4,19 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="7dp"
+    android:layout_margin="20dp"
     app:cardElevation="8dp"
-    app:cardCornerRadius="20dp"
+    app:cardCornerRadius="24dp"
+    app:cardBackgroundColor="@color/white"
     android:clickable="true"
-    android:focusable="true"
-    android:layout_centerInParent="true"
-    android:background="@drawable/dialog_bg"
-    android:backgroundTint="@color/white">
+    android:focusable="true">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:gravity="center"
-        android:layout_gravity="center">
+        android:padding="20dp">
 
         <!-- Game Over Title -->
         <TextView
@@ -74,6 +72,7 @@
                 android:textStyle="bold"
                 android:textColor="@color/gameOver_returnBg"
                 android:textSize="20sp"
+                android:drawablePadding="4dp"
                 android:contentDescription="@string/exit"/>
 
             <!-- Restart Button -->
@@ -87,6 +86,7 @@
                 android:textStyle="bold"
                 android:textColor="@color/gameOver_returnBg"
                 android:textSize="20sp"
+                android:drawablePadding="4dp"
                 android:contentDescription="@string/restart" />
         </LinearLayout>
 

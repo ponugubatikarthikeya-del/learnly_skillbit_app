@@ -1,117 +1,156 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
-    android:padding="20dp"
-    android:gravity="center"
-    android:background="@drawable/quiz_bg"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
- <LinearLayout
-     android:layout_width="match_parent"
-     android:layout_height="wrap_content"
-     android:orientation="horizontal"
-     android:layout_gravity="center"
-     android:gravity="center"
-     android:weightSum="2"
-     android:layout_marginBottom="150dp"
-   >
+    android:layout_height="match_parent"
+    android:background="@color/background">
 
-    <TextView
-        android:id="@+id/QuizQuestionView"
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="@string/questions_1_10"
-        android:gravity="center"
-        android:textSize="17sp"
-        android:textStyle="bold"
-        android:textColor="@color/white"
-      />
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toTopOf="@+id/ad_container"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-     <TextView
-         android:id="@+id/score_text"
-         android:layout_width="0dp"
-         android:layout_height="wrap_content"
-         android:layout_weight="1"
-         android:text="@string/score_0"
-         android:textColor="@color/white"
-         android:textSize="17sp"
-         android:gravity="center"
-         android:textStyle="bold"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="20dp"
+            android:paddingBottom="24dp"
+            android:layout_marginTop="26dp">
 
+            <!-- Top Bar -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp">
 
- </LinearLayout>
-    <TextView
-        android:id="@+id/question_text"
-        android:text="@string/question"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:textColor="@color/white"
-        android:gravity="center"
-        android:layout_marginBottom="30dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/QuizQuestionView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat"
+                    android:textColor="@color/on_background"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toStartOf="@+id/score_text"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="Question 1/10" />
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/option1"
+                <TextView
+                    android:id="@+id/score_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/primary"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="Score: 0" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!-- Progress Indicator -->
+            <com.google.android.material.progressindicator.LinearProgressIndicator
+                android:id="@+id/quiz_progress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="32dp"
+                app:indicatorColor="@color/primary"
+                app:trackColor="@color/surface_variant"
+                app:trackCornerRadius="4dp"
+                app:trackThickness="8dp" />
+
+            <!-- Question Card -->
+            <com.google.android.material.card.MaterialCardView
+                style="@style/PremiumCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:layout_marginBottom="32dp"
+                app:cardBackgroundColor="@color/surface">
+
+                <TextView
+                    android:id="@+id/question_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="24dp"
+                    android:textColor="@color/on_surface"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    tools:text="Which planet is known as the Red Planet?" />
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Options -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/option1"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="64dp"
+                android:layout_marginBottom="12dp"
+                android:textSize="16sp"
+                android:paddingVertical="12dp"
+                app:cornerRadius="16dp"
+                app:strokeColor="@color/outline"
+                tools:text="Option 1"
+                android:layout_marginTop="22dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/option2"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="64dp"
+                android:layout_marginBottom="12dp"
+                android:textSize="16sp"
+                android:paddingVertical="12dp"
+                app:cornerRadius="16dp"
+                app:strokeColor="@color/outline"
+                tools:text="Option 2" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/option3"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="64dp"
+                android:layout_marginBottom="12dp"
+                android:textSize="16sp"
+                android:paddingVertical="12dp"
+                app:cornerRadius="16dp"
+                app:strokeColor="@color/outline"
+                tools:text="Option 3" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/option4"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="64dp"
+                android:layout_marginBottom="12dp"
+                android:textSize="16sp"
+                android:paddingVertical="12dp"
+                app:cornerRadius="16dp"
+                app:strokeColor="@color/outline"
+                tools:text="Option 4" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <FrameLayout
+        android:id="@+id/ad_container"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/quizOptionBtnBg"
-        android:text="@string/option_1"
-        android:textColor="@color/quiz_optionBtnTextBg"
-        android:layout_margin="5dp"
-        app:cornerRadius="10dp"
-        android:padding="15dp"
-        android:clickable="true"
-        android:focusable="true"
-        tools:ignore="VisualLintButtonSize"
-        android:contentDescription="@string/option_1"/>
+        android:minHeight="50dp"
+        app:layout_constraintBottom_toBottomOf="parent" />
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/option2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:backgroundTint="@color/quizOptionBtnBg"
-        android:text="@string/option_2"
-        android:textColor="@color/quiz_optionBtnTextBg"
-        android:layout_margin="5dp"
-        app:cornerRadius="10dp"
-        android:clickable="true"
-        android:focusable="true"
-        android:padding="15dp"
-        tools:ignore="VisualLintButtonSize"
-        android:contentDescription="@string/option_2"/>
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/option3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:backgroundTint="@color/quizOptionBtnBg"
-        android:text="@string/option_3"
-        android:textColor="@color/quiz_optionBtnTextBg"
-        android:layout_margin="5dp"
-        app:cornerRadius="10dp"
-        android:padding="15dp"
-        android:clickable="true"
-        android:focusable="true"
-        tools:ignore="VisualLintButtonSize"
-        android:contentDescription="@string/option_3"/>
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/option4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:backgroundTint="@color/quizOptionBtnBg"
-        android:text="@string/option_4"
-        android:textColor="@color/quiz_optionBtnTextBg"
-        android:layout_margin="5dp"
-        app:cornerRadius="10dp"
-        android:padding="15dp"
-        android:clickable="true"
-        android:focusable="true"
-        tools:ignore="VisualLintButtonSize"
-        android:contentDescription="@string/option_4"/>
-
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

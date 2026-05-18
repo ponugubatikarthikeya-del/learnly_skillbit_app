@@ -1,124 +1,201 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.core.widget.NestedScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fillViewport="true"
-    android:background="@color/pageBackgrounds"
-    tools:context=".fragments.FactsFragment">
+    android:background="@color/background">
 
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_marginTop="20dp"
+    <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:background="#0F172A"
+        android:theme="@style/ThemeOverlay.Material3.Dark"
+        app:elevation="0dp">
 
-        <!-- Title -->
-        <TextView
-            android:id="@+id/HelloNameView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/hello_buddy"
-            android:textSize="30sp"
-            android:textStyle="bold"
-            android:layout_marginTop="10dp"
-            android:textColor="@color/white"
-            android:layout_gravity="start"
-            android:padding="15dp"/>
-
-        <!-- Title -->
-        <TextView
-            android:text="@string/what_are_you_looking_for_today"
-            android:textSize="17sp"
-            android:textStyle="bold"
-            android:textColor="@color/white"
-            android:layout_gravity="start"
-            android:paddingStart="15dp"
-            android:paddingEnd="15dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-
-        <!-- Section 1: Interesting Facts -->
-        <TextView
-            android:text="@string/interesting_facts"
-            android:textSize="30sp"
-            android:textStyle="bold"
-            android:layout_marginStart="5dp"
-            android:padding="10dp"
-            android:textColor="@color/interesting_factTextBg"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="8dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerInteresting"
+        <com.google.android.material.appbar.CollapsingToolbarLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:nestedScrollingEnabled="false" />
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
 
-        <!-- Section 2: Psychology Facts -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="24dp">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:layout_marginStart="5dp"
-            android:padding="10dp"
-            android:text="@string/psychology_facts"
-            android:textColor="@color/PsychologyTextBg"
-            android:textSize="30sp"
-            android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/HelloNameView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat"
+                    android:text="@string/hello_buddy"
+                    android:textColor="#F8FAFC"
+                    android:textSize="32sp"
+                    android:textStyle="bold" />
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerPsychology"
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:alpha="0.6"
+                    android:fontFamily="@font/montserrat"
+                    android:text="@string/what_are_you_looking_for_today"
+                    android:textColor="#F8FAFC"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:paddingBottom="100dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:nestedScrollingEnabled="false" />
+            android:orientation="vertical">
 
-        <!--  unKnown facts -->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/unknown_facts"
-            android:textSize="30sp"
-            android:textStyle="bold"
-            android:textColor="@color/unknown_factsTextBg"
-            android:layout_marginStart="5dp"
-            android:padding="10dp"
-            android:layout_marginBottom="8dp" />
+            <!-- Category Section Helper -->
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="24dp"
+                android:alpha="0.1" />
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerUnKnown"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="8dp"
-            android:nestedScrollingEnabled="false" />
+            <!-- SECTION: Interesting -->
+            <TextView
+                style="@style/TextAppearance.Material3.TitleMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                android:textSize="30sp"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/interesting_facts"
+                android:textColor="@color/primary"
+                android:textStyle="bold" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Hidden Facts"
-            android:textSize="30sp"
-            android:textStyle="bold"
-            android:textColor="@color/noFavoriteTextBg"
-            android:layout_marginStart="5dp"
-            android:padding="10dp"
-            android:layout_marginBottom="8dp" />
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerHidden"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="8dp"
-            android:nestedScrollingEnabled="false" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerInteresting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:clipToPadding="false"
+                android:nestedScrollingEnabled="false"
+                android:paddingHorizontal="16dp" />
 
 
-    </LinearLayout>
-</androidx.core.widget.NestedScrollView>
+            <!-- SECTION: Psychology -->
+            <TextView
+                style="@style/TextAppearance.Material3.TitleMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/psychology_facts"
+                android:textColor="@color/secondary"
+                android:textStyle="bold"
+                android:textSize="30sp"/>
 
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerPsychology"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:clipToPadding="false"
+                android:nestedScrollingEnabled="false"
+                android:paddingHorizontal="16dp" />
 
+            <!-- NATIVE AD 1: Middle container -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/ad_card_wrapper"
+                style="@style/PremiumCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="@color/surface_variant"
+                app:strokeWidth="0dp">
+
+                <FrameLayout
+                    android:id="@+id/native_ad_container_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="100dp"
+                    android:visibility="gone" />
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- SECTION: Unknown -->
+            <TextView
+                style="@style/TextAppearance.Material3.TitleMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/unknown_facts"
+                android:textColor="@color/tertiary"
+                android:textStyle="bold"
+                android:textSize="30sp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerUnKnown"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:clipToPadding="false"
+                android:nestedScrollingEnabled="false"
+                android:paddingHorizontal="16dp" />
+
+            <!-- SECTION: Hidden -->
+            <TextView
+                style="@style/TextAppearance.Material3.TitleMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/cat_hidden_facts"
+                android:textColor="@color/orange"
+                android:textStyle="bold"
+                android:textSize="30sp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerHidden"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:clipToPadding="false"
+                android:nestedScrollingEnabled="false"
+                android:paddingHorizontal="16dp" />
+
+            <!-- NATIVE AD 2: Bottom container -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/ad_card_wrapper_bottom"
+                style="@style/PremiumCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="@color/surface_variant"
+                app:strokeWidth="0dp">
+
+                <FrameLayout
+                    android:id="@+id/native_ad_container_bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="100dp"
+                    android:visibility="gone" />
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

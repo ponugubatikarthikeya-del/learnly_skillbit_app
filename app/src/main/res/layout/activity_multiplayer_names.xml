@@ -1,82 +1,105 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
+    android:id="@+id/mainContainer"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
-    android:background="@drawable/gradient_bg"
-    android:padding="24dp"
     android:alpha="0"
-    android:translationY="50dp"
-    android:animateLayoutChanges="true"
-    android:id="@+id/mainContainer">
+    android:background="@drawable/gradient_bg"
+    android:translationY="50dp">
 
-    <!-- Title -->
-    <TextView
-        android:layout_width="match_parent"
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:id="@+id/titleText"
-        android:text="@string/enter_player_names"
-        android:textSize="26sp"
-        android:textStyle="bold"
-        android:textColor="@android:color/white"
-        android:layout_marginBottom="32dp"
-        android:gravity="center" />
+        android:layout_margin="24dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-    <!-- Player 1 -->
-    <EditText
-        android:id="@+id/player1Name"
-        android:layout_width="match_parent"
-        android:layout_height="55dp"
-        android:hint="@string/player_1_name"
-        android:background="@drawable/input_field_bg"
-        android:padding="12dp"
-        android:autofillHints="personName"
-        android:textColor="@android:color/white"
-        android:textColorHint="@color/player2Bg"
-        android:textSize="18sp"
-        android:inputType="textPersonName"
-        android:maxLength="5"
-        android:layout_marginBottom="20dp"
-        android:alpha="0"
-        tools:ignore="TouchTargetSizeCheck,VisualLintTextFieldSize"
-        android:translationY="30dp" />
+        <!-- Title -->
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:gravity="center"
+            android:text="@string/enter_player_names"
+            android:textColor="@android:color/white"
+            android:textSize="26sp"
+            android:textStyle="bold" />
 
-    <!-- Player 2 -->
-    <EditText
-        android:id="@+id/player2Name"
-        android:layout_width="match_parent"
-        android:layout_height="55dp"
-        android:hint="@string/player_2_name"
-        android:background="@drawable/input_field_bg"
-        android:padding="12dp"
-        android:autofillHints="personName"
-        android:textColor="@android:color/white"
-        android:textColorHint="@color/player2Bg"
-        android:textSize="18sp"
-        android:inputType="textPersonName"
-        android:maxLength="5"
-        android:layout_marginBottom="30dp"
-        android:alpha="0"
-        tools:ignore="TouchTargetSizeCheck,VisualLintTextFieldSize"
-        android:translationY="30dp" />
+        <!-- Player 1 -->
+        <EditText
+            android:id="@+id/player1Name"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginBottom="20dp"
+            android:alpha="0"
+            android:autofillHints="personName"
+            android:background="@drawable/input_field_bg"
+            android:hint="@string/player_1_name"
+            android:inputType="textPersonName"
+            android:maxLength="6"
+            android:padding="12dp"
+            android:textColor="@android:color/white"
+            android:textColorHint="@color/player2Bg"
+            android:textSize="18sp"
+            android:translationY="30dp"
+            tools:ignore="TouchTargetSizeCheck" />
 
-    <!-- Start Game Button -->
-    <Button
-        android:id="@+id/startGameButton"
-        android:layout_width="match_parent"
-        android:layout_height="55dp"
-        android:text="@string/start_game"
-        android:textAllCaps="true"
-        android:textStyle="bold"
-        android:textColor="@android:color/white"
-        android:textSize="18sp"
-        android:background="@drawable/btn_purple_gradient"
-        android:elevation="6dp"
-        android:alpha="0"
-        android:translationY="30dp"
-        tools:ignore="TouchTargetSizeCheck,VisualLintButtonSize"
-        />
+        <!-- Player 2 -->
+        <EditText
+            android:id="@+id/player2Name"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginBottom="30dp"
+            android:alpha="0"
+            android:autofillHints="personName"
+            android:background="@drawable/input_field_bg"
+            android:hint="@string/player_2_name"
+            android:inputType="textPersonName"
+            android:maxLength="6"
+            android:padding="12dp"
+            android:textColor="@android:color/white"
+            android:textColorHint="@color/player2Bg"
+            android:textSize="18sp"
+            android:translationY="30dp"
+            tools:ignore="TouchTargetSizeCheck" />
 
-</LinearLayout>
+        <!-- Start Game Button -->
+        <Button
+            android:id="@+id/startGameButton"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:alpha="0"
+            android:background="@drawable/btn_purple_gradient"
+            android:elevation="6dp"
+            android:text="@string/start_game"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:translationY="30dp"
+            tools:ignore="TouchTargetSizeCheck,VisualLintBounds" />
+
+    </LinearLayout>
+
+    <!-- Ad Container -->
+    <FrameLayout
+        android:id="@+id/ad_container"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:minHeight="50dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

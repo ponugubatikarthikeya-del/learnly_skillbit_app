@@ -1,88 +1,110 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="ic_launcher_bg">@color/background</color>
+    <!-- Core Brand Colors (Material 3 Palette) -->
+    <color name="primary">#6366F1</color>
+    <color name="primary_container">#312E81</color>
+    <color name="on_primary">#FFFFFF</color>
+
+    <color name="secondary">#10B981</color>
+    <color name="secondary_container">#064E3B</color>
+    <color name="on_secondary">#FFFFFF</color>
+
+    <color name="tertiary">#F59E0B</color>
+    <color name="tertiary_container">#78350F</color>
+    <color name="on_tertiary">#FFFFFF</color>
+
+    <color name="error">#EF4444</color>
+    <color name="on_error">#FFFFFF</color>
+
+    <!-- Background and Surface Colors (Premium Dark Theme) -->
+    <color name="background">#0F172A</color>
+    <color name="on_background">#F8FAFC</color>
+
+    <color name="surface">#1E293B</color>
+    <color name="on_surface">#F8FAFC</color>
+    <color name="surface_variant">#334155</color>
+    <color name="on_surface_variant">#CBD5E1</color>
+
+    <color name="outline">#475569</color>
+
+    <!-- Glassmorphism / Transparency effects -->
+    <color name="glass_white_10">#1AFFFFFF</color>
+    <color name="glass_white_20">#33FFFFFF</color>
+
+    <!-- Legacy / Compatibility colors -->
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="gray">#FF808080</color>
-    <color name="red">#D71E1E</color>
-    <color name="actionBarColor">#2E2A3A</color>
-    <color name="toastColor">#333333</color>
-    <color name="pageBackgrounds">#0A2533</color>
-    <color name="blue">#007AFF</color>
-    <color name="purple_700">#9C27B0</color>
-    <color name="teal_700">#03DAC5</color>
-    <color name="design_default_color_primary">#1F4068</color>
-    <color name="yellow_accent">#FEE715</color>
-    <color name="colorPrimaryOne">#F3C9FA</color>
+    <color name="gray">#94A3B8</color>
+    <color name="red">#EF4444</color>
+    <color name="blue">#3B82F6</color>
+    <color name="green">#10B981</color>
+    <color name="emerald">#10B981</color>
+    <color name="orange">#F59E0B</color>
 
+    <!-- Palette Gradients -->
+    <color name="grad_indigo_start">#6366F1</color>
+    <color name="grad_indigo_end">#A855F7</color>
 
-    <!-- Palette 1 -->
-    <color name="palette1_start">#00C6FF</color>
-    <color name="palette1_end">#0072FF</color>
+    <color name="grad_emerald_start">#10B981</color>
+    <color name="grad_emerald_end">#3B82F6</color>
 
-    <!-- Palette 2 -->
-    <color name="palette2_start">#FF6B6B</color>
-    <color name="palette2_end">#FFD93D</color>
+    <color name="grad_orange_start">#F59E0B</color>
+    <color name="grad_orange_end">#EF4444</color>
 
-    <!-- Palette 3 -->
-    <color name="palette3_start">#8E2DE2</color>
-    <color name="palette3_end">#4A00E0</color>
+    <color name="pageBackgrounds">#0F172A</color>
+    <color name="bottomNav_rippleColor">#1AFFFFFF</color>
+    <color name="favorites_copyBg">#6366F1</color>
+    <color name="favorites_shareColor">#10B981</color>
 
-    <!-- Palette 4 -->
-    <color name="palette4_start">#43CEA2</color>
-    <color name="palette4_end">#185A9D</color>
+    <!-- Quiz specific -->
+    <color name="quiz_option_default">#1E293B</color>
+    <color name="quiz_option_correct">#10B981</color>
+    <color name="quiz_option_wrong">#EF4444</color>
+    <color name="quiz_option_text">#F8FAFC</color>
 
-    <!-- Palette 5 -->
-    <color name="palette5_start">#FF9A8B</color>
-    <color name="palette5_end">#FF6A88</color>
+    <!-- UI Elements -->
+    <color name="toastColor">#1E293B</color>
+    <color name="player2Bg">#10B981</color>
+    <color name="snake_viewPage_bg">#0F172A</color>
+    <color name="snake_textActivity">#F8FAFC</color>
+    <color name="snakeGame_scoreBg">#1E293B</color>
+    <color name="snakeGame_startBg">#6366F1</color>
+    <color name="snakeGm_controlBtn_arrowCl">#6366F1</color>
+    <color name="tic_homePg_titleBg">#6366F1</color>
+    <color name="tic_homePg_buttonText">#F8FAFC</color>
+    <color name="tic_shadowColor">#1A000000</color>
+    <color name="purple_700">#7C3AED</color>
+    <color name="tic_overlay_bg">#B30F172A</color>
+    <color name="gameOver_scoreBg">#1E293B</color>
+    <color name="gameOver_returnBg">#6366F1</color>
+    <color name="yellow_accent">#F59E0B</color>
 
-    <!-- Palette 6 -->
-    <color name="palette6_start">#4ECDC4</color>
-    <color name="palette6_end">#556270</color>
+    <!-- Palette Colors -->
+    <color name="palette1_start">#6366F1</color>
+    <color name="palette1_end">#A855F7</color>
+    <color name="palette2_start">#10B981</color>
+    <color name="palette2_end">#3B82F6</color>
+    <color name="palette3_start">#F59E0B</color>
+    <color name="palette3_end">#EF4444</color>
+    <color name="palette4_start">#EC4899</color>
+    <color name="palette4_end">#8B5CF6</color>
+    <color name="palette5_start">#06B6D4</color>
+    <color name="palette5_end">#3B82F6</color>
+    <color name="palette6_start">#F97316</color>
+    <color name="palette6_end">#EAB308</color>
+
+    <color name="quiz_wrong_red">#EF4444</color>
 
     <!-- Snake Game Colors -->
-    <color name="snake_bg_dark">#113033</color>
-    <color name="snake_grid">#1E3B3F</color>
-    <color name="snake_green">#2FA74E</color>
-    <color name="snake_food_red">#E63A3A</color>
-    <color name="snake_border">#0B2B3A</color>
-    <color name="snake_canvas_bg">#E8F7FF</color>
-    <color name="quiz_wrong_red">#F44336</color>    <!-- Material Red -->
-    <color name="quiz_option_default">#E0E0E0</color>
-    <color name="green">#15E61D</color>
-    <color name="toast_text_color">#D8FFFFFF</color>
-    <color name="tic_game_dialogBg">#602ABD</color>
-    <color name="splash_applyBg">#092433</color>
-    <color name="snakeGm_controlBtn_arrowCl">#E6F0F4</color>
-    <color name="snake_viewPage_bg">#E8F7FF</color>
-    <color name="gameOver_returnBg">#4F16B6</color>
-    <color name="gameOver_scoreBg">#500ACC</color>
-
-    <color name="button_bg">#D19ADB</color>
-    <color name="tic_shadowColor">#22000000</color>
-    <color name="tic_overlay_bg">#88000000</color>
-    <color name="quiz_itemsBg">#0D303C</color>
-    <color name="tic_homePg_buttonText">#607D8B</color>
-    <color name="tic_homePg_titleBg">#55000000</color>
-    <color name="favorites_shareColor">#0FA215</color>
-    <color name="favorites_copyBg">#007AFF</color>
-    <color name="more_apps_to_Try_logoBg">#00BCD4</color>
-    <color name="profile_cardViewBg">#3F51B5</color>
-    <color name="termsConditionsLogoBg">#CDDC39</color>
-    <color name="privacyLogoBg">#FF9800</color>
-    <color name="noFavoriteTextBg">#AAAAAA</color>
-    <color name="unknown_factsTextBg">#7BBF2B</color>
-    <color name="PsychologyTextBg">#FF4081</color>
-    <color name="interesting_factTextBg">#FFBB33</color>
-    <color name="profileFavLogo">#22CA29</color>
-    <color name="quiz_optionBtnTextBg">#000</color>
-    <color name="quizOptionBtnBg">#E0E0E0</color>
-    <color name="player2Bg">#B3FFFFFF</color>
-    <color name="bottomNav_rippleColor">#b4b5b8</color>
-    <color name="fact_header_bg">#2E2A3A</color>
-    <color name="snake_textActivity">#0B2B3A</color>
-    <color name="snakeGame_scoreBg">#0B2B3A</color>
-    <color name="snakeGame_startBg">#0B2B3A</color>
-    <color name="_4f16b6">#4F16B6</color>
+    <color name="snake_bg_dark">#0F172A</color>
+    <color name="snake_grid">#1E293B</color>
+    <color name="snake_green">#10B981</color>
+    <color name="snake_food_red">#EF4444</color>
+    <color name="snake_border">#475569</color>
+    <color name="snake_canvas_bg">#0F172A</color>
+    
+    <color name="outline_variant">#DCD5D5</color>
 
 
 </resources>

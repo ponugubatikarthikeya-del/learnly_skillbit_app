@@ -75,8 +75,11 @@
                     android:text="@string/back"
                     android:textColor="@color/black"
                     android:contentDescription="@string/back"
-                    android:textSize="25sp"
-                    android:textStyle="bold" />
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:drawablePadding="4dp"/>
 
 
             </com.google.android.material.card.MaterialCardView>
@@ -106,8 +109,11 @@
                     android:gravity="center"
                     android:text="@string/reset"
                     android:textColor="@color/black"
-                    android:textSize="25sp"
-                    android:textStyle="bold" />
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:drawablePadding="4dp"/>
 
 
             </com.google.android.material.card.MaterialCardView>
