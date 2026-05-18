@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--
+      Refined Insets: 18dp provides a slightly larger logo (72dp)
+      while remaining safely within the 66dp-72dp recommended center
+      for Adaptive Icons. This ensures it looks "Full" but never cut off.
+    -->
+    <item
+        android:drawable="@drawable/app_logo"
+        android:top="18dp"
+        android:bottom="18dp"
+        android:left="18dp"
+        android:right="18dp" />
+</layer-list>
