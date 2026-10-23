@@ -239,7 +239,7 @@
     <!-- Unlock Dialog -->
     <string name="unlock_category">Unlock %1$s</string>
     <string name="unlock_message">Watch a short video to unlock this quiz category and start playing!</string>
-    <string name="unlock_wait_message">Please wait a few seconds to open another lock...</string>
+    <string name="unlock_wait_message">Please wait a few seconds to open lock...</string>
     <string name="unlock_no_internet">No internet connection. Please check your network.</string>
     <string name="watch_ad_to_unlock">WATCH AD TO UNLOCK</string>
     <string name="maybe_later">Maybe Later</string>

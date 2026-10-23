@@ -6,6 +6,8 @@ import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.graphics.Point;
+import android.media.AudioAttributes;
+import android.media.SoundPool;
 import android.util.AttributeSet;
 import android.util.DisplayMetrics;
 import android.view.LayoutInflater;
@@ -50,6 +52,10 @@ public class GameView extends SurfaceView implements Runnable, SurfaceHolder.Cal
 
     private OnScoreChangeListener scoreListener;
 
+    private SoundPool soundPool;
+    private int eatSoundId;
+    private int gameOverSoundId;
+
     public GameView(Context context) {
         super(context);
         init();
@@ -87,6 +93,44 @@ public class GameView extends SurfaceView implements Runnable, SurfaceHolder.Cal
         borderPaint.setColor(ContextCompat.getColor(getContext(), R.color.snake_border));
         borderPaint.setStyle(Paint.Style.STROKE);
         borderPaint.setStrokeWidth(6);
+
+        initSoundPool();
+    }
+
+    private void initSoundPool() {
+        AudioAttributes audioAttributes = new AudioAttributes.Builder()
+                .setUsage(AudioAttributes.USAGE_GAME)
+                .setContentType(AudioAttributes.CONTENT_TYPE_SONIFICATION)
+                .build();
+        soundPool = new SoundPool.Builder()
+                .setMaxStreams(5)
+                .setAudioAttributes(audioAttributes)
+                .build();
+
+        int eatResId = getResources().getIdentifier("snake_eat", "raw", getContext().getPackageName());
+        if (eatResId != 0) {
+            eatSoundId = soundPool.load(getContext(), eatResId, 1);
+        }
+
+        int gameOverResId = getResources().getIdentifier("snake_game_over", "raw", getContext().getPackageName());
+        if (gameOverResId != 0) {
+            gameOverSoundId = soundPool.load(getContext(), gameOverResId, 1);
+        }
+    }
+
+    private void playSound(int soundId) {
+        if (soundPool != null && soundId != 0) {
+            soundPool.play(soundId, 1, 1, 0, 0, 1);
+        }
+    }
+
+    @Override
+    protected void onDetachedFromWindow() {
+        super.onDetachedFromWindow();
+        if (soundPool != null) {
+            soundPool.release();
+            soundPool = null;
+        }
     }
 
     public void setOnScoreChangeListener(OnScoreChangeListener listener) {
@@ -233,12 +277,14 @@ public class GameView extends SurfaceView implements Runnable, SurfaceHolder.Cal
 
         if (head.x < 0 || head.x >= cols || head.y < 0 || head.y >= rows) {
             isGameOver = true;
+            playSound(gameOverSoundId);
             return;
         }
 
         for (Point p : snake) {
             if (p.x == head.x && p.y == head.y) {
                 isGameOver = true;
+                playSound(gameOverSoundId);
                 return;
             }
         }
@@ -249,6 +295,7 @@ public class GameView extends SurfaceView implements Runnable, SurfaceHolder.Cal
             score += 1;
             notifyScore();
             placeFood();
+            playSound(eatSoundId);
         } else {
             snake.remove(snake.size() - 1);
         }
