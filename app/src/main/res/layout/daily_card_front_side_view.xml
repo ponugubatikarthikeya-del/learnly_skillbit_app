@@ -10,6 +10,7 @@
         android:id="@+id/dailyFactView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
         android:gravity="center"
         android:text="@string/daily_fact"
         android:textColor="@color/white"
