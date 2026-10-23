@@ -92,6 +92,8 @@ app/
    - Run Gradle sync.
    - Run `./gradlew assembleDebug` or click **Run 'app'** in Android Studio.
 
+---
+
 ## 💪 Play Store link
 
  - Factify App : [Factify](https://play.google.com/store/apps/details?id=com.factifyft.app)
