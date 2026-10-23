@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="@string/tap_to_reveal"
+        android:text="@string/daily_fact"
         android:textColor="@color/white"
         android:textSize="32sp"
         android:textStyle="bold"

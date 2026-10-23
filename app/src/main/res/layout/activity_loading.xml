@@ -6,29 +6,44 @@
     android:layout_height="match_parent"
     android:background="@color/background">
 
+    <!-- Top Linear Progress (Modern Production Look) -->
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/topProgressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        app:indicatorColor="@color/primary"
+        app:trackColor="@android:color/transparent"
+        app:trackThickness="4dp"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <com.google.android.material.progressindicator.CircularProgressIndicator
         android:id="@+id/progressBar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:indeterminate="true"
         app:indicatorColor="@color/primary"
-        app:indicatorSize="40dp"
-        app:trackThickness="4dp"
+        app:indicatorSize="64dp"
+        app:trackThickness="6dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+        app:layout_constraintVertical_bias="0.45" />
 
     <TextView
         android:id="@+id/loadQuote"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="32dp"
         android:text="@string/overView_text"
         android:textColor="@color/on_background"
-        android:textSize="14sp"
+        android:textSize="18sp"
+        android:gravity="center"
         android:alpha="0"
         android:fontFamily="@font/montserrat"
+        android:lineSpacingExtra="4dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/progressBar" />
