@@ -8,7 +8,7 @@ A polished, modern, feature-rich Android application built with native **Java** 
 
 **[Factify](https://play.google.com/store/apps/details?id=com.factifyft.app)** is an engaging educational and entertainment application combining fascinating daily facts across multiple psychology and general knowledge categories with classic retro minigames (Quiz Show, Snake Game, and Tic Tac Toe).
 
-The app has been completely redesigned and modernized to provide a sleek, responsive, and delightful user experience across all Android devices while strictly maintaining a lightweight, performant Java + XML architecture.
+The app has been completely designed and modernized to provide a sleek, responsive, and delightful user experience across all Android devices while strictly maintaining a lightweight, performant Java + XML architecture.
 
 ---
 
